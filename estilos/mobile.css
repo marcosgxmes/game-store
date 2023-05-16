@@ -1,0 +1,482 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'game';
+    src: url('../fonts/gameshow/Gameshow.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thunder';
+    src: url('../fonts/thunder_kingdom/Thunder\ Kingdom.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'logos';
+    src: url('../fonts/game_logos2/Game\ Logos.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gow';
+    src: url('../fonts/god-of-war/gow.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    background: black url('../imagens/thumb.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgba(0, 0, 0, 0.065);
+}
+
+
+header h1 {
+    text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.893);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+    font-size: 2.3rem;
+    font-family: 'gow';
+    font-weight: normal;
+    text-transform: uppercase;   
+}
+
+
+header p {
+    margin: 10px 0;
+}
+
+.logos {
+    font-family: 'logos';
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.toggle{ 
+    
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.toggle i {
+    font-size: 30px;
+}
+
+#burguer {
+    width: 100%;
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+    
+    
+}
+
+#burguer:hover {
+   background-color:white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+menu a {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+menu a:hover {
+    color: black;
+    background-color:white;
+}
+
+
+h2 {
+    font-family: 'thunder';
+    text-align: center;
+    margin: 20px 0;
+    font-weight: normal;   
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+    
+}
+
+section { 
+    margin: 20px 0;
+    width: 100%;
+    background-color: rgb(39, 39, 41);
+}
+
+
+#container {
+    width: 100%;
+    display: grid;
+    padding: 0 20px;
+    grid-gap: 20px;
+    justify-content: center;
+    
+
+    grid-template-areas: 
+    "gow item1"
+    "gow item1"
+    "item3 item3"
+    "item2 item2";
+   
+}
+
+.gow1 {
+    display: none;
+    max-width: 400px;
+    min-width: 300;
+    height: 300px;
+    text-align: center;
+    grid-area: "gow1";
+}
+
+.gow1 img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 350px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px black;
+}
+
+.gow {
+    max-width: 400px;
+    min-width: 350px;
+    height: 580px;
+    
+    border-radius: 10px;
+    grid-area: "gow";
+    grid-row: gow;
+}
+
+.thor {
+    width: 100%;
+    height: 545px;
+    background-image: url('../imagens/thor.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 1px 2px 5px black;
+}
+
+.gow img {
+    display: none;
+}
+
+
+
+.item1 {
+    max-width: 400px;
+    min-width: 300;
+    height: 300px;
+    text-align: center;
+    grid-area: "item1";
+}
+
+.item1 img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 350px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px black;
+}
+
+
+#og {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    padding: 0 20px;
+    justify-content: center;
+    grid-template-areas:
+    "item item item"
+    "item item item"
+    "item item item";
+}
+
+
+.item {
+    max-width: 300px;
+    min-width: 240;
+    height: 300px;
+    text-align: center;
+    grid-area: "item";
+
+}
+
+.item img{
+    width: 100%;
+    max-width: 300px;
+    min-width: 240px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px black;
+}
+
+#off {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+   
+}
+
+#off img {
+    margin-top: 15px;
+}
+
+footer {
+    padding: 40px;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer ul li {
+    font-style: italic;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    menu a {
+        width: 100%;
+    }
+
+    .gow {
+        
+        max-width: 620px;
+        min-width: 350;
+        height: 370px;
+        
+        margin-top: 20px;
+        text-align: center;
+        grid-area: "gow";
+        grid-column: gow;
+    }
+
+    .fundo {
+        width: 100%;
+        height: 310px;
+        margin-bottom: 20px;
+        background-image: url('../imagens/kratos.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+    }
+
+    .thor {
+        display: none;
+    }
+
+    .gow img { display: none; }
+
+    .item {
+        height: 240px;
+    }
+
+    .item1 {
+        
+        max-width: 300px;
+        min-width: 240;
+        height: 220px;
+    }
+
+    .item1 img {
+        width: 100%;
+        max-width: 300px;
+        min-width: 240px;
+    }
+
+    #container {
+        
+        grid-template-areas: 
+        "gow gow"
+        "item1 item1"
+        "item1 item1"
+        "item1 item1";
+       
+    }
+    #og {
+
+        padding-bottom: 20px;
+        
+        grid-template-areas:
+        "item item"
+        "item item"
+        "item item"
+        "item item"
+        "item item";
+    }
+}
+
+@media (max-width: 540px) {
+
+    .toggle i {
+        font-size: 25px;
+
+    }
+    
+    #burguer {
+        width: 100%;
+        display: block;
+        background-color: white;
+        color: black;
+        padding: 8px;
+        cursor: pointer;
+        margin: 0 auto;
+        
+        
+    }
+    
+    #burguer:hover {
+       background-color:white;
+        color: black;
+    }
+    
+    menu a {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background-color: rgb(39, 39, 41);
+        text-decoration: none;
+        text-align: center;
+        border-top: 2px solid darkgray;
+        padding: 10px;
+        border-radius: 0px;
+    }
+    
+    menu a:hover {
+        color: black;
+        background-color:rgb(168, 167, 167);
+    }
+
+    body {
+        background-color: white;
+    }
+
+    main {
+        color: black;
+        background-color: white;
+    }
+
+    section {
+        background-color: white;
+    }
+
+    .thor {
+        display: none;
+    }
+
+    .gow {display: none;}
+
+
+    #og {
+        
+        grid-template-areas:
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item";
+    }
+
+    #container {
+        
+        grid-template-areas:
+        "gow1"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item";
+    }
+
+    .gow1 {
+       
+        display: block;
+        max-width: 300px;
+        min-width: 240;
+        height: 240px;
+    }
+
+    .gow1 img {
+        width: 100%;
+    max-width: 300px;
+    min-width: 240px;
+        
+    
+    }
+
+    .item {
+        height: 240px;
+    }
+
+    .item1 {
+        max-width: 300px;
+        min-width: 240;
+        height: 240px;
+    }
+
+    .item1 img {
+        width: 100%;
+    max-width: 300px;
+    min-width: 240px;
+        
+    
+    }
+
+    footer {
+        background-color: black;
+    }
+}
