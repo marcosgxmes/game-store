@@ -53,7 +53,7 @@ header {
 header h1 {
     text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.893);
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     
     font-size: 2.3rem;
     font-family: 'gow';
@@ -62,14 +62,14 @@ header h1 {
 }
 
 
-header p {
-    margin: 10px 0;
-}
+
 
 .logos {
     font-family: 'logos';
     font-weight: normal;
     font-size: 1.2rem;
+    margin-bottom: 20px;
+    
 }
 
 .toggle{ 
@@ -361,6 +361,7 @@ footer ul li {
 
     header {
         height: 260px;
+        margin-bottom: 15px;
     }
    
 
