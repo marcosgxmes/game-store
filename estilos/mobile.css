@@ -39,6 +39,14 @@
     font-style: normal;
 }
 
+.flip {
+    display: none;
+}
+
+#desconto {
+    margin: 20px 0;
+}
+
 header {
     width: 100%;
     height: 230px;
@@ -83,7 +91,7 @@ header h1 {
 }
 
 .toggle i {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 #burguer {
@@ -273,15 +281,41 @@ section {
 }
 
 footer {
-    padding: 40px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+footer div {
+    
+    width: 200px;
+    
+
+}
+
+.hydra {
+    width: 300px;
+}
+
+.hydra img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
 }
 
 footer h3 {
-    text-align: center;
+    color: rgb(192, 3, 3);
+    margin-bottom: 20px;
 }
+
+
 
 footer ul li {
     font-style: italic;
+    list-style: none;
     margin: 10px 0;
     cursor: pointer;
 }
@@ -358,15 +392,79 @@ footer ul li {
         "item item"
         "item item";
     }
+
+    footer {
+        background-color: black;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    footer div {
+        width: 100px;
+        margin: 20px 0;
+    }
+
+    .hydra img {
+        width: 100px;
+        display: block;
+        margin:  0 auto;
+    }
+
+    .hydra {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 540px) {
 
+    .flip {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .flip div {
+        max-width: 320px;
+       
+    }
+
+    .arcade img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .out {
+        color: red;
+        font-weight: bold;
+    }
+
+    #l1 {
+        display: none;
+    }
+
+    .logos {
+        margin-top: 0px;
+    }
+
     header {
-        height: 260px;
+        height: 220px;
         margin-bottom: 15px;
     }
-   
+    header h1 {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        
+    }
 
     .toggle i {
         font-size: 25px;
@@ -487,5 +585,33 @@ footer ul li {
 
     footer {
         background-color: black;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    footer div {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .hydra img {
+        width: 100px;
+        display: block;
+        margin:  0 auto;
+    }
+
+    .hydra {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #off h2 {
+        margin-top: 40px 0 ;
     }
 }
