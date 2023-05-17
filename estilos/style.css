@@ -232,9 +232,9 @@ section {
     width: 100%;
     max-width: 400px;
     min-width: 350px;
-    margin: 20px 0;
+    
     border-radius: 10px;
-    box-shadow: 1px 2px 5px black;
+    box-shadow: 2px 2px 5px black;
 }
 
 
@@ -262,10 +262,9 @@ section {
 
 .item img{
     width: 100%;
-    
-    margin: 20px 0;
+     margin: 20px 0;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px black;
+    box-shadow: 2px 2px 5px black;
 }
 
 #off {
@@ -289,14 +288,11 @@ footer {
 }
 
 footer div {
-    
-    width: 200px;
-    
-
+     width: 200px;
 }
 
 .hydra {
-    width: 300px;
+    width: 200px;
 }
 
 .hydra img {

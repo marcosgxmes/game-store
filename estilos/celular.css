@@ -2,13 +2,152 @@
 
 @media (max-width: 540px) {
 
+    body {
+        background-color: white;
+    }
+
+    main {
+        color: black;
+        background-color: white;
+    }
+
+    header {
+        height: 280px;
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        margin-top: 70px;
+        margin-bottom: 30px;    
+    }
+
+    .logos {
+        margin-top: 0px;
+    }
+
+    #l1 {
+        display: none;
+    }
+
+    .toggle i {
+        font-size: 25px;     
+    }
+    
+    #burguer {
+        width: 100%;
+        display: block;
+        background-color: white;
+        color: black;
+        padding: 8px;
+        cursor: pointer;
+        margin: 0 auto;
+        
+    }
+    
+    #burguer:hover {
+       background-color:white;
+        color: black;
+    }
+    
+    menu a {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background-color: rgb(14, 14, 15);
+        text-decoration: none;
+        text-align: center;
+        border-top: 2px solid darkgray;
+        padding: 10px;
+        border-radius: 0px;
+    }
+    
+    menu a:hover {
+        color: black;
+        background-color:rgb(176, 176, 176);
+    }
+
+    #container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .item1 {
+        max-width: 300px;
+        min-width: 240;
+        height: 240px;
+    }
+
+    .gow1 {
+       
+        display: block;
+        max-width: 300px;
+        min-width: 240;
+        height: 240px;
+    }
+
+    .gow1 img {
+        width: 100%;
+        max-width: 300px;
+        min-width: 240px;
+    }
+
+    .thor {
+        display: none;
+    }
+
+    .gow { 
+        display: none;
+    }
+
+    .txt  {
+        color: white;
+        background-color: rgb(39, 39, 41);
+        padding: 0 15px;
+        padding-top: 10px;
+        margin-top: 20px;
+
+    }
+
+    #og {
+        color: white;
+        background-color: rgb(39, 39, 41);
+        margin-top: 0px;
+        padding-top: 20px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        column-gap: 15px;
+        row-gap: 0px;
+
+        grid-template-areas:
+        "item item"
+        "item item"
+        "item item"
+        "item item";
+    }
+
+    #og div {
+        height: 190px;
+    }
+
+    .item {
+        margin: 0px;
+        width: 170px;
+        height: 100px;
+    }
+
     .flip {
         margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row-gap: 30px;
+        row-gap: 40px;
     }
 
     .flip h2 {
@@ -30,176 +169,29 @@
         font-weight: bold;
     }
 
-    #l1 {
-        display: none;
-    }
-
-    .logos {
-        margin-top: 0px;
-    }
-
-    header {
-        height: 270px;
-        margin-bottom: 15px;
-    }
-    header h1 {
-        margin-top: 60px;
-        margin-bottom: 40px;
-        
-    }
-
-    .toggle i {
-        font-size: 25px;
-
-    }
-    
-    #burguer {
-        width: 100%;
-        display: block;
-        background-color: white;
-        color: black;
-        padding: 8px;
-        cursor: pointer;
-        margin: 0 auto;
-        
-        
-    }
-    
-    #burguer:hover {
-       background-color:white;
-        color: black;
-    }
-    
-    menu a {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        color: white;
-        background-color: rgb(39, 39, 41);
-        text-decoration: none;
-        text-align: center;
-        border-top: 2px solid darkgray;
-        padding: 10px;
-        border-radius: 0px;
-    }
-    
-    menu a:hover {
-        color: black;
-        background-color:rgb(168, 167, 167);
-    }
-
-    body {
+    #off {
         background-color: white;
     }
 
-    main {
-        color: black;
-        background-color: white;
-    }
-
-    section {
-        background-color: white;
-    }
-
-    .thor {
-        display: none;
-    }
-
-    .gow {display: none;}
-
-
-    
-
-    #container {
-        
-        grid-template-areas:
-        "gow1"
-        "item"
-        "item"
-        "item"
-        "item"
-        "item"
-        "item";
-    }
-
-    .gow1 {
-       
-        display: block;
-        max-width: 300px;
-        min-width: 240;
-        height: 240px;
-    }
-
-    .gow1 img {
-        width: 100%;
-        max-width: 300px;
-        min-width: 240px;
-        
-    
-    }
-
-    .txt  {
-        color: white;
-        background-color: rgb(39, 39, 41);
-        padding: 0 15px;
-        padding-top: 10px;
-        margin-top: 20px;
-
-    }
-
-    #og {
-        color: white;
-        background-color: rgb(39, 39, 41);
-        margin-top: 0px;
-        padding-top: 20px;
-        
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        column-gap: 15px;
-        grid-template-areas:
-        "item item"
-        "item item"
-        "item item"
-        "item item";
-        
-    }
-
-    .item {
-        margin: 0px;
-        width: 170px;
-        height: 170px;
-    }
-
-    .item1 {
-        max-width: 300px;
-        min-width: 240;
-        height: 240px;
-    }
-
-    .item1 img {
-        width: 100%;
-    
-        
-    
+    #off h2 {
+        margin-top: 40px 0 ;
     }
 
     
 
     footer {
         background-color: black;
-        
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         justify-content: space-around;
-        align-items: center;
+        align-content: flex-start;
         align-content: flex-start;
         flex-wrap: wrap;
         padding: 20px 30px;
     }
 
     footer div {
-        width: 100%;
+        width: 100% !important;
         margin: 10px 0;
     }
 
@@ -209,12 +201,10 @@
         margin:  0 auto;
     }
 
-    .hydra {
+    div.hydra {
         width: 100%;
         margin-bottom: 15px;
     }
 
-    #off h2 {
-        margin-top: 40px 0 ;
-    }
+    
 }
