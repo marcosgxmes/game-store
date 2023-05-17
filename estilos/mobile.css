@@ -253,7 +253,7 @@ section {
 
 .item {
     max-width: 300px;
-    min-width: 240;
+    min-width: 150;
     height: 300px;
     text-align: center;
     grid-area: "item";
@@ -262,8 +262,7 @@ section {
 
 .item img{
     width: 100%;
-    max-width: 300px;
-    min-width: 210px;
+    
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 1px 2px 5px black;
@@ -425,7 +424,7 @@ footer ul li {
 @media (max-width: 540px) {
 
     .flip {
-        
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -433,8 +432,12 @@ footer ul li {
         row-gap: 30px;
     }
 
+    .flip h2 {
+        margin-bottom: 0px;
+    }
+
     .flip div {
-        max-width: 250px;
+        max-width: 200px;
        
     }
 
@@ -457,7 +460,7 @@ footer ul li {
     }
 
     header {
-        height: 230px;
+        height: 280px;
         margin-bottom: 15px;
     }
     header h1 {
@@ -550,8 +553,8 @@ footer ul li {
 
     .gow1 img {
         width: 100%;
-    max-width: 300px;
-    min-width: 240px;
+        max-width: 300px;
+        min-width: 240px;
         
     
     }
@@ -559,8 +562,10 @@ footer ul li {
     .txt  {
         color: white;
         background-color: rgb(39, 39, 41);
+        padding: 0 15px;
         padding-top: 10px;
         margin-top: 20px;
+
     }
 
     #og {
@@ -583,8 +588,8 @@ footer ul li {
 
     .item {
         margin: 0px;
-        max-width: 240px;
-        height: 240px;
+        width: 170px;
+        height: 170px;
     }
 
     .item1 {
@@ -595,15 +600,12 @@ footer ul li {
 
     .item1 img {
         width: 100%;
-    max-width: 300px;
-    min-width: 240px;
+    
         
     
     }
 
-    .flip {
-        margin-bottom: 40px;
-    }
+    
 
     footer {
         background-color: black;
@@ -623,7 +625,7 @@ footer ul li {
     }
 
     .hydra img {
-        width: 100px;
+        width: 60px;
         display: block;
         margin:  0 auto;
     }
