@@ -263,7 +263,7 @@ section {
 .item img{
     width: 100%;
     max-width: 300px;
-    min-width: 240px;
+    min-width: 210px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 1px 2px 5px black;
@@ -434,7 +434,7 @@ footer ul li {
     }
 
     .flip div {
-        max-width: 320px;
+        max-width: 250px;
        
     }
 
@@ -457,7 +457,7 @@ footer ul li {
     }
 
     header {
-        height: 220px;
+        height: 230px;
         margin-bottom: 15px;
     }
     header h1 {
@@ -526,16 +526,7 @@ footer ul li {
     .gow {display: none;}
 
 
-    #og {
-        
-        grid-template-areas:
-        "item"
-        "item"
-        "item"
-        "item"
-        "item"
-        "item";
-    }
+    
 
     #container {
         
@@ -565,7 +556,34 @@ footer ul li {
     
     }
 
+    .txt  {
+        color: white;
+        background-color: rgb(39, 39, 41);
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+
+    #og {
+        color: white;
+        background-color: rgb(39, 39, 41);
+        margin-top: 0px;
+        padding-top: 20px;
+        
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        column-gap: 15px;
+        grid-template-areas:
+        "item item"
+        "item item"
+        "item item"
+        "item item";
+        
+    }
+
     .item {
+        margin: 0px;
+        max-width: 240px;
         height: 240px;
     }
 
@@ -583,6 +601,10 @@ footer ul li {
     
     }
 
+    .flip {
+        margin-bottom: 40px;
+    }
+
     footer {
         background-color: black;
         
@@ -592,12 +614,12 @@ footer ul li {
         align-items: center;
         align-content: flex-start;
         flex-wrap: wrap;
-        padding: 30px;
+        padding: 20px 30px;
     }
 
     footer div {
         width: 100%;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .hydra img {
@@ -608,7 +630,7 @@ footer ul li {
 
     .hydra {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     #off h2 {
