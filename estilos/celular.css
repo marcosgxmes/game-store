@@ -3,7 +3,7 @@
 @media (max-width: 540px) {
 
     body {
-        background-color: white;
+        background-color: white !important;
     }
 
     main {
@@ -12,6 +12,7 @@
     }
 
     header {
+       
         height: 280px;
         margin-bottom: 15px;
         background: black url('../imagens/controles1.jpg') no-repeat;
@@ -41,7 +42,8 @@
     }
 
     .toggle {
-        display: block;
+       
+        display: block !important;
     }
 
     .toggle i {
@@ -206,12 +208,7 @@
         margin-top: 40px 0 ;
     }
 
-    #off p {
-        margin: 15px 0;
-    }
-
     
-
     footer {
         background-color: black;
         display: flex;

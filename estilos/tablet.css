@@ -2,6 +2,10 @@
 
 @media (max-width: 800px) {
 
+    body {
+        background-color: rgb(39, 39, 41);
+    }
+
     header h1 {
         margin-top: 70px;
         margin-bottom: 30px;
@@ -11,16 +15,9 @@
         display: none;
     }
 
-    .toggle {
+    .toggle{ 
+    
         display: none;
-    }
-
-    body {
-        background-color: rgb(39, 39, 41);
-    }
-
-    menu a {
-        width: 100%;
     }
 
     #container {
@@ -102,6 +99,10 @@
 
     #gta {
         display: block;
+    }
+
+    #off p {
+        margin: 20px 0;
     }
 
     footer {

@@ -91,35 +91,21 @@ header h1 {
 
 .toggle{ 
     
-    display: block;
+    display: none;
     width: 100%;
     text-align: center;
 }
 
 .toggle i {
-    font-size: 27px;
+    font-size: 28px;
 }
 
-#burguer {
-    width: 100%;
-    display: block;
-    background-color: black;
-    color: white;
-    padding: 8px;
-    cursor: pointer;
-    margin: 0 auto;
-    
-    
-}
 
 #burguer:hover {
    background-color:white;
-    color: black;
+    color: white;
 }
 
-menu {
-    display: none;
-}
 menu a {
     width: 50%;
     display: block;
@@ -275,6 +261,10 @@ section {
     padding: 20px;
     margin-bottom: 10px;
    
+}
+
+#off p {
+    margin: 20px 0;
 }
 
 #off img {
