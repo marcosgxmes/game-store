@@ -1,12 +1,72 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     main {
         max-width: 1200px;
         margin: 0px auto;
     }
 
+    .toggle {
+        display: none;
+    }
+
     section {
         border-radius: 10px;
-    }    
+    }  
+    
+    #container {
+        padding: 40px 0;
+        column-gap: 60px;
+    }
+
+    #og {
+        column-gap: 50px;
+    }
+
+    .gow {
+        
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .fundo {
+        height: 100%;
+        padding: 0px;
+        margin-bottom: 25px;
+    }
+
+    .thor {
+        height: 100%;
+        margin: 0px;
+        
+    }
+
+    .item1 {
+        
+        margin: 0px;
+    }
+
+    .item1 img {
+        margin-bottom: 25px;
+    }
+
+    header {
+        height: 210px;
+    }
+
+    header h1 {
+        margin-top: 50px;
+    }
+
+    #l2 {
+        display: none;
+    }
+
+    #off {
+        padding-bottom: 30px;
+    }
+
+    #off p {
+        margin: 15px 0;
+    }
 }

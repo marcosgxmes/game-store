@@ -39,9 +39,15 @@
     font-style: normal;
 }
 
+#gta {
+    display: none;
+}
+
 .flip {
     display: none;
 }
+
+
 
 #desconto {
     margin: 20px 0;
@@ -79,9 +85,9 @@ header h1 {
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 20px;
-    
-    
 }
+
+
 
 .toggle{ 
     
@@ -195,7 +201,7 @@ section {
 .gow {
     max-width: 400px;
     min-width: 350px;
-    height: 580px;
+    height: 545px;
     
     border-radius: 10px;
     grid-area: "gow";
@@ -222,17 +228,14 @@ section {
 
 .item1 {
     max-width: 400px;
-    min-width: 300;
-    height: 300px;
+    min-width: 100;
+    height: 290px;
     text-align: center;
     grid-area: "item1";
 }
 
 .item1 img {
-    width: 100%;
-    max-width: 400px;
-    min-width: 350px;
-    
+    width: 100%; 
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
 }

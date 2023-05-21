@@ -1,14 +1,14 @@
-let btn = document.querySelector(".toggle");
-let icon = btn.querySelector(".fa-gamepad");
+
+let btn = document.querySelector('.toggle');
+let icon = btn.querySelector('.fa-gamepad');
 
 btn.onclick = function() {
-    if (icon.classList.contains("fa-gameped")) {
-        icon.classList.replace("fa-gamepad", "fa-times");
+    if (icon.classList.contains('fa-gamepad')) {
+        icon.classList.replace('fa-close');
     } else { 
-        icon.classList.replace("fa-times", "fa-gamepad");
-
+        icon.classList.replace ('fa-gamepad');
     }
-}
+} 
 
 
 function clickMenu() {
