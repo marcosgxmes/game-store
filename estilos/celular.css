@@ -15,7 +15,7 @@
        
         height: 280px;
         margin-bottom: 15px;
-        background: black url('../imagens/controles1.jpg') no-repeat;
+        background: black url('../imagens/controles11.jpg') no-repeat;
         background-position: 50% 50%;
         background-size: cover;
     }
@@ -68,10 +68,14 @@
        color: rgb(100, 100, 180);
         
     }
+
+    #itens {
+        display: none;
+    }
     
     menu a {
         width: 100%;
-        display: block;
+        
         margin: 0 auto;
         color: white;
         background-color:#07112e;
