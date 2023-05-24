@@ -53,30 +53,32 @@ header {
 .icones {
    
     height: 100%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    
 }
 
 .icones div i {
+    margin: 0 10px;
     font-size: 20px;
-    height: 100%;
+    
 }
 
 #menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px;
+    height: 70px;
+    width: 35px;
     border-left: 1px solid rgba(0, 0, 0, 0.099);
-    margin-left: 10px;
-    padding:  10px;
+    margin-left: 5px;
+    
 }
 
 #menu i {
-    margin-top: 25px;
+   display: block;
+   margin: 0 auto;
 }
 
 #search-main {
@@ -140,6 +142,11 @@ input#search {
 
 .imagem-p img {
    width: 100%;
+}
+
+.imagem-p:hover {
+    border: 1px solid black;
+    box-shadow: none;
 }
 
 strong {
