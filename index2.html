@@ -4,72 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="estilos/celular2.css">
     <title>Game Store</title>
 </head>
 <body>
     <header>
-        <img src="imagens/hydra.webp" alt="" width="50px">
-        <h3>Hydra<br> Game Store</h3>
-        <div>Login</div>
-        <div>Carrinho</div>
-        <div>Menu</div>
+        <div class="hydra-logo"><img src="imagens/hydra_blue.webp" alt="" width="45px" height="45px"></div>
+
+        <div class="hydra-name">
+            <h3>Hydra<br> Game Store</h3>
+        </div>
+
+        <div class="icones">
+            <div><i class="fa fa-user"></i></div>
+            <div><i class="fa fa-shopping-cart"></i></div>
+            <div id="menu"><i class="fa fa-bars"></i></div>
+        </div>
+        
     </header>
-    <input type="text" name="search" id="search" placeholder="Pesquisar">
+
+    <div id="search-main">
+        <input type="text" name="search" id="search" placeholder="Pesquisar...">
+    </div>
 
     <main>
         <section id="compra">
             <div>
-                <img src="imagens/ps5.jpg" alt="" width="300px">
-                <div>imagem p</div>
-                <div>imagem p</div>
-                <div>imagem p</div>
+                <img src="imagens/ps5_gow.jpg" alt="" width="270px" height="245px" id="main-img">
+
+                <div class="acessorios">
+                    
+                    <div class="imagem-p"><img src="imagens/shopping2.webp" alt=""></div>
+                    <div class="imagem-p"><img src="imagens/shopping3.webp" alt=""></div>
+                    <div class="imagem-p"><img src="imagens/controleps5jpg.jpg" alt=""></div>
+
+                </div>
             </div>
-            <h3>Sony PlayStation 5</h3>
-                <p>Avista - R$ 4.399,00 <br>
+
+            <h3> Console Sony PlayStation 5</h3>
+
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> 4.9 (523 avaliaçôes)
+            </div>
+                <p><strong>R$ 4.184,90</strong> <br>
                 ou 12x sem juros.</p>
-                <button>ADICIONAR AO CARRINHO</button>
+                <button id="addCarrinho">ADICIONAR AO CARRINHO</button>
+            </section>
+
+            <section id="description">
 
                 <H1>DESCRIÇÃO DO PRODUTO</H1>
 
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptate perspiciatis. Fugit perferendis distinctio cupiditate, iure amet numquam ex quam quisquam unde ut a quod cum obcaecati. Veritatis, maxime possimus?</P>
+                <P>A evolução em consoles de videogame chegou e você precisa viver essa experiência! Com SSD de alta velocidade, que permite um carregamento ultrarrápido, áudio 3D e controle Wireless DualSense com feedback tátil e gatilhos adaptáveis, o PlayStation 5 proporcionará uma incrível imersão em seus games favoritos.</P>
 
-                <div>
-                    <h3>Detalhes</h3>
+                <div class="detalhes">
+                    <h3>Detalhes:</h3>
                     <ul>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
+                        <li>2 Controles DualSense.</li>
+                        <li>1 Jogo God of War Ragnarok</li>
+                        <li>1 Cabo USB-C.</li>
+                        <li>1 Headset Sony.</li>
+                        <li>1 Cabo de energia.</li>
+                        <li>1 Dispositivo VR.</li>
                     </ul>
                 </div>
+
             </section>
 
-            <section>
-                <div>
-                    <img src="imagens/ps4.jpg" alt="" width="150px">
-                    <h3>Sony PlayStation 4</h3>
-                    <p>R$ 3.249,00</p>
-                </div>
-
-                <div>
-                    <img src="imagens/series_x.png" alt="" width="150px">
-                    <h3>Xbox Series X</h3>
-                    <p>R$ 4.150,00</p>
-                </div>
-            </section>
+            <aside>
+                <h2>Veja também</h2>
+                <section id="sugestoes">
+                
+                    <div class="sugest">
+                        <img src="imagens/ps4.jpg" alt="" width="100%">
+                        <h4>Sony PlayStation 4</h4>
+                        <p>R$ 3.249,00</p>
+                    </div>
+                
+                    <div class="sugest">
+                        <img src="imagens/series_x.png" alt="" width="100%">
+                        <h4>Xbox Series X</h4>
+                        <p>R$ 4.150,00</p>
+                    </div>
+                </section>
+            </aside>
 
             <footer>
-                <p>comprar</p>
-                <p>Sobre</p>
-                <p>Precisa de ajuda?</p>
+                <p><i>Comprar</i></p>
+                <p><i>Sobre</i></p>
+                <p><i>Precisa de ajuda?</i></p>
 
                 <h4>Pagamentos Aceitos</h4>
-                <img src="" alt="">cartoes
+                <img src="imagens/paymentss.png" alt="" width="250px">
 
-                <p>&copy; 2023 Developed by Marcos Gomes</p>
+                <div id="copright">
+                    <p>Hydra Game Store | BR Shop &copy; 2023 Todos os direitos </p>
+                    <p>reservados.</p>
+                </div>
             </footer>
+
+            <p id="mg">&copy; Developed by Marcos Gomes</p>
     </main>
     
 </body>
