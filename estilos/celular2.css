@@ -132,7 +132,7 @@ input#search {
     gap: 15px;
     justify-content: space-between;
     margin: 10px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 50px;
 }
 
@@ -167,6 +167,7 @@ strong {
 #description p {
     text-indent: 20px;
     line-height: 23px;
+    text-align: justify;
 }
 
 .detalhes {
