@@ -13,7 +13,7 @@
 
     header {
        
-        height: 280px;
+        height: 225px;
         margin-bottom: 15px;
         background: black url('../imagens/controles11.jpg') no-repeat;
         background-position: 50% 50%;
@@ -22,9 +22,10 @@
 
     header h1 {
         color: white;
-        margin-top: 70px;
-        margin-bottom: 30px;
-        text-shadow: 2px 2px 5px black; 
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+        
+        text-shadow: 2px 2px 6px #0070D1; 
     }
 
     header p {
@@ -55,7 +56,7 @@
         width: 100%;
         display: block;
         background-color: white;
-        color: rgb(100, 100, 180);
+        color: #0070D1;
         padding: 8px;
         cursor: pointer;
         margin: 0 auto;
@@ -65,7 +66,7 @@
     
     #burguer:hover {
        background-color:white;
-       color: rgb(100, 100, 180);
+       color: #76b900;
         
     }
 
@@ -97,7 +98,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
     .item1 {

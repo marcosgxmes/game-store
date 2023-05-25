@@ -19,12 +19,11 @@ h1, h2, h3 {
     margin: 20px 0;
 }
 
-
-
 header {
     padding-left: 7px;
     display: flex;
     align-items: center;
+    
 }
 
 
