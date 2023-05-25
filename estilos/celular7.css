@@ -93,7 +93,7 @@ input#search {
     margin: 0 auto;
     width: 300px;
     padding: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.399);
+    border: 2px solid rgba(0, 0, 0, 0.699);
 }
 
 #compra {
@@ -154,13 +154,27 @@ strong {
     color:#004996;
 }
 
+#qt {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#quantidade {
+    color: rgba(0, 0, 0, 0.387);
+    border: 2px solid black;
+    width: 100px;
+    height: 35px;
+    background-color: white;
+}
+
 #addCarrinho {
     border: 2px solid #004996;
     display: block;
     width: 350px;
     margin: 0 auto;
     margin-top: 25px;
-    padding: 5px;
+    padding: 8px;
     font-weight: bold;
     color: #004996;
     background-color: white;
