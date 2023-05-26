@@ -131,11 +131,11 @@
     }
 
     .txt  {
-        color: white;
-        background-color: rgb(39, 39, 41);
+        color: black;
+        background-color: white;
         padding: 0 15px;
-        padding-top: 10px;
-        margin-top: 20px;
+        padding-top: 5px;
+        margin-top: 15px;
 
     }
 
