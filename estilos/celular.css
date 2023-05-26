@@ -143,6 +143,7 @@
         color: black;
         background-color: white;
         margin-top: 0px;
+        margin-bottom: 0;
         padding-top: 20px;
         justify-content: center;
         align-content: center;
@@ -157,14 +158,23 @@
         "item item";
     }
 
+    #og p {
+        color: black !important;
+    }
+
     #og div {
         height: 190px;
     }
 
     .item {
+        
         margin: 0px;
         width: 170px;
         height: 100px;
+    }
+
+    .item p {
+        color: black;
     }
 
     #gta {
