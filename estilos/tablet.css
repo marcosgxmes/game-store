@@ -2,8 +2,15 @@
 
 @media (max-width: 800px) {
 
-    body {
-        background-color: rgb(39, 39, 41);
+    body { background-color: white;
+    }
+
+    main p {
+        color: black;
+    }
+
+    h2 {
+        color: black;
     }
 
     header h1 {
@@ -21,6 +28,8 @@
     }
 
     #container {
+        color: black;
+        background-color: white;
         margin-bottom: 50px;
     }
 
@@ -85,9 +94,7 @@
         "item1 item1";
        
     }
-    #og {
-
-        padding: 20px;
+    #og {padding: 20px;
         
         grid-template-areas:
         "item item"
@@ -97,8 +104,17 @@
         "item item";
     }
 
+    #og p {
+        color: white;
+    }
+
     #gta {
         display: block;
+    }
+
+    #off {
+        background-color: white;
+        color: black;
     }
 
     #off p {
