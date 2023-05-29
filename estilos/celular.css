@@ -4,6 +4,7 @@
 
     body {
         background-color: white !important;
+        
     }
 
     main {
@@ -15,7 +16,7 @@
        
         height: 225px;
         margin-bottom: 15px;
-        background: black url('../imagens/download.jpg') no-repeat;
+        background: black url('../imagens/control.jpg') no-repeat;
         background-position: 50% 50%;
         background-size: cover;
     }
@@ -64,7 +65,7 @@
     
     #burguer:hover {
        background-color:white;
-       color: rgba(0, 0, 0, 0.451);
+       color: #0070D1;
         
     }
 
@@ -77,17 +78,17 @@
         
         margin: 0 auto;
         color: white;
-        background-color:#07112e;
+        background-color:rgb(39, 39, 41);
         text-decoration: none;
         text-align: center;
-        border-top: 2px solid rgb(86, 86, 86);
+        border-top: 2px solid rgb(120, 120, 120);
         padding: 10px;
         border-radius: 0px;
     }
     
     menu a:hover {
         color: black;
-        background-color:rgba(212, 211, 211, 0.744);
+        background-color:rgb(222, 220, 220);
     }
 
     #container {
@@ -96,7 +97,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
+        margin-bottom: 35px !important;
     }
 
     .item1 {
@@ -143,7 +145,8 @@
         color: black;
         background-color: white;
         margin-top: 0px;
-        margin-bottom: 0;
+        margin-bottom: 35 !important;
+        padding-bottom: 0 !important;
         padding-top: 20px;
         justify-content: center;
         align-content: center;

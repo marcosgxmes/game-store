@@ -20,7 +20,6 @@ h1, h2, h3 {
 }
 
 
-
 header {
     padding-left: 7px;
     display: flex;
@@ -172,7 +171,7 @@ strong {
 #addCarrinho {
     border: 2px solid #004996;
     display: block;
-    width: 350px;
+    width: 365px;
     margin: 0 auto;
     margin-top: 25px;
     padding: 8px;
@@ -238,7 +237,7 @@ aside h2 {
 #sugestoes div {
     
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.458);
-    width: 160px;
+    width: 170px;
     text-align: center;
 }
 
