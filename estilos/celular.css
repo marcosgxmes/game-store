@@ -190,15 +190,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row-gap: 40px;
+        row-gap: 20px;
     }
 
     .flip h2 {
-        margin-bottom: 0px;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .flip p {
+        padding-top: 0 !important;
     }
 
     .flip div {
         max-width: 300px;
+        margin-bottom: 20px;
        
     }
 
@@ -224,6 +230,10 @@
         margin-top: 40px 0 ;
     }
 
+    #desconto {
+        margin: 0 !important;
+    }
+
     
     footer {
         background-color: black;
@@ -242,7 +252,8 @@
     }
 
     .hydra img {
-        width: 60px;
+        width: 50px !important;
+        
         display: block;
         margin:  0 auto;
     }
