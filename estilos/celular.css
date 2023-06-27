@@ -16,15 +16,16 @@
        
         height: 225px;
         margin-bottom: 15px;
-        background: black url('../imagens/7K2iNW9-snk-vs-capcom-wallpapers.jpg') no-repeat;
+        background: black url('../imagens/hydra_wallpaper.jpg') no-repeat;
         background-position: center;
         background-size: cover;
     }
 
     header h1 {
-        color: white;
+        color: rgb(255, 255, 255);
         margin-top: 35px !important;
-        margin-bottom: 30px !important;text-shadow: 2px 2px 6px black; 
+        margin-bottom: 30px !important;
+        text-shadow: 2px 2px 6px gray
     }
 
     header p {
@@ -65,7 +66,7 @@
     
     #burguer:hover {
        background-color:white;
-       color: #0070D1;
+       color: #D62338;
         
     }
 

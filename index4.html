@@ -5,30 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="estilos/celular4.css">
+    <link rel="stylesheet" href="estilos/celular2.css">
     <title>Game Store</title>
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <div class="hydra-logo"><img src="imagens/hydra_blue.webp" alt="" width="45px" height="45px"></div>
-        </a>
-
-        <div class="hydra-name">
-            <h3>Hydra<br> Game Store</h3>
+        <div id="acesso-main">
+            <div class="hydra-logo">
+                    <a href="index.html">
+                        <img src="imagens/hydra_blue.webp" alt="" width="45px" height="45px"></div>
+                        <div class="hydra-name"> <h3>Hydra<br> Game Store</h3>
+                    </a>
+                </div>
         </div>
-
+    
+        <form id="big-bar">
+            <div id="search-main" class="s3">
+                <input type="text" name="search" id="search" placeholder="Pesquisar..."><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </form>
+    
+        
+    
         <div class="icones">
+    
             <div><i class="fa fa-user"></i></div>
-            <div><i class="fa fa-shopping-cart"></i></div>
+    
+            <div id="cart"><i class="fa fa-shopping-cart"></i></div>
+    
             <div id="menu"><i class="fa fa-bars"></i></div>
         </div>
+    
+        
         
     </header>
-
-    <div id="search-main">
-        <input type="text" name="search" id="search" placeholder="Pesquisar...">
-    </div>
+    
+    
+    <section id="big-menu">
+        <div>
+            <h4>LANÇAMENTOS</h4>
+            <h4>JOGOS</h4>
+            <h4>CONSOLES</h4>
+            <h4>RETROS</h4>
+            <h4>ARCADES</h4>
+            <h4>ACESSÓRIOS</h4>
+        </div>
+    </section>
+    
+    
+    <form id="small-bar">
+        <div id="search-main">
+            <input type="text" name="search" id="search" placeholder="Pesquisar">
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </form>
+    
+    
+    <section id="info-page">
+        <p>início / lançamentos / consoles / console microsoft xbox series s 2020</p>
+    </section>
 
     <main>
         <section id="compra">
@@ -52,7 +87,7 @@
                  </div>
             </div>
 
-            <h3> Console Microsoft Xbox Series S</h3>
+            <h1> Console Microsoft Xbox Series S</h1>
 
             <div class="stars">
                 <i class="fa fa-star"></i>
@@ -103,25 +138,29 @@
         
             <div class="sugest">
                 <a href="index7.html"><img src="imagens/geforce.jpg" alt="" width="100%"></a>
-                <h4>NVIDIA GeForce RTX 4090</h4>
+                <h4>NVIDIA RTX 4090</h4>
                 <p>R$ 11.499,00</p>
             </div>
         </section>
     </aside>
     
     <footer>
-        <p><i>Comprar</i></p>
-        <p><i>Sobre</i></p>
-        <p><i>Precisa de ajuda?</i></p>
-
+        <div class="footer_options"> <p><i>Comprar</i></p> </div>
+    
+        <div class="footer_options"> <p><i>Sobre</i></p>  </div>
+    
+        <div class="footer_options optl"> <p><i>Precisa de ajuda?</i></p>  </div>
+    
         <h4>Pagamentos Aceitos</h4>
-        <img src="imagens/pay1 (1).png" alt="" width="350px">
-
+    
+        <img src="imagens/pay1 (1).png" alt="">
+    
         <div id="copright">
-            <p>Hydra Game Store | BR Shop &copy; 2023 Todos os direitos </p>
+             <p>Hydra Game Store | BR Shop &copy; 2023 Todos os direitos </p>
             <p>reservados.</p>
         </div>
     </footer>
+    
     <script src="js.script.js"></script>
 </body>
 </html>
