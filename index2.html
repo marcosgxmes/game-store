@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/celular2.css">
     <title>Game Store</title>
 </head>
-<body>
+<body class="overflow__hidden">
 
 <header>
     <div id="acesso-main">
@@ -26,18 +26,35 @@
         </div>
     </form>
 
-    
-
     <div class="icones">
 
         <div><i class="fa fa-user"></i></div>
 
         <div id="cart"><i class="fa fa-shopping-cart"></i></div>
 
-        <div id="menu"><i class="fa fa-bars"></i></div>
+
+        <nav class="navbar">
+        
+            <ul class="nav-menu">
+                <a href="index.html" class="logo"><img src="imagens/pngwing.com.png" alt="" width="50px"></a>
+    
+                <li class="nav-item"><a href="#" class="nav-link">Lançamentos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Acessórios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Consoles</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Jogos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Retros</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Arcades</a></li>
+                <li class="nav-item"><a href=".flip" class="nav-link">Contato</a></li>
+            </ul>
+    
+            <div class="hamburguer2" onclick="disableScrolling()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </div>
 
-    
     
 </header>
 
