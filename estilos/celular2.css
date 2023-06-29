@@ -123,16 +123,16 @@ a {
 .nav-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     gap: 20px;
     position: fixed;
     right: -100%;
     top: 0px;
+    padding-top: 90px;
     background-color: #24252a;
-    
     text-align: center;
     flex-direction: column;
-    width: 70%;
+    width: 55%;
     height: 100vh;
     transition: 0.3s;
     z-index: 2;
@@ -142,8 +142,7 @@ a {
 
 .logo {
    
-    margin-top: -50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 body.active { 
