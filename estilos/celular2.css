@@ -132,7 +132,7 @@ a {
     background-color: #24252a;
     text-align: center;
     flex-direction: column;
-    width: 55%;
+    width: 60%;
     height: 100vh;
     transition: 0.3s;
     z-index: 2;
@@ -446,7 +446,7 @@ display: block;
 width: 100%;
 max-width: 450px;
 margin: 15px auto;
-margin-bottom: 50px;
+margin-bottom: 70px;
 }
 
 
