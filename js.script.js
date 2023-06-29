@@ -44,10 +44,10 @@
     };
 
     //TROCAR IMAGEM GOW
-    let gowMain = "imagens/gow_game.jpg";
-    let gow1 = "imagens/gow_imagem1.webp";
-    let gow2 = "imagens/gow_imagem2.webp";
-    let gow3 = "imagens/gow_imagem3.webp";
+    let gowMain = "imagens/gow_ps5.jpg";
+    let gow1 = "imagens/gow_imagem1.jpg";
+    let gow2 = "imagens/gow_imagem2.jpg";
+    let gow3 = "imagens/gow_imagem3.jpg";
 
     function trocar3() {
       document.getElementById('main-img').src = gow1;

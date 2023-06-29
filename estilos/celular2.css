@@ -31,6 +31,7 @@ background-color: #fff;
 justify-content: space-between;
 align-items: center;
 width: 100%;
+
 z-index: 4;
 }
 
@@ -75,6 +76,11 @@ padding-right: 10px;
 align-items: center;
 }
 
+.icones button {
+    border: none;
+    background: none;
+}
+
 
 .icones div i {
 margin: 0 9px;
@@ -110,6 +116,7 @@ a {
     padding-left: 7px;
     margin: 0 5px;
     height: 100%;
+    
 }
 
 
@@ -121,19 +128,22 @@ a {
     position: fixed;
     right: -100%;
     top: 0px;
-    border-radius: 0 0 0 15px;
     background-color: #24252a;
+    
     text-align: center;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     height: 100vh;
     transition: 0.3s;
     z-index: 2;
 }
 
+
+
 .logo {
    
-    margin-bottom: 30px;
+    margin-top: -50px;
+    margin-bottom: 10px;
 }
 
 body.active { 
@@ -259,6 +269,11 @@ color: rgb(162, 163, 163);
 #compra {
 margin-top: 70px;
 padding: 15px;
+width: 100%;
+}
+
+#main-img {
+    max-width: 100%;
 }
 
 
@@ -431,7 +446,8 @@ footer img {
 display: block;
 width: 100%;
 max-width: 450px;
-margin: 30px auto;
+margin: 15px auto;
+margin-bottom: 50px;
 }
 
 
