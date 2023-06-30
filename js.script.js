@@ -44,33 +44,38 @@
     };
 
     //TROCAR IMAGEM GOW
+    const mG = document.getElementById('main-img');
     let gowMain = "imagens/gow_ps5.jpg";
-    let gow1 = "imagens/gow_imagem1.jpg";
-    let gow2 = "imagens/gow_imagem2.jpg";
-    let gow3 = "imagens/gow_imagem3.jpg";
+    let gow1 = "imagens/god-of-war-ragnarok-watermark-screenshot-08-en-08sep21.webp";
+    let gow2 = "imagens/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21.webp";
+    let gow3 =  document.getElementById('trailer');
 
     function trocar3() {
-      document.getElementById('main-img').src = gow1;
-      let aux = gowMain;
+      gow3.style.display = 'none'
+      document.getElementById('img-main').src = gow1;
+      /*let aux = gowMain;
       gowMain = gow1;
-      gow1 = aux;
+      gow1 = aux;*/
 
     };
 
     function trocar4() {
-      document.getElementById('main-img').src = gow2;
+      gow3.style.display = 'none'
+      document.getElementById('img-main').src = gow2;
       
     };
 
     function trocar5() {
-      document.getElementById('main-img').src = gow3;
+      gow3.style.display = 'block'
+      document.getElementById('img-main').src = gow3;
+      gow3.classList.toggle('active');
       
     };
 
     //TROCAR IMAGEM PS4
 
-    let ps4Main = "imagens/ps4box.webp";
-    let ps1 = "imagens/gow3.jpg";
+    let ps4Main = "imagens/god-of-war-iii-remaster-dostan-image-126.jpg";
+    let ps1 = "imagens/81TBqOBJatL._AC_SX385_.jpg";
     let ps2 = "imagens/ps4_control.png";
     let ps3 = "imagens/ps444.png";
 
