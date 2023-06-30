@@ -1,247 +1,215 @@
 @charset "UTF-8";
 
+
 @media (max-width: 540px) {
 
-    body {
-        background-color: white !important;
-        
-    }
+   section { margin: 40px 0; }
 
-    main {
-        color: black;
-        background-color: white;
-    }
+   h2 { margin-bottom: 15px; }
 
-    header {
-       
-        height: 230px;
-        margin-bottom: 15px;
-        background: black url('../imagens/depositphotos_124824752-stock-illustration-abstract-red-frame-with-steel.jpg') no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
 
-    header h1 {
-        color: rgb(255, 255, 255);
-        margin-top: 40px !important;
-        margin-bottom: 30px !important;
-        text-shadow: 2px 2px 6px rgb(174, 0, 0);
-    }
+/* HEADER E MENU */
 
-    header p {
-        color: white;
-        text-shadow: 2px 2px 4px black; 
+header {
+height: 230px;
+margin-bottom: 15px;
+background: black url('../imagens/depositphotos_124824752-stock-illustration-abstract-red-frame-with-steel.jpg') no-repeat;
+background-position: center;
+background-size: cover;
+}
 
-    }
+header h1 {
+color: rgb(255, 255, 255);
+margin-top: 40px !important;
+margin-bottom: 30px !important;
+text-shadow: 2px 2px 6px rgb(207, 0, 0);
+}
 
-    .logos {
-        margin-top: 0px;
-    }
 
-    #l1 {
-        display: none;
-    }
+#l1 { display: none; }
 
-    .toggle {
-       
-        display: block !important;
-    }
 
-    .toggle i {
-        font-size: 30px;
-           
-    }
+/* MENU */
+
+nav { margin-bottom: 30px;}
+
+.toggle { display: block !important;  }
+
+.toggle i { font-size: 30px;  }
+
+#burguer {
+width: 100%;
+display: block;
+background-color: white;
+color: black;
+padding: 8px;
+cursor: pointer;
+margin: 0 auto;
+}
+
+#burguer:hover {
+background-color:white;
+color: #000;
+
+}
+
+#itens { display: none; }
+
+menu a {
+width: 100%;
+margin: 0 auto;
+color: white;
+background-color:#24252a;
+text-decoration: none;
+text-align: center;
+border-top: 1px solid rgb(120, 120, 120);
+padding: 10px;
+border-radius: 0px;
+}
+
+menu a:hover {
+color: black;
+background-color:rgb(255, 255, 255);
+}
+
+
+
+/* SESSÃO JOGOS */
+
+
+#jogos {
+display: grid;
+grid-template-columns: auto auto;
+align-items: center;
+width: 100%;
+justify-content: center;
+column-gap: 15px;
+row-gap: 30px;
+padding: 0 15px;
+}
+
+
+
+.jogos-itens {
+min-width: 150px;
+max-width: 250px;
+border-radius: 5px;
+}
+
+
+.jogos-itens img {
+width: 100%;
+height: 100%;
+margin-bottom: 15px;
+border-radius: 5px;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.519);
+}
+
     
-    #burguer {
-        width: 100%;
-        display: block;
-        background-color: white;
-        color: black;
-        padding: 8px;
-        cursor: pointer;
-        margin: 0 auto;
-        
-        
-    }
-    
-    #burguer:hover {
-       background-color:white;
-       color: #000;
-        
-    }
-
-    #itens {
-        display: none;
-    }
-    
-    menu a {
-        width: 100%;
-        
-        margin: 0 auto;
-        color: white;
-        background-color:#24252a;
-        text-decoration: none;
-        text-align: center;
-        border-top: 1px solid rgb(120, 120, 120);
-        padding: 10px;
-        border-radius: 0px;
-    }
-    
-    menu a:hover {
-        color: black;
-        background-color:rgb(255, 255, 255);
-    }
-
-    #container {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 0px;
-        margin-bottom: 35px !important;
-    }
-
-    #container a {
-        text-decoration: none;
-        color: black;
-    }
 
 
-    .item1 {
-        width: 300px;
-        height: 200px;
-    }
+/* SESSÃO CONSOLES */
 
-    .item1 img {
-        margin-bottom: 10px;
-    }
 
-    .gow1 {
-       
-        display: block;
-        max-width: 300px;
-        min-width: 240;
-        height: 240px;
-    }
+#consoles {
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 30px;
+}
 
-    .gow1 img {
-        width: 100%;
-        max-width: 300px;
-        min-width: 240px;
-    }
+#consoles a {
+text-decoration: none;
+color: black;
+}
 
-    .thor {
-        display: none;
-    }
 
-    .gow { 
-        display: none;
-    }
+.consoles-itens {
+width: 300px;
 
-    .txt  {
-        color: black;
-        background-color: white;
-        padding: 0 15px;
-        padding-top: 5px;
-        margin-top: 15px;
+}
 
-    }
+.consoles-itens img {
+width: 100%;
+margin-bottom: 15px;
+}
 
-    #og {
-        color: black;
-        background-color: white;
-        margin-top: 0px;
-        margin-bottom: 35 !important;
-        padding-bottom: 0 !important;
-        padding-top: 20px;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        column-gap: 15px;
-        row-gap: 0px;
 
-        grid-template-areas:
-        "item item"
-        "item item"
-        "item item"
-        "item item";
-    }
 
-    #og p {
-        color: black !important;
-    }
+/* SESSÃO RETROS */
 
-    #og div {
-        height: 190px;
-    }
 
-    .item {
-        
-        margin: 0px;
-        width: 170px;
-        height: 100px;
-    }
+#retros {
+display: grid;
+justify-content: center;
+align-content: center;
+align-items: center;
+column-gap: 15px;
+row-gap: 30px;
 
-    .item p {
-        color: black;
-    }
+grid-template-areas:
+"item item"
+"item item"
+"item item"
+"item item";
+}
 
-    #gta {
-        display: block;
-    }
 
-    .flip {
-        margin-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 20px;
-    }
+.retros-itens {
+width: 170px;
+border-radius: 10px;
+}
 
-    .flip h2 {
-        padding-bottom: 0 !important;
-        margin-bottom: 0 !important;
-    }
 
-    .flip p {
-        padding-top: 0 !important;
-    }
+.retros-itens img {
+width: 100%;
+border-radius: 10px;
+margin-bottom: 15px;
+box-shadow: 2px 2px 5px black;
+}
 
-    .flip div {
-        max-width: 300px;
-        margin-bottom: 20px;
-       
-    }
 
-    .arcade {
-       width: 100%;
-    }
 
-    .arcade img {
-        width: 50%;
-        margin-bottom: 20px;
-    }
+/* SESSÃO ARCADES */
 
-    .out {
-        color: red;
-        font-weight: bold;
-    }
+
+#arcades {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+row-gap: 40px;
+}
+
+
+.arcades-itens {
+width: 100%;
+}
+
+
+.arcades-itens img {
+width: 180px;
+margin-bottom: 15px;
+
+}
+
+.out {
+color: red;
+font-weight: bold;
+}
+
+    /* SESSÃO DESCONTO */
 
     #off {
-        background-color: white;
+        max-width: 400px;
     }
 
-    #off h2 {
-        margin-top: 40px 0 ;
-    }
 
-    #desconto {
-        margin: 0 !important;
-    }
+    /* footer */
 
-    
+
     footer {
         background-color: black;
         display: flex;

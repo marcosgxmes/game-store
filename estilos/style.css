@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 @font-face {
     font-family: 'game';
     src: url('../fonts/gameshow/Gameshow.ttf')
@@ -39,19 +32,15 @@
     font-style: normal;
 }
 
-#gta {
-    display: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.flip {
-    display: none;
-}
 
 
-
-#desconto {
-    margin: 20px 0;
-}
 
 header {
     color: white;
@@ -66,12 +55,10 @@ header {
 
 
 header h1 {
-    
     font-style: oblique;
     text-shadow: 3px 3px 6px #0070D1;
     margin-top: 40px;
     margin-bottom: 20px;
-    
     font-size: 2.3rem;
     font-family: 'gow';
     font-weight: normal;
@@ -91,20 +78,17 @@ header h1 {
 
 
 .toggle{ 
-    
     display: none;
     width: 100%;
     text-align: center;
 }
 
-.toggle i {
-    font-size: 28px;
-}
+.toggle i { font-size: 28px; }
 
 
 #burguer:hover {
    background-color:white;
-    color: white;
+   color: white;
 }
 
 
@@ -131,14 +115,10 @@ menu a:hover {
 h2 {
     font-family: 'thunder';
     text-align: center;
-    margin: 20px 0;
     font-weight: normal;   
 }
 
-body {
-    color: black;
-    background-color: white;
-}
+
 
 main {
     width: 100%;
@@ -146,91 +126,43 @@ main {
     
 }
 
-section { 
-    margin: 20px 0;
-    width: 100%;
-    background-color: white;
-}
 
+/* CONSOLES */
 
-#container {
+#consoles {
     width: 100%;
     display: grid;
     padding: 0 20px;
-    grid-gap: 20px;
+    grid-gap: 30px;
     justify-content: center;
     
-
     grid-template-areas: 
-    "gow item1"
-    "gow item1"
+    "item1 item1"
     "item3 item3"
-    "item2 item2";
-   
-}
-
-.gow1 {
-    display: none;
-    max-width: 400px;
-    min-width: 300;
-    height: 300px;
-    text-align: center;
-    grid-area: "gow1";
-}
-
-.gow1 img {
-    width: 100%;
-    max-width: 400px;
-    min-width: 350px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px black;
-}
-
-.gow {
-    max-width: 400px;
-    min-width: 350px;
-    height: 545px;
-    
-    border-radius: 10px;
-    grid-area: "gow";
-    grid-row: gow;
-}
-
-.thor {
-    width: 100%;
-    height: 545px;
-    background-image: url('../imagens/thor.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 1px 2px 5px black;
-}
-
-.gow img {
-    display: none;
+    "item2 item2";  
 }
 
 
 
-.item1 {
+
+.consoles-itens {
     max-width: 400px;
     min-width: 100;
-    height: 290px;
+   
     text-align: center;
     grid-area: "item1";
 }
 
-.item1 img {
+.consoles-itens img {
     width: 100%; 
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
 }
 
+/* SESSÃO RETROS */
 
-#og {
+
+#retros {
     width: 100%;
     display: grid;
     grid-gap: 20px;
@@ -243,36 +175,29 @@ section {
 }
 
 
-.item {
+.retros-itens {
     max-width: 300px;
     min-width: 150;
-    height: 300px;
     text-align: center;
     grid-area: "item";
 
 }
 
-.item img{
+.retros-itens img{
     width: 100%;
-     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
 }
 
+/* DESCONTO */
+
 #off {
     text-align: center;
-    padding: 20px;
-    margin-bottom: 10px;
-   
+    padding: 0 20px;   
 }
 
-#off p {
-    margin: 20px 0;
-}
 
-#off img {
-    margin-top: 0px;
-}
+/* FOOTER */
 
 footer {
     background-color: black;
