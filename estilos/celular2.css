@@ -23,6 +23,10 @@
 
 h1, h2, h3 { margin: 20px 0; }
 
+h2 {
+    text-align: center;
+}
+
 
 header {
 padding-left: 7px;
@@ -410,6 +414,10 @@ aside div { padding-bottom: 10px; }
 
 aside h2 { margin-left: 15px; }
 
+.lst {
+    display: none;
+}
+
 
 #sugestoes {
 display: flex;
@@ -422,14 +430,16 @@ margin-bottom: 45px;
 
 
 #sugestoes div {
-border-radius: 7px;
+
 overflow: hidden;
 max-width: 195px;
-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.458);
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.458);
 width: 100%;
 text-align: center;
 margin: 0 auto;
 }
+
+.sugest img { margin-bottom: 15px; }
 
 
 h4 { margin: 6px; }
@@ -620,38 +630,45 @@ font-style: italic;
 
 /* TELAS GRANDES */
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 880px){
 
-    iframe {
-        height: 556px;
-        
-    }
+    
 
     #small-bar { display: none;}
     .lts { display: block; }
+    .navbar { display: none; }
+    .lts1 { display: block;}
 
-    #big-bar { display: block;
-    margin-right: 70px;
-    margin-left: -70px;
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #big-bar {
+    display: block;
+    
+    
 }
+
 
     header {
     display: flex;
-    justify-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 0;
     align-items: center;
-    gap: 0;
-    border: 1px solid yellow;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.863);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.367);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.367);
     }
 
+
+
     #acesso-main {
-    margin-right: 5px;
-    margin-left: 30px;
+    
+   
     width: 150px;
     }
 
-    .lts1 { display: block;}
+    
 
     
     #search-main {
@@ -665,9 +682,14 @@ font-style: italic;
     
 
     .icones {
-    align-content: end;
     height: 100%;
-    border-left: 1px solid rgba(128, 128, 128, 0.534);
+    padding-left: 40px;
+    }
+
+    
+
+    #user {
+        height: 100%;
     }
 
     #cart { border-right: none; }
@@ -677,38 +699,40 @@ font-style: italic;
         max-width: 700px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
+        margin: 0;
     }
     
     #compra {
     display: grid;
     align-items: center;
+    width: 100%;
+    margin-bottom: 70px;
     justify-content: space-around;
     grid-template-columns: auto auto auto;
-    grid-template-areas: 
-    "item item item";
-    padding: 40px 0;
+    padding: 0;
     }
 
     #m-i {
-    grid-column-start: 2;
-    grid-row-start: 1;    
+    width: 300px;  
     }
 
     .acessorios {
     flex-direction: column;
-    width: 140px;
+    justify-content: space-between;
+    width: 150px;
     height: 100%;
-    grid-column-start: 1;
     grid-row-start: 1;
-    margin-bottom: 0;
+    margin: 0;
     }
 
     #price {
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
     width: 370px;
     height: 100%;
     grid-column-start: 3;
-    grid-row-start: 1;
     }
 
     #price > h1 { font-size: 2rem; }
@@ -734,6 +758,56 @@ font-style: italic;
     #menu { display: none;}
     .s3 {display: none;}
     .s2 {display: block;}
+
+    #description {
+        display: flex;
+        width: 1100px;
+        align-items: center;
+        justify-content: space-around;
+        margin: 40px auto;
+    }
+
+    #description p {
+        width: 400px;
+    }
+
+    
+
+    .detalhes {
+        width: 400px;
+        display: block;
+       
+    }
+
+    main h2 {
+        text-align: center;
+    }
+
+
+    aside {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+     aside h2 {
+        text-align: center;
+    }
+
+    #sugestoes {
+        display: flex;
+        width: 1000px;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        margin: 50px auto;
+    }
+
+    footer {
+        padding: 50px;
+    }
+
+    
 
     
 }

@@ -1,65 +1,99 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 880px) {
-    main {
-        max-width: 1200px;
-        margin: 0px auto;
-    }
-
-    .toggle {
-        display: none;
-    }
 
     section {
-        border-radius: 10px;
-    }  
-    
-    #container {
-        padding: 40px 0;
-        column-gap: 60px;
+        margin: 50px 0;
     }
 
-    #og {
-        column-gap: 50px;
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
-    .gow {
-        
-        margin: 0px;
-        padding: 0px;
+    main h2 {
+        margin-bottom: 15px;
     }
 
-    .fundo {
-        height: 100%;
-        padding: 0px;
-        margin-bottom: 25px;
-    }
+    .toggle { display: none; }
 
-    .thor {
-        height: 100%;
-        margin: 0px;
-        
-    }
-
-    .item1 {
-        
-        margin: 0px;
-    }
-
-    .item1 img {
-        margin-bottom: 25px;
-    }
+   
 
     header {
-        height: 210px;
+        height: 230px;
+        margin-bottom: 50px;
     }
 
     header h1 {
         margin-top: 50px;
     }
 
-    #l2 {
-        display: none;
+    #l1 { display: none; }
+
+    #jogos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 930px;
+        margin: 50px auto;
+        row-gap: 30px;
+        column-gap: 20px;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .jogos-itens {
+        width: 175px;
+    }
+
+    .jogos-itens img {
+        width: 175px;
+        height: 240px;
+        border-radius: 7px;
+        margin-bottom: 15px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.519);
+    }
+
+
+    #consoles {
+        width: 100%;
+        display: grid;
+       
+        grid-gap: 50px;
+        justify-content: space-around;
+        grid-template-columns: auto auto auto;
+    }
+
+
+    .consoles-itens {
+        width: 300px;
+    }
+
+    .consoles-itens img {
+        margin-bottom: 20px;
+    }
+
+    #retros {
+        column-gap: 40px;
+    }
+
+
+    .retros-itens img {
+        margin-bottom: 20px;
+    }
+
+    #arcades {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .arcades-itens img {
+        width: 200px;
+        margin-bottom: 25px;
     }
 
     #off {
@@ -69,4 +103,10 @@
     #off p {
         margin: 15px 0;
     }
+
+
+
+
+
+    
 }
