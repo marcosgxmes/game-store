@@ -1,10 +1,10 @@
 //TROCAR ICONE
     function change (iconID){
-    if(document.getElementById(iconID).className=="fa fa-gamepad") {
+    if(document.getElementById(iconID).className=="fa fa-bars") {
       document.getElementById(iconID).className = "fa fa-close";
       
     } else {
-      document.getElementById(iconID).className = "fa fa-gamepad";
+      document.getElementById(iconID).className = "fa fa-bars";
      
       
     } if (itens.style.display == 'block') {
@@ -44,31 +44,33 @@
     };
 
     //TROCAR IMAGEM GOW
+
+
     const mG = document.getElementById('main-img');
-    let gowMain = "imagens/gow_ps5.jpg";
+    let gowMain = "imagens/gow_capa.jpg";
     let gow1 = "imagens/god-of-war-ragnarok-watermark-screenshot-08-en-08sep21.webp";
     let gow2 = "imagens/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21.webp";
-    let gow3 =  document.getElementById('trailer');
+    let gow3 =  "imagens/maxresdefault.jpg";
 
     function trocar3() {
-      gow3.style.display = 'none'
-      document.getElementById('img-main').src = gow1;
-      /*let aux = gowMain;
+     
+      document.getElementById('main-img').src = gow1;
+      let aux = gowMain;
       gowMain = gow1;
-      gow1 = aux;*/
+      gow1 = aux;
 
     };
 
     function trocar4() {
-      gow3.style.display = 'none'
-      document.getElementById('img-main').src = gow2;
+     
+      document.getElementById('main-img').src = gow2;
       
     };
 
     function trocar5() {
-      gow3.style.display = 'block'
-      document.getElementById('img-main').src = gow3;
-      gow3.classList.toggle('active');
+     
+      document.getElementById('main-img').src = gow3;
+     
       
     };
 
@@ -172,6 +174,38 @@
       
     };
 
+    // TROCAR IMAGEM SPIDE MAN 
+
+
+    let spiderImgMain = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686924707_gg.jpg"
+    let spiderImg1 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919356_gg.jpg";
+    let spiderImg2 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919363_gg.jpg";
+    let spiderImg3 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919354_gg.jpg"
+
+    function trocar18() {
+      document.getElementById('main-img').src = spiderImg1;
+      let aux = spiderImgMain;
+      spiderImgMain = spiderImg1;
+      spiderImg1 = aux;
+
+    };
+
+    
+
+    function trocar19() {
+      document.getElementById('main-img').src = spiderImg2;
+      
+
+    };
+
+    
+
+    function trocar20() {
+      document.getElementById('main-img').src = spiderImg3;
+      
+
+    };
+
     // ABRIR MENU RESPONSIVO
     
     const hamburguer2 = document.querySelector(".hamburguer2");
@@ -189,6 +223,187 @@
      
     });
 
-    
+    // TROCAR IMAGEM MK1 
+
+    const mk1Main = document.getElementById('main-img');
+    let mkImgMain = "imagens/ret-ps5-mk1-1.web";
+    let mkImg1 = "imagens/mortal-kombat-1-14.jpg";
+    let mkImg2 = "imagens/mortal-kombat-1-5.jpg";
+    let mkImg3 =  "imagens/mortal-kombat-1-5 (1).jpg";
+
+    function trocar21() {
+     
+      document.getElementById('main-img').src = mkImg1;
+      let aux = mk1Main;
+      mk1Main = mkImg1;
+      mkImgMain = aux;
+
+    };
+
+    function trocar22() {
+     
+      document.getElementById('main-img').src = mkImg2;
+      
+    };
+
+    function trocar23() {
+     
+      document.getElementById('main-img').src = mkImg3;
+     
+      
+    };
+
+    // TROCAR IMAGEM DIABLO IV
+
+    const diabloMain = document.getElementById('main-img');
+    let diabloImgMain = "imagens/diablo-iv-ps5--us--site-x9hpe2rshu.webp";
+    let diabloImg1 = "imagens/diablo-iv-screen-05-en-10dec22.webp";
+    let diabloImg2 = "imagens/diablo-iv-screen-12-en-17may23.webp";
+    let diabloImg3 =  "imagens/diablo-iv-screen-14-en-17may23.webp";
+
+    function trocar24() {
+     
+      document.getElementById('main-img').src = diabloImg1;
+      let aux = diabloImgMain;
+      diabloImgMain = diabloImg1;
+      diabloImgMain = aux;
+
+    };
+
+    function trocar25() {
+     
+      document.getElementById('main-img').src = diabloImg2;
+      
+    };
+
+    function trocar26() {
+     
+      document.getElementById('main-img').src = diabloImg3;
+     
+      
+    };
+
+    // TROCAR IMAGEM FIFA 23 
+
+    const fifaMain = document.getElementById('main-img');
+    let fifaImgMain = "imagens/fifa23_capa.jpg";
+    let fifaImg1 = "imagens/fifa-23-world-cup-team-usa-screen-03-ps4-ps5-en-11nov22.webp";
+    let fifaImg2 = "imagens/fifa-23-world-cup-pulisic-screen-02-ps4-ps5-en-11nov22.webp";
+    let fifaImg3 =  "imagens/fifa-23-world-cup-netherlands-screen-01-ps4-ps5-en-11nov22.webp";
+
+    function trocar27() {
+     
+      document.getElementById('main-img').src = fifaImg1;
+      let aux = fifaImgMain;
+      fifaImgMain = fifaImg1;
+      fifaImgMain = aux;
+
+    };
+
+    function trocar28() {
+     
+      document.getElementById('main-img').src = fifaImg2;
+      
+    };
+
+    function trocar29() {
+     
+      document.getElementById('main-img').src = fifaImg3;
+     
+      
+    };
+
+
+    //TROCAR IMAGEM ELDEN RING 
+
+    const eldenMain = document.getElementById('main-img');
+    let eldenImgMain = "imagens/elden_ring_capa.jpg";
+    let eldenImg1 = "imagens/elden-ring-screenshot-17-en-15jun21.webp";
+    let eldenImg2 = "imagens/elden-ring-screenshot-13-en-15jun21.webp";
+    let eldenImg3 =  "imagens/elden-ring-screenshot-12-en-15jun21.webp";
+
+    function trocar30() {
+     
+      document.getElementById('main-img').src = eldenImg1;
+      let aux = eldenImgMain;
+      eldenImgMain = eldenImg1;
+      eldenImgMain = aux;
+
+    };
+
+    function trocar31() {
+     
+      document.getElementById('main-img').src = eldenImg2;
+      
+    };
+
+    function trocar32() {
+     
+      document.getElementById('main-img').src = eldenImg3;
+     
+      
+    };
+
+
+    // TROCAR IMAGEM STREET FIGHTER 6
+
+    const streetMain = document.getElementById('main-img');
+    let streetImgMain = "imagens/street_fighter_capa.webp";
+    let streetImg1 = "imagens/street-fighter-6-screen-23-ps4-ps5-en-21nov22.webp";
+    let streetImg2 = "imagens/street-fighter-6-screen-18-ps4-ps5-en-21nov22.webp";
+    let streetImg3 =  "imagens/street-fighter-6-screen-09-ps4-ps5-en-02sep22.webp";
+
+    function trocar33() {
+     
+      document.getElementById('main-img').src = streetImg1;
+      let aux = streetImgMain;
+      streetImgMain = streetImg1;
+      streetImgMain = aux;
+
+    };
+
+    function trocar34() {
+     
+      document.getElementById('main-img').src = streetImg2;
+      
+    };
+
+    function trocar35() {
+     
+      document.getElementById('main-img').src = streetImg3;
+     
+      
+    };
+
+
+    // TROCAR IMAGEM TEKKEN 8
+
+    const tekkenMain = document.getElementById('main-img');
+    let tekkenImgMain = "imagens/tekken8_capa.webp";
+    let tekkenImg1 = "imagens/tekken-8-screenshot-05-en-20sep22.webp";
+    let tekkenImg2 = "imagens/tekken-8-screenshot-08-en-20sep22.webp";
+    let tekkenImg3 =  "imagens/tekken-8-screenshot-07-en-20sep22.webp";
+
+    function trocar36() {
+     
+      document.getElementById('main-img').src = tekkenImg1;
+      let aux = tekkenImgMain;
+      tekkenImgMain = tekkenImg1;
+      tekkenImgMain = aux;
+
+    };
+
+    function trocar37() {
+     
+      document.getElementById('main-img').src = tekkenImg2;
+      
+    };
+
+    function trocar38() {
+     
+      document.getElementById('main-img').src = tekkenImg3;
+     
+      
+    };
 
 
