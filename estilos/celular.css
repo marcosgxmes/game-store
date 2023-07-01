@@ -142,7 +142,7 @@ align-items: center;
 width: 100%;
 max-width: 678px;
 justify-content: space-around;
-column-gap: 20px;
+column-gap: 15px;
 row-gap: 30px;
 padding: 0 15px;
 }
@@ -150,8 +150,7 @@ padding: 0 15px;
 
 .jogos-itens {
 width: 140px;
-height: 240px;
-border-radius: 5px;
+height: 250px;
 }
 
 
@@ -159,7 +158,7 @@ border-radius: 5px;
 height: 170px;
 width: 100%;
 margin-bottom: 10px;
-border-radius: 5px;
+border-radius: 4px;
 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.519);
 }
 
