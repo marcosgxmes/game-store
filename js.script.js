@@ -47,7 +47,7 @@
 
 
     const mG = document.getElementById('main-img');
-    let gowMain = "imagens/gow_capa.jpg";
+    let gowMain = "imagens/gow-capa.jpg";
     let gow1 = "imagens/god-of-war-ragnarok-watermark-screenshot-08-en-08sep21.webp";
     let gow2 = "imagens/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21.webp";
     let gow3 =  "imagens/maxresdefault.jpg";
@@ -174,10 +174,10 @@
       
     };
 
-    // TROCAR IMAGEM SPIDE MAN 
+    // TROCAR IMAGEM SPIDE MAN 2
 
 
-    let spiderImgMain = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686924707_gg.jpg"
+    let spiderImgMain = "imagens/spider_man2-capa.jpg"
     let spiderImg1 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919356_gg.jpg";
     let spiderImg2 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919363_gg.jpg";
     let spiderImg3 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919354_gg.jpg"

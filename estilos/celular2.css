@@ -23,9 +23,7 @@
 
 h1, h2, h3 { margin: 20px 0; }
 
-h2 {
-    text-align: center;
-}
+h2 { margin-left: 15px; }
 
 
 header {
@@ -247,6 +245,8 @@ line-height: 1.8;
 
 }
 
+/* SESSSÃO COMPRA */
+
 
 #compra {
 margin-top: 50px;
@@ -254,16 +254,24 @@ padding: 15px;
 width: 100%;
 }
 
-#main-img {
-width: 100%;
-height: 100%;
+#m-i {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+height: 300px;
+min-width: 300px;
+}
+
+
+#main-img {     
+max-width: 100% !important;
+max-height: 300px;
 box-shadow: none;
 }
 
+
 #img-main {box-shadow: none;}
-
-
-
 
 #compra #main-img { box-shadow: none; }
 
@@ -341,15 +349,16 @@ cursor: pointer;
 
 }
 
-
+/* SESSSÃO DESCRIÇÃO */
 
 #description {  padding: 15px; }
 
 #description h2 {
-    line-height: 1.3;
-    letter-spacing: 0.06rem;
-    
+line-height: 1.3;
+letter-spacing: 0.06rem;
 }
+
+
 #description p {
 text-indent: 20px;
 line-height: 23px;
@@ -366,7 +375,10 @@ padding: 0 15px;
 
 .detalhes h3 { margin-bottom: 5; }
 
-.detalhes ul li { margin: 10px 0; }
+.detalhes ul li {
+margin: 10px 0;
+list-style-type: disc;
+}
 
 
 .detalhes ul {
@@ -378,9 +390,7 @@ aside div { padding-bottom: 10px; }
 
 aside h2 { margin-left: 15px; }
 
-.lst {
-    display: none;
-}
+.lst { display: none; }
 
 
 #sugestoes {
@@ -394,7 +404,6 @@ margin-bottom: 45px;
 
 
 .sugest {
-
 overflow: hidden;
 max-width: 195px;
 height: 280px;
