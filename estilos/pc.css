@@ -21,26 +21,52 @@
    
 
     header {
-        height: 230px;
-        margin-bottom: 50px;
+        height: 220px;
+        margin-bottom: 10px;
     }
 
     header h1 {
         margin-top: 50px;
     }
 
-    #l1 { display: none; }
+    
+
+    #l2 {
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+    }
+
+
+    #big-menu {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        margin-top: 0;
+        padding: 10px 0;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.367);
+        }
+    
+        #big-menu div {
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        margin: 0 auto;  
+        }
+    
+        #big-menu div h4 { color:#003b7a; }
+    
+        #big-menu div h4:hover { color: red; }
 
     #jogos {
-        display: flex;
-        flex-wrap: wrap;
-        width: 930px;
-        margin: 50px auto;
-        row-gap: 30px;
-        column-gap: 20px;
-        align-items: center;
-        align-content: center;
-        justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 50px auto;
+    row-gap: 30px;
+    column-gap: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
     }
 
     .jogos-itens {
@@ -52,7 +78,6 @@
         height: 240px;
         border-radius: 7px;
         margin-bottom: 15px;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.519);
     }
 
 
@@ -88,6 +113,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
+        margin-bottom: 80px;
     }
 
 

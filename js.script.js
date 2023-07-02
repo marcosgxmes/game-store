@@ -50,7 +50,7 @@
     let gowMain = "imagens/gow-capa.jpg";
     let gow1 = "imagens/god-of-war-ragnarok-watermark-screenshot-08-en-08sep21.webp";
     let gow2 = "imagens/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21.webp";
-    let gow3 =  "imagens/maxresdefault.jpg";
+    let gow3 =  "imagens/god-of-war-ragnarok-watermark-screenshot-11-en-08sep21.webp";
 
     function trocar3() {
      

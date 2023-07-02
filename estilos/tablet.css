@@ -39,33 +39,6 @@
 
    
 
-    .gow {
-        
-        max-width: 620px;
-        min-width: 350;
-        height: 370px;
-        
-        margin-top: 20px;
-        text-align: center;
-        grid-area: "gow";
-        grid-column: gow;
-    }
-
-    .fundo {
-        width: 100%;
-        height: 310px;
-        margin-bottom: 20px;
-        background-image: url('../imagens/gow1.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        border-radius: 10px;
-    }
-
-    .thor {
-        display: none;
-    }
-
     .gow img { display: none; }
 
     .item {
