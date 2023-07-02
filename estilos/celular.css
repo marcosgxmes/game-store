@@ -135,7 +135,7 @@ background-color:rgb(255, 255, 255);
 
 #jogos {
 display: flex;
-margin: 50px auto;
+margin: 50px auto 30px auto;
 flex-wrap: wrap;
 align-items: center;
 width: 100%;
