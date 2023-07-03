@@ -82,12 +82,12 @@
 
 
     #consoles {
-        width: 100%;
+        width: 930px;
         display: grid;
-       
-        grid-gap: 50px;
+        gap: 40px;
+        margin: 50px auto;
         justify-content: space-around;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
     }
 
 
