@@ -3,9 +3,9 @@
 
 @media (max-width: 768px) {
 
-   section { margin: 50px 0; }
+section { margin: 50px 0; }
 
-   h2 { margin-bottom: 15px; }
+h2 { margin-bottom: 15px; }
 
 
 /* HEADER E MENU */
@@ -161,9 +161,6 @@ border-radius: 4px;
 }
 
 
-    
-
-
 /* SESSÃO CONSOLES */
 
 
@@ -172,19 +169,18 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 width: 100%;
-max-width: 678px;
+max-width: 768px;
 align-items: center;
 margin: 50px auto;
+padding: 0 15px;
 row-gap: 30px;
+column-gap: 15px;
 }
 
 
-
-
-
 .consoles-itens {
-min-width: 170px;   
-width: 280px;
+min-width: 160px;   
+width: 300px;
 
 }
 
@@ -195,9 +191,9 @@ margin-bottom: 15px;
 
 
 #consoles a {
-    text-decoration: none;
-    color: black;
-    }
+text-decoration: none;
+color: black;
+}
 
 
 
@@ -269,33 +265,32 @@ padding: 0 25px;
     /* footer */
 
 
-    footer {
-        background-color: black;
-        display: flex;
-        flex-direction: column !important;
-        justify-content: space-around;
-        align-content: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        padding: 20px 30px;
-    }
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+}
 
-    footer div {
-        width: 100% !important;
-        margin: 10px 0;
-    }
+footer div {
+    width: 100% !important;
+    margin: 10px 0;
+}
 
-    .hydra img {
-        width: 50px !important;
-        
-        display: block;
-        margin:  0 auto;
-    }
-
-    div.hydra {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
+.hydra img {
+    width: 50px !important;
     
+    display: block;
+    margin:  0 auto;
+}
+
+div.hydra {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 }

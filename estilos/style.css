@@ -40,8 +40,6 @@
 }
 
 
-
-
 header {
 color: white;
 width: 100%;
@@ -63,172 +61,158 @@ text-transform: uppercase;
 }
 
 
-
-
 .logos {
-    font-family: 'logos';
-    font-weight: normal;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+font-family: 'logos';
+font-weight: normal;
+font-size: 1.2rem;
+margin-bottom: 20px;
 }
 
 
-
 .toggle{ 
-    display: none;
-    width: 100%;
-    text-align: center;
+display: none;
+width: 100%;
+text-align: center;
 }
 
 .toggle i { font-size: 28px; }
 
 
 #burguer:hover {
-   background-color:white;
-   color: white;
+background-color:white;
+color: white;
 }
-
 
 
 menu a {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
-    color: black;
-    background-color: gray;
-    text-decoration: none;
-    text-align: center;
-    border-top: 2px solid black;
-    padding: 10px;
-    border-radius: 10px;
+width: 50%;
+display: block;
+margin: 0 auto;
+color: black;
+background-color: gray;
+text-decoration: none;
+text-align: center;
+border-top: 2px solid black;
+padding: 10px;
+border-radius: 10px;
 }
 
+
 menu a:hover {
-    color: black;
-    background-color:white;
+color: black;
+background-color:white;
 }
 
 
 h2 {
-    font-family: 'thunder';
-    text-align: center;
-    font-weight: normal;   
+font-family: 'thunder';
+text-align: center;
+font-weight: normal;   
 }
-
 
 
 main {
-    width: 100%;
-    text-align: center;
-    
-}
+width: 100%;
+text-align: center;
+    }
 
 
 /* CONSOLES */
 
 a {
-    text-decoration: none;
-    color: black;
+text-decoration: none;
+color: black;
 }
-
-
 
 
 .consoles-itens {
-    max-width: 300px;
-    min-width: 100;
-   
-    text-align: center;
-    grid-area: "item1";
+max-width: 300px;
+min-width: 100;
+text-align: center;
+grid-area: "item1";
 }
 
+
 .consoles-itens img {
-    width: 100%; 
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px black;
+width: 100%; 
+border-radius: 10px;
+box-shadow: 2px 2px 5px black;
 }
+
 
 /* SESSÃO RETROS */
 
 
 #retros {
-    width: 100%;
-    display: grid;
-    grid-gap: 20px;
-    padding: 0 20px;
-    justify-content: center;
-    grid-template-areas:
-    "item item item"
-    "item item item"
-    "item item item";
+width: 100%;
+display: grid;
+grid-gap: 20px;
+padding: 0 20px;
+justify-content: center;
+grid-template-areas:
+"item item item"
+"item item item"
+"item item item";
 }
 
 
 .retros-itens {
-    max-width: 300px;
-    min-width: 150;
-    text-align: center;
-    grid-area: "item";
-
+max-width: 300px;
+min-width: 150;
+text-align: center;
+grid-area: "item";
 }
+
 
 .retros-itens img{
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px black;
+width: 100%;
+border-radius: 10px;
+box-shadow: 2px 2px 5px black;
 }
 
+
 .out {
-    color: red;
-    font-weight: bold;
-    }
-
-/* DESCONTO */
-
-#off {
-    text-align: center;
-    padding: 0 20px;   
+color: red;
+font-weight: bold;
 }
 
 
 /* FOOTER */
 
 footer {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
+background-color: black;
+color: white;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+padding: 20px;
 }
 
-footer div {
-     width: 200px;
-}
+footer div { width: 200px; }
 
-.hydra {
-    width: 200px;
-}
+
+.hydra { width: 200px; }
+
 
 .hydra img {
-    display: block;
-    width: 100px;
-    margin: 0 auto;
+display: block;
+width: 100px;
+margin: 0 auto;
 }
+
 
 footer h3 {
-    color: rgb(192, 3, 3);
-    margin-bottom: 20px;
+color: rgb(192, 3, 3);
+margin-bottom: 20px;
 }
-
 
 
 footer ul li {
-    font-style: italic;
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
+font-style: italic;
+list-style: none;
+margin: 10px 0;
+cursor: pointer;
 }
 
 

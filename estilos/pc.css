@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
 
     section {
         margin: 50px 0;
@@ -38,24 +38,24 @@
 
 
     #big-menu {
-        display: block;
-        width: 100%;
-        padding: 5px 0;
-        margin-top: 0;
-        padding: 10px 0;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.367);
-        }
-    
-        #big-menu div {
-        display: flex;
-        justify-content: space-between;
-        width: 700px;
-        margin: 0 auto;  
-        }
-    
-        #big-menu div h4 { color:#003b7a; }
-    
-        #big-menu div h4:hover { color: red; }
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 0;
+    padding: 10px 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.267);
+    }
+
+    #big-menu div {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;  
+    }
+
+    #big-menu div h4 { color:#003b7a; }
+
+    #big-menu div h4:hover { color: red; }
 
     #jogos {
     display: flex;
@@ -121,17 +121,6 @@
         width: 200px;
         margin-bottom: 25px;
     }
-
-    #off {
-        padding-bottom: 30px;
-    }
-
-    #off p {
-        margin: 15px 0;
-    }
-
-
-
 
 
     
