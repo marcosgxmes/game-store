@@ -280,9 +280,9 @@ width: 100%;
 }
 
 #compra.active {
-    filter: blur(25px);
-    pointer-events: none;
-    user-select: none;
+filter: blur(25px);
+pointer-events: none;
+user-select: none;
 }
 
 #m-i {
@@ -311,6 +311,18 @@ box-shadow: none;
 .stars i { color: rgb(252, 208, 0); }
 
 #compra p { line-height: 23px; }
+
+#frete {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#frete i {
+    margin-right: 5px;
+    font-size: 20px;
+}
 
 
 #compra img {
