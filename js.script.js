@@ -15,6 +15,26 @@
     }
     };
 
+
+    // BLUR NO FUNDO AO ABRIR MENU
+
+
+    function blurMenu() {
+      
+     
+      let blurTop = document.getElementById('acesso-main');
+      let blurBarra = document.getElementById('small-bar');
+      let blurInfo = document.getElementById('info-page');
+      let blurCompra = document.getElementById('compra');
+
+      blurCompra.classList.toggle('active');
+      blurInfo.classList.toggle('active');
+      blurTop.classList.toggle('active');
+      blurBarra.classList.toggle('active');
+    };
+
+
+
 //TROCAR IMAGEM PS5
     let imgAnterior = "imagens/shopping2.webp";
     let imgAtual = "imagens/ps5_gow.jpg";
