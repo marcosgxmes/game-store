@@ -77,7 +77,7 @@
     //TROCAR IMAGEM PS4
 
     let ps4Main = "imagens/god-of-war-iii-remaster-dostan-image-126.jpg";
-    let ps1 = "imagens/81TBqOBJatL._AC_SX385_.jpg";
+    let ps1 = "imagens/ps4-control.jpg";
     let ps2 = "imagens/ps4_control.png";
     let ps3 = "imagens/ps444.png";
 

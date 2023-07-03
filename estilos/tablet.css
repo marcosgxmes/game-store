@@ -51,6 +51,7 @@
             flex-wrap: wrap;
             max-width: 992px;
             margin: 50px auto;
+            padding: 0 15px;
             row-gap: 30px;
             column-gap: 20px;
             align-items: center;
@@ -74,10 +75,10 @@
                 max-width: 992px;
                 display: grid;
                 row-gap: 40px;
-                column-gap: 20px;
+                column-gap: 80px;
                 align-items: center;
                 margin: 50px auto;
-                justify-content: space-around;
+                justify-content: center;
                 grid-template-columns: auto auto;
             }
         
