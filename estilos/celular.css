@@ -232,15 +232,16 @@ box-shadow: 2px 2px 5px black;
 
 #arcades {
 display: flex;
-flex-direction: column;
+flex-wrap: wrap;
 align-items: center;
-justify-content: center;
-row-gap: 40px;
+justify-content: space-around;
+row-gap: 50px;
+column-gap: 40px;
 }
 
 
 .arcades-itens {
-width: 100%;
+width: 200px;
 }
 
 
