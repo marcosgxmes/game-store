@@ -18,10 +18,8 @@
 
     // BLUR NO FUNDO AO ABRIR MENU
 
-
     function blurMenu() {
-      
-     
+
       let blurTop = document.getElementById('acesso-main');
       let blurBarra = document.getElementById('small-bar');
       let blurInfo = document.getElementById('info-page');
@@ -31,6 +29,7 @@
       blurInfo.classList.toggle('active');
       blurTop.classList.toggle('active');
       blurBarra.classList.toggle('active');
+
     };
 
 
