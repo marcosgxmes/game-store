@@ -47,6 +47,10 @@
                 margin-bottom: 15px;
             }
 
+            .jogos-itens p {
+                line-height: 25px;
+            }
+
 
             #consoles {
                 width: 1000px;
@@ -64,6 +68,10 @@
         
             .consoles-itens img {
                 margin-bottom: 20px;
+            }
+
+            .consoles-itens p {
+                line-height: 25px;
             }
 
             #retros {
@@ -92,4 +100,6 @@
                 width: 200px;
                 margin-bottom: 25px;
             }
+
+            .arcades-itens p { line-height: 25px; }
 }

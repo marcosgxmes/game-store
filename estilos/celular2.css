@@ -378,10 +378,10 @@ margin-bottom: 5px;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 10px;
+gap: 7px;
 color: rgba(0, 0, 0, 0.387);
 border: 2px solid black;
-width: 100px;
+width: 97px;
 height: 35px;
 margin-top: 10px;
 background-color: white;
@@ -389,7 +389,9 @@ background-color: white;
 
 .qnt_menor_maior {
     border: none;
-    color: gray;
+    color: black;
+    background: none;
+    font-size: 17px;
 }
 
 .quanti {

@@ -70,6 +70,10 @@
                 margin-bottom: 15px;
             }
 
+            .jogos-itens p {
+                line-height: 25px;
+            }
+
 
             #consoles {
                 max-width: 992px;
@@ -89,6 +93,10 @@
         
             .consoles-itens img {
                 margin-bottom: 20px;
+            }
+
+            .consoles-itens p {
+                line-height: 25px;
             }
 
 
