@@ -347,7 +347,7 @@ box-sizing: border-box;
 
 
 .imagem-p {
-min-width: 120px;
+min-width: 100px;
 max-height: 135px;
 margin: 0;
 padding: 0;
@@ -379,7 +379,7 @@ justify-content: center;
 gap: 5px;
 color: rgba(0, 0, 0, 0.387);
 border: 2px solid black;
-width: 97px;
+width: 100px;
 height: 35px;
 margin-top: 10px;
 background-color: white;
@@ -389,7 +389,7 @@ background-color: white;
 border: none;
 color: black;
 background: none;
-font-size: 17px;
+font-size: 1rem;
 }
 
 .quanti { text-align: center; }
