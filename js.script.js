@@ -18,12 +18,14 @@
 
     // BLUR NO FUNDO AO ABRIR MENU
 
+    let blurTop = document.getElementById('acesso-main');
+    let blurBarra = document.getElementById('small-bar');
+    let blurInfo = document.getElementById('info-page');
+    let blurCompra = document.getElementById('compra');
+
     function blurMenu() {
 
-      let blurTop = document.getElementById('acesso-main');
-      let blurBarra = document.getElementById('small-bar');
-      let blurInfo = document.getElementById('info-page');
-      let blurCompra = document.getElementById('compra');
+    
 
       blurCompra.classList.toggle('active');
       blurInfo.classList.toggle('active');
@@ -31,6 +33,43 @@
       blurBarra.classList.toggle('active');
 
     };
+
+
+     // ABRIR MENU RESPONSIVO
+    
+     const hamburguer2 = document.querySelector(".hamburguer2");
+     const navMenu = document.querySelector(".nav-menu");
+     const rolagem = document.querySelector(".overflow__hidden");
+ 
+    
+ 
+     hamburguer2.addEventListener("click", () => {
+       hamburguer2.classList.toggle('active');
+      
+       navMenu.classList.toggle('active');
+ 
+       rolagem.classList.toggle('active')
+      
+     });
+ 
+ 
+     // ABRIR POP UP CARRINHO
+ 
+     const hamburguer3 = document.querySelector(".hamburguer3");
+     const cartMenu = document.querySelector("#carrinho");
+     const cartPop = document.querySelector("#cart-menu");
+ 
+    function AddToCart(){
+     cartMenu.classList.toggle('active');
+     cartPop.classList.toggle('active');
+     rolagem.classList.toggle('active')
+
+      blurCompra.classList.toggle('active');
+      blurInfo.classList.toggle('active');
+      blurTop.classList.toggle('active');
+      blurBarra.classList.toggle('active');
+    };
+ 
 
 
     // BOTAO QUANTIDADE 
@@ -266,22 +305,8 @@
 
     };
 
-    // ABRIR MENU RESPONSIVO
+  
     
-    const hamburguer2 = document.querySelector(".hamburguer2");
-    const navMenu = document.querySelector(".nav-menu");
-    const rolagem = document.querySelector(".overflow__hidden");
-
-   
-
-    hamburguer2.addEventListener("click", () => {
-      hamburguer2.classList.toggle('active');
-     
-      navMenu.classList.toggle('active');
-
-      rolagem.classList.toggle('active')
-     
-    });
 
     // TROCAR IMAGEM MK1 
 

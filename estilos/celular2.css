@@ -101,12 +101,145 @@ font-size: 20px;
 }
 
 
+/* SESSÃO CARRINHO */
+
+
 #cart {
 display: flex;
 align-items: center;
 height: 70px;
 border-right: 1px solid rgba(0, 0, 0, 0.099);
 }
+
+
+
+#carrinho { 
+display: none;
+flex-direction: column;
+height: 100vh;
+border: 1px solid red;
+z-index: 4;
+}
+
+#carrinho.active {
+    display: flex;
+}
+
+#cart-menu {
+display: flex;
+align-items: center;
+background-color: white;
+position: fixed;
+right: -100%;
+top: 0px;
+text-align: center;
+flex-direction: column;
+width: 80%;
+padding: 0 25px;
+height: 100vh;
+transition: 0.3s;
+}
+
+#cart-menu.active {
+    right: 0;
+}
+
+#your-cart {
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: space-between;
+}
+
+#carrinho h3 {
+    
+color: rgb(16, 35, 65);
+letter-spacing: 1px;
+text-align: left;
+}
+
+.hamburguer3 {
+display: block;
+cursor: pointer;
+font-size: 20px;
+z-index: 4;
+}
+
+.hamburguer3 .bar:nth-child(2) { opacity: 0; }
+
+.hamburguer3 .bar:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+background-color: black;
+}
+
+.hamburguer3 .bar:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+background-color: black;
+}
+
+#subtotal {
+    color: rgb(16, 35, 65);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#price-dados {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#price-dados > p {
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 0 2px;
+    font-size: 0.8rem;
+}
+
+button.btn-cart {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(16, 35, 65);
+    letter-spacing: 1px;
+}
+
+button.btn-pay {
+    height: 60px;
+    background-color: black;
+}
+
+#carrinho-conteudo {
+display: flex;
+width: 100%;
+flex-direction: row;
+justify-content: center;
+height: 315px;
+padding: 35px 0;
+gap: 15px;
+border-top: 1px solid rgba(128, 128, 128, 0.160);
+border-bottom: 1px solid rgba(128, 128, 128, 0.160);
+}
+
+
+.item-preco {
+    font-size: 0.8rem;
+}
+
+.carrinho-item{
+    max-width: 100px;
+}
+
+div.carrinho-item:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+    
 
 
 /* MENU RESPONSIVO */
@@ -118,8 +251,7 @@ color: white;
 text-decoration: none;
 }
 
-.navbar {
-    
+.navbar {  
 display: flex;
 font-size: 20px;
 justify-content: space-between;
