@@ -5,7 +5,8 @@
 
 section { margin: 50px 0; }
 
-h2 { margin-bottom: 15px; }
+h2 { margin-bottom: 15px;
+color: #333; }
 
 
 /* HEADER E MENU */
@@ -160,6 +161,10 @@ margin-bottom: 10px;
 border-radius: 4px;
 }
 
+.jogos-itens p {
+    line-height: 25px;
+}
+
 
 /* SESSÃO CONSOLES */
 
@@ -187,6 +192,10 @@ width: 300px;
 .consoles-itens img {
 width: 100%;
 margin-bottom: 15px;
+}
+
+.consoles-itens p {
+    line-height: 25px;
 }
 
 
@@ -248,8 +257,9 @@ width: 200px;
 .arcades-itens img {
 width: 150px;
 margin-bottom: 15px;
-
 }
+
+.arcades-itens p { line-height: 25px; }
 
 
 
