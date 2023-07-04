@@ -161,6 +161,8 @@ margin-bottom: 10px;
 border-radius: 4px;
 }
 
+#gow-title { line-height: normal;}
+
 .jogos-itens p {
     line-height: 25px;
 }
