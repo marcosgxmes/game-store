@@ -33,6 +33,20 @@
     };
 
 
+    // BOTAO QUANTIDADE 
+
+    function process_geral(quant, element){
+      var classValue = parseInt(element.parentElement.querySelector('.quanti').value);
+      classValue+=quant;
+      //console.log(classValue); 
+      if(classValue < 1){
+          element.parentElement.querySelector("input.quanti").value = 1;
+      }else{ 
+          element.parentElement.querySelector("input.quanti").value = classValue;    
+      }
+  }  
+
+
 
 //TROCAR IMAGEM PS5
     let imgAnterior = "imagens/shopping2.webp";
