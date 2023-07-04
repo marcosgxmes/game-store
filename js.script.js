@@ -66,18 +66,21 @@
 
 
     const mG = document.getElementById('main-img');
+    let gImg1 = document.getElementById('gow1')
+    let gImg2 = document.getElementById('gow2')
     let gowMain = "imagens/gow-capa.jpg";
-    let gow1 = "imagens/god-of-war-ragnarok-watermark-screenshot-08-en-08sep21.webp";
-    let gow2 = "imagens/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21.webp";
+    let gow1 = "imagens/gow-img6.jpg";
+    let gow2 = "imagens/god-of-war-ragnarok-watermark-screenshot-03-en-08sep21.webp";
     let gow3 =  "imagens/god-of-war-ragnarok-watermark-screenshot-11-en-08sep21.webp";
+    let gow4 = "imagens/god-of-war-ragnarok-watermark-screenshot-08-en-08sep21.webp"
+    let gow5 = "imagens/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21.webp"
 
     function trocar3() {
      
-      document.getElementById('main-img').src = gow1;
-      let aux = gowMain;
-      gowMain = gow1;
-      gow1 = aux;
+      
+      gImg1.addEventListener('click', mG.src = gow1 );
 
+    
     };
 
     function trocar4() {
@@ -89,6 +92,20 @@
     function trocar5() {
      
       document.getElementById('main-img').src = gow3;
+     
+      
+    };
+
+    function trocar39() {
+     
+      document.getElementById('main-img').src = gow4;
+     
+      
+    };
+
+    function trocar40() {
+     
+      document.getElementById('main-img').src = gow5;
      
       
     };
@@ -197,16 +214,14 @@
 
 
     let spiderImgMain = "imagens/spider_man2-capa.jpg"
-    let spiderImg1 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919356_gg.jpg";
-    let spiderImg2 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919363_gg.jpg";
+    let spiderImg1 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919358_gg.jpg";
+    let spiderImg2 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919361_gg.jpg";
     let spiderImg3 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919354_gg.jpg"
-
+    let spiderImg4 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919363_gg.jpg"
+    let spiderImg5 = "imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919356_gg.jpg"
     function trocar18() {
       document.getElementById('main-img').src = spiderImg1;
-      let aux = spiderImgMain;
-      spiderImgMain = spiderImg1;
-      spiderImg1 = aux;
-
+      
     };
 
     
@@ -221,6 +236,18 @@
 
     function trocar20() {
       document.getElementById('main-img').src = spiderImg3;
+      
+
+    };
+
+    function trocar41() {
+      document.getElementById('main-img').src = spiderImg4;
+      
+
+    };
+
+    function trocar42() {
+      document.getElementById('main-img').src = spiderImg5;
       
 
     };
