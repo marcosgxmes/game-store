@@ -66,21 +66,27 @@
      const cartMenu = document.getElementById('cart');
      const overlay = document.getElementById('carrinho');
      const addCarrinho = document.getElementById('addCarrinho');
+     const btnCart = document.getElementById('btn-cart')
 
      cartMenu.addEventListener('click', () => {
           overlay.classList.toggle('active');
           rolagem.classList.toggle('active');
-     });
+    });
 
      hamburguer3.addEventListener('click', () => {
           overlay.classList.toggle('active');
           rolagem.classList.toggle('active');
-     });
+    });
 
       addCarrinho.addEventListener('click', () => {
       overlay.classList.toggle('active');
       rolagem.classList.toggle('active');
- });
+    });
+
+      btnCart.addEventListener('click', () => {
+      overlay.classList.toggle('active');
+      rolagem.classList.toggle('active');
+    });
 
 
      
@@ -99,7 +105,7 @@
       }else{ 
           element.parentElement.querySelector("input.quanti").value = classValue;    
       }
-  }  
+  };
 
 
 
