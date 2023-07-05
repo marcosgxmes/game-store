@@ -89,6 +89,50 @@
     });
 
 
+    /* ADD IMG PRODUTO AO CARRINHO
+
+    let imgCart = document.getElementById('img-cart');
+    let imgPrincipal = document.getElementById('main-img')
+
+    function addImgCart() {
+      imgCart.src = imgPrincipal.src
+    }; */
+
+    // MULTIPLICAR PREÇO 
+
+    let precoFinall = document.getElementById('preco-final');
+    let menosItem = document.getElementById('plus');
+    let totalItem = document.getElementById('totalItens')
+    let maisItem = document.getElementById('minus');
+    let subTotal = document.getElementById('subTotal');
+    let res = document.getElementById('res');
+
+    
+
+      maisItem.addEventListener('click', () => {
+        let n1 = 307;
+        let n2 = totalItem.value;
+        let n3 = parseInt(n1 * n2)
+        subTotal.innerHTML = `<strong id="subtotal">Subtotal</strong> R$ ${n3},00`
+      res.innerHTML = `R$ ${n3},00`;
+    });
+
+    menosItem.addEventListener('click', () => {
+      let n1 = 307;
+      let n2 = totalItem.value;
+      let n3 = parseInt(n1 * n2);
+      let n4 = n3;
+      let n5 = (n4 - n1);
+      if(n5 == 0) {
+        n5 = n1;
+      }
+
+    subTotal.innerHTML = `<strong id="subtotal">Subtotal</strong> R$ ${n3},00`
+    res.innerHTML = `R$ ${n5},00`;
+  });
+
+
+
      
  
   
