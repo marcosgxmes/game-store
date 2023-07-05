@@ -16,10 +16,7 @@
 }
 
 
-.overflow__hidden.active {
-    overflow: hidden;
-    transition: 0.3s;
-}
+.overflow__hidden.active { overflow: hidden; }
 
 h1, h2, h3 { margin: 20px 0; }
 
@@ -107,6 +104,7 @@ display: flex;
 align-items: center;
 height: 70px;
 border-right: 1px solid rgba(0, 0, 0, 0.099);
+
 }
 
 
@@ -114,18 +112,16 @@ border-right: 1px solid rgba(0, 0, 0, 0.099);
 #carrinho { 
 display: none;
 height: 100vh;
-width: 100vw;
+top: 0;
 right: -100%;
 z-index: 4;
-position: relative;
-transition: 0.3s;
+position: absolute;
 }
 
-#carrinho.active {
-display: flex;
-right: 0;
-transition: 0.3s;
-}
+#carrinho.active { right: 0;
+display: flex; }
+
+
 
 #overlay {
 width: 20%;
@@ -134,18 +130,17 @@ background-color: black;
 opacity: 0.5;
 top: 0;
 left: 0;
-position: fixed;
-top: 0;
+right: -100%;
+position: relative;
 right: 0;
 transition: 0.3s;
-z-index: 2;
 }
 
 #cart-menu {
 display: flex;
 align-items: center;
 background-color: white;
-position: fixed;
+position: relative;
 top: 0;
 right: 0;
 text-align: center;
@@ -154,7 +149,6 @@ width: 80%;
 padding: 0 25px;
 height: 100vh;
 transition: 0.3s;
-z-index: 2;
 }
 
 
@@ -165,8 +159,7 @@ align-items: center;
 justify-content: space-between;
 }
 
-#carrinho h3 {
-    
+#carrinho h3 {   
 color: rgb(16, 35, 65);
 letter-spacing: 1px;
 text-align: left;
@@ -176,7 +169,6 @@ text-align: left;
 display: block;
 cursor: pointer;
 font-size: 20px;
-z-index: 7;
 }
 
 .hamburguer3 .bar:nth-child(2) { opacity: 0; }
@@ -330,6 +322,9 @@ margin: 5px auto;
 background-color: black;
 transition: all 0.3s ease-in-out;
 }
+
+
+/* BARRA DE PESQUISA */
 
 #search-main {
 width: 100%;

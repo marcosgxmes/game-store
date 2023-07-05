@@ -60,18 +60,22 @@
  
      // ABRIR POP UP CARRINHO
  
-     const hamburguer3 = document.querySelector(".hamburguer3");
-     const cartMenu = document.querySelector("#carrinho");
-     const cartPop = document.querySelector("#cart-menu");
+    
+     
+     
+     const cartMenu = document.getElementById('carrinho');
+     const infoBuy = document.getElementById('info-buy');
+     
  
-    function AddToCart(){
-     cartMenu.classList.toggle('active');
-     cartPop.classList.toggle('active');
-     rolagem.classList.toggle('active');
-     hamburguer3.classList.toggle('active');
+    function addToCart(){
 
-      
-    };
+   
+    
+     cartMenu.classList.toggle('active');
+     rolagem.classList.toggle('active');
+
+    
+     };
  
 
 
