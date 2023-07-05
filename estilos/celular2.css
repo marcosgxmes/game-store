@@ -37,7 +37,6 @@ z-index: 4;
 }
 
 header.active {
-filter: blur(25px);
 pointer-events: none;
 user-select: none;
 }
@@ -49,7 +48,6 @@ align-items: center;
 }
 
 #acesso-main.active {
-filter: blur(20px);
 pointer-events: none;
 user-select: none;
 }
@@ -115,14 +113,32 @@ border-right: 1px solid rgba(0, 0, 0, 0.099);
 
 #carrinho { 
 display: none;
-flex-direction: column;
 height: 100vh;
-border: 1px solid red;
+width: 100vw;
+right: -100%;
 z-index: 4;
+position: relative;
+transition: 0.3s;
 }
 
 #carrinho.active {
-    display: flex;
+display: flex;
+right: 0;
+transition: 0.3s;
+}
+
+#overlay {
+width: 20%;
+height: 100vh;
+background-color: black;
+opacity: 0.5;
+top: 0;
+left: 0;
+position: fixed;
+top: 0;
+right: 0;
+transition: 0.3s;
+z-index: 2;
 }
 
 #cart-menu {
@@ -130,19 +146,17 @@ display: flex;
 align-items: center;
 background-color: white;
 position: fixed;
-right: -100%;
-top: 0px;
+top: 0;
+right: 0;
 text-align: center;
 flex-direction: column;
 width: 80%;
 padding: 0 25px;
 height: 100vh;
 transition: 0.3s;
+z-index: 2;
 }
 
-#cart-menu.active {
-    right: 0;
-}
 
 #your-cart {
 display: flex;
@@ -162,7 +176,7 @@ text-align: left;
 display: block;
 cursor: pointer;
 font-size: 20px;
-z-index: 4;
+z-index: 7;
 }
 
 .hamburguer3 .bar:nth-child(2) { opacity: 0; }
@@ -178,39 +192,39 @@ background-color: black;
 }
 
 #subtotal {
-    color: rgb(16, 35, 65);
-    font-weight: bolder;
-    font-size: 1rem;
+color: rgb(16, 35, 65);
+font-weight: bolder;
+font-size: 1rem;
 }
 
 #price-dados {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    margin-bottom: 30px;
+display: flex;
+width: 100%;
+flex-direction: column;
+gap: 20px;
+text-align: center;
+margin-bottom: 30px;
 }
 
 #price-dados > p {
-    width: 100%;
-    letter-spacing: 1px;
-    padding: 0 2px;
-    font-size: 0.8rem;
+width: 100%;
+letter-spacing: 1px;
+padding: 0 2px;
+font-size: 0.8rem;
 }
 
 button.btn-cart {
-    height: 40px;
-    width: 100%;
-    color: #fff;
-    font-weight: bold;
-    background-color: rgb(16, 35, 65);
-    letter-spacing: 1px;
+height: 40px;
+width: 100%;
+color: #fff;
+font-weight: bold;
+background-color: rgb(16, 35, 65);
+letter-spacing: 1px;
 }
 
 button.btn-pay {
-    height: 60px;
-    background-color: black;
+height: 60px;
+background-color: black;
 }
 
 #carrinho-conteudo {
@@ -226,18 +240,15 @@ border-bottom: 1px solid rgba(128, 128, 128, 0.160);
 }
 
 
-.item-preco {
-    font-size: 0.8rem;
-}
+.item-preco { font-size: 0.8rem; }
 
-.carrinho-item{
-    max-width: 100px;
-}
+.carrinho-item{ max-width: 100px; }
+
 
 div.carrinho-item:nth-child(2) {
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
     
 
@@ -280,8 +291,6 @@ z-index: 2;
 }
 
 
-
-.logo { margin-bottom: 20px; }
 
 body.active { overflow: hidden; }
 
@@ -349,7 +358,6 @@ padding: 10px 15px;
 }
 
 #small-bar.active {
-filter: blur(25px);
 pointer-events: none;
 user-select: none;
 }
@@ -384,7 +392,6 @@ padding: 10px 15px;
 }
 
 #info-page.active {
-filter: blur(25px);
 pointer-events: none;
 user-select: none;
 }
@@ -408,7 +415,6 @@ width: 100%;
 }
 
 #compra.active {
-filter: blur(25px);
 pointer-events: none;
 user-select: none;
 }
@@ -544,6 +550,12 @@ cursor: pointer;
 /* SESSSÃO DESCRIÇÃO */
 
 #description {  padding: 15px; }
+
+#description.active {
+   
+    pointer-events: none;
+    user-select: none;
+    }
 
 #description h2 {
 line-height: 1.3;

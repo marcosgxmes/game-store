@@ -22,6 +22,7 @@
     let blurBarra = document.getElementById('small-bar');
     let blurInfo = document.getElementById('info-page');
     let blurCompra = document.getElementById('compra');
+    let blurDescription = document.getElementById('description');
 
     function blurMenu() {
 
@@ -46,9 +47,13 @@
      hamburguer2.addEventListener("click", () => {
        hamburguer2.classList.toggle('active');
       
-       navMenu.classList.toggle('active');
- 
-       rolagem.classList.toggle('active')
+        navMenu.classList.toggle('active');
+        rolagem.classList.toggle('active');
+        blurCompra.classList.toggle('active');
+        blurDescription.classList.toggle('active');
+        blurInfo.classList.toggle('active');
+        blurTop.classList.toggle('active');
+        blurBarra.classList.toggle('active');
       
      });
  
@@ -62,12 +67,10 @@
     function AddToCart(){
      cartMenu.classList.toggle('active');
      cartPop.classList.toggle('active');
-     rolagem.classList.toggle('active')
+     rolagem.classList.toggle('active');
+     hamburguer3.classList.toggle('active');
 
-      blurCompra.classList.toggle('active');
-      blurInfo.classList.toggle('active');
-      blurTop.classList.toggle('active');
-      blurBarra.classList.toggle('active');
+      
     };
  
 
