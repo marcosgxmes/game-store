@@ -67,14 +67,11 @@
      const infoBuy = document.getElementById('info-buy');
      
  
-    function addToCart(){
+    function addToCart(){ 
 
-   
-    
      cartMenu.classList.toggle('active');
      rolagem.classList.toggle('active');
 
-    
      };
  
 
