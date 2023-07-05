@@ -62,18 +62,30 @@
  
     
      
-     
-     const cartMenu = document.getElementById('carrinho');
-     const infoBuy = document.getElementById('info-buy');
+     const hamburguer3 = document.querySelector(".hamburguer3");
+     const cartMenu = document.getElementById('cart');
+     const overlay = document.getElementById('carrinho');
+     const addCarrinho = document.getElementById('addCarrinho');
+
+     cartMenu.addEventListener('click', () => {
+          overlay.classList.toggle('active');
+          rolagem.classList.toggle('active');
+     });
+
+     hamburguer3.addEventListener('click', () => {
+          overlay.classList.toggle('active');
+          rolagem.classList.toggle('active');
+     });
+
+      addCarrinho.addEventListener('click', () => {
+      overlay.classList.toggle('active');
+      rolagem.classList.toggle('active');
+ });
+
+
      
  
-    function addToCart(){ 
-
-     cartMenu.classList.toggle('active');
-     rolagem.classList.toggle('active');
-
-     };
- 
+  
 
 
     // BOTAO QUANTIDADE 
