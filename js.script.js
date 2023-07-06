@@ -85,11 +85,10 @@ rolagem.classList.toggle('active');
 
 let quantBtn = document.querySelector(".produto_qnt_princ");
 let itemQuant2 = document.getElementById('totalItens2');
-let subTotal = document.getElementById('subTotal');
 let removeItem = document.getElementById('plus');
 let itemQuant = document.getElementById('totalItens');
 let addItem = document.getElementById('minus');
-let total = document.getElementById('res');
+let total = document.querySelector('.res');
 
 
 
@@ -118,7 +117,7 @@ let x11 = 307;
 let peep = parseInt(itemQuant2.value * x11);
 let xxx = peep;
 
-subTotal.innerHTML = `<strong id="subtotal">Subtotal</strong> R$ ${xxx},00`
+subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xxx},00`
   total.innerHTML = `R$ ${xxx},00`;
 
 
@@ -128,7 +127,7 @@ addItem.addEventListener('click', () => {
   let n3 = parseInt(n1 * n2)
   let n4 = n3
   
-  subTotal.innerHTML = `<strong id="subtotal">Subtotal</strong> R$ ${n4},00`
+  subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
   total.innerHTML = `R$ ${n4},00`;
   });
 
@@ -140,7 +139,7 @@ removeItem.addEventListener('click', () => {
   let n3 = parseInt(n1 * n2)
   let n4 = n3
   
-  subTotal.innerHTML = `<strong id="subtotal">Subtotal</strong> R$ ${n4},00`
+  subTotal.innerHTML = `<strong id="subtotal"Total</strong> R$ ${n4},00`
   total.innerHTML = `R$ ${n4},00`;
     
 });
@@ -166,7 +165,7 @@ let x11 = 307;
 let peep = parseInt(itemQuant2.value * x11);
 let xxx = peep;
 
-subTotal.innerHTML = `<strong id="subtotal">Subtotal</strong> R$ ${xxx},00`
+subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xxx},00`
   total.innerHTML = `R$ ${xxx},00`;
 
 
@@ -176,7 +175,7 @@ addItem.addEventListener('click', () => {
   let n3 = parseInt(n1 * n2)
   let n4 = n3
   
-  subTotal.innerHTML = `<strong id="subtotal">Subtotal</strong> R$ ${n4},00`
+  subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
   total.innerHTML = `R$ ${n4},00`;
   });
 
@@ -188,7 +187,7 @@ removeItem.addEventListener('click', () => {
   let n3 = parseInt(n1 * n2)
   let n4 = n3
   
-  subTotal.innerHTML = `<strong id="subtotal">Subtotal</strong> R$ ${n4},00`
+  subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
   total.innerHTML = `R$ ${n4},00`;
 });
 

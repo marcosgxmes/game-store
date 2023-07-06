@@ -43,7 +43,6 @@
             <div id="cart"><i class="fa fa-shopping-cart"></i></div>
 
             <nav class="navbar">
-
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index8.html" class="nav-link">LOGIN</a></li>
                     <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
@@ -54,13 +53,15 @@
                     <li class="nav-item"><a href="" class="nav-link">ARCADES</a></li>
                 </ul>
 
-                <div class="hamburguer2" onclick="blurMenu()">
+                <div class="hamburguer2">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
+
                 <section id="carrinho">
                     <div id="overlay"></div>
+
                     <div id="cart-menu">
                         <div id="your-cart">
                             <h3>Seu carrinho</h3>
@@ -72,10 +73,6 @@
                         </div>
 
                         <div id="price-dados">
-
-                            <p id="subTotal">
-                                <strong id="subtotal">Subtotal</strong> R$ 307,00
-                            </p>
                             <p>Os impostos incluídos e os custos de envio são calculados na tela de pagamento.</p>
 
                             <button class="btn-cart btn-pay" type="submit"><img src="imagens/pesquisa.png" alt=""
@@ -90,31 +87,32 @@
 
                             <div class="carrinho-item 2">
                                 <p>God of War Ragnarök PS4/PS5</p>
-                                <p id="res">R$ 349,90</p>
+
+                                <p class="res">
+                                    <strong id="subtotal">Total</strong> R$ 307,00
+                                </p>
+                               
 
                                 <div id="delete-cart">
-
                                     <div id="quantidade" class="produto_qnt_princ" data-app="product.quantity">
 
-                                        <input class="qnt_menor_maior" type="button" id="plus" value='-'
-                                            onclick="process_geral(-1, this)" />
+                                    <input class="qnt_menor_maior" type="button" id="plus" value='-'
+                                        onclick="process_geral(-1, this)" />
 
-                                        <input id="totalItens2" class="quanti qnt_menor_maior" name="quanti"
-                                            class="text" size="1" type="text" value="" maxlength="1" />
+                                    <input id="totalItens2" class="quanti qnt_menor_maior" name="quanti"
+                                        class="text" size="1" type="text" value="" maxlength="1" />
 
-                                        <input class="qnt_menor_maior" type="button" id="minus" value='+'
-                                            onclick="process_geral(1, this)" />
-                                    </div>
+                                    <input class="qnt_menor_maior" type="button" id="minus" value='+'
+                                    onclick="process_geral(1, this)" />
+                                </div>
 
 
                                     <span class="material-symbols-outlined">delete</span>
                                 </div>
                             </div>
-
                         </div>
                         <button id="btn-cart" type="submit" onclick="AddToCart()">Continuar a comprar</button>
                     </div>
-
                 </section>
             </nav>
         </div>
@@ -126,9 +124,7 @@
 
     <section id="big-menu">
         <div>
-            <a href="index.html">
-                <h4>HOME</h4>
-            </a>
+            <h4><a href="index.html"></a>HOME</a></h4>
             <h4>JOGOS</h4>
             <h4>CONSOLES</h4>
             <h4>RETROS</h4>
