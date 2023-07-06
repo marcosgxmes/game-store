@@ -1,4 +1,47 @@
 
+//TROCAR IMAGENS
+
+let imgPrincipal = document.getElementById('main-img');
+
+let img1 = document.getElementById('img1');
+let img2 = document.getElementById('img2');
+let img3 = document.getElementById('img3');
+let img4 = document.getElementById('img4');
+let img5 = document.getElementById('img5');
+
+const fotos = [img1, img2, img3, img4, img5];
+
+
+function trocarImg1() {
+if(fotos[0].src == fotos[0].src) {
+  imgPrincipal.src = fotos[0].src
+}
+};
+
+function trocarImg2() {
+if(fotos[1].src == fotos[1].src) {
+  imgPrincipal.src = fotos[1].src
+}
+};
+
+function trocarImg3() {
+if(fotos[2].src == fotos[2].src) {
+  imgPrincipal.src = fotos[2].src
+}
+};
+
+function trocarImg4() {
+if(fotos[3].src ==fotos[3].src) {
+  imgPrincipal.src = fotos[3].src
+}
+};
+
+function trocarImg5() {
+if(fotos[4].src == fotos[4].src) {
+  imgPrincipal.src = fotos[4].src
+}
+};
+
 
 //TROCAR ICONE DO MENU
 
@@ -34,6 +77,7 @@ hamburguer2.classList.toggle('active');
 navMenu.classList.toggle('active');
 rolagem.classList.toggle('active');
 });
+ 
 
 
 // ABRIR POP UP CARRINHO
@@ -54,6 +98,14 @@ const cartMenu = document.getElementById('cart');
 const overlay = document.getElementById('carrinho');
 const addCarrinho = document.getElementById('addCarrinho');
 const btnCart = document.getElementById('btn-cart');
+
+let preco = document.getElementById('preco-final');
+
+
+let n1 = parseInt(preco);
+let n2 = itemQuant2.value;
+let n3 = parseInt(n1 * n2)
+let n4 = n3
 
 cartMenu.addEventListener('click', () => {
     overlay.classList.toggle('active');
@@ -95,12 +147,13 @@ removeItem.addEventListener('click', () => {
 
 });
 
+
 hamburguer3.addEventListener('click', () => {
     overlay.classList.toggle('active');
     rolagem.classList.toggle('active');
-
     itemQuant.value = itemQuant2.value;
 });
+
 
 addCarrinho.addEventListener('click', () => {
 overlay.classList.toggle('active');
@@ -167,46 +220,3 @@ if(classValue < 1){
 
 
 
-
-//TROCAR IMAGENS
-
-let imgPrincipal = document.getElementById('main-img');
-
-let img1 = document.getElementById('img1');
-let img2 = document.getElementById('img2');
-let img3 = document.getElementById('img3');
-let img4 = document.getElementById('img4');
-let img5 = document.getElementById('img5');
-
-const fotos = [img1, img2, img3, img4, img5];
-
-
-function trocarImg1() {
-if(fotos[0].src == img1.src) {
-  imgPrincipal.src = img1.src
-}
-};
-
-function trocarImg2() {
-if(fotos[1].src == img2.src) {
-  imgPrincipal.src = img2.src
-}
-};
-
-function trocarImg3() {
-if(fotos[2].src == img3.src) {
-  imgPrincipal.src = img3.src
-}
-};
-
-function trocarImg4() {
-if(fotos[3].src == img4.src) {
-  imgPrincipal.src = img4.src
-}
-};
-
-function trocarImg5() {
-if(fotos[4].src == img5.src) {
-  imgPrincipal.src = img5.src
-}
-};
