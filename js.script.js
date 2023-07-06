@@ -83,28 +83,29 @@ rolagem.classList.toggle('active');
 // ABRIR POP UP CARRINHO
 
 
-let quantBtn = document.querySelector(".produto_qnt_princ");
-let itemQuant2 = document.getElementById('totalItens2');
-let removeItem = document.getElementById('plus');
-let itemQuant = document.getElementById('totalItens');
-let addItem = document.getElementById('minus');
-let total = document.querySelector('.res');
-
-
-
 const hamburguer3 = document.querySelector(".hamburguer3");
 const cartMenu = document.getElementById('cart');
 const overlay = document.getElementById('carrinho');
 const addCarrinho = document.getElementById('addCarrinho');
 const btnCart = document.getElementById('btn-cart');
 
-let preco = document.getElementById('preco-final');
+let quantBtn = document.querySelector(".produto_qnt_princ");
+let itemQuant2 = document.getElementById('totalItens2');
+
+let removeItem = document.getElementById('plus');
+let itemQuant = document.getElementById('totalItens');
+let addItem = document.getElementById('minus');
+
+let preco = document.querySelector('.preco');
+
+let res = document.querySelector('.res');
+
+let total = document.getElementById('subtotal');
 
 
-let n1 = parseInt(preco);
-let n2 = itemQuant2.value;
-let n3 = parseInt(n1 * n2)
-let n4 = n3
+
+
+
 
 cartMenu.addEventListener('click', () => {
     overlay.classList.toggle('active');
@@ -146,7 +147,6 @@ removeItem.addEventListener('click', () => {
 
 });
 
-
 hamburguer3.addEventListener('click', () => {
     overlay.classList.toggle('active');
     rolagem.classList.toggle('active');
@@ -160,13 +160,10 @@ rolagem.classList.toggle('active');
 
 itemQuant2.value = itemQuant.value;
 
-let x11 = 307;
 
-let peep = parseInt(itemQuant2.value * x11);
-let xxx = peep;
 
-subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xxx},00`
-  total.innerHTML = `R$ ${xxx},00`;
+res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${preco},00`
+
 
 
 addItem.addEventListener('click', () => {
@@ -176,7 +173,6 @@ addItem.addEventListener('click', () => {
   let n4 = n3
   
   subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
-  total.innerHTML = `R$ ${n4},00`;
   });
 
 
@@ -188,7 +184,6 @@ removeItem.addEventListener('click', () => {
   let n4 = n3
   
   subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
-  total.innerHTML = `R$ ${n4},00`;
 });
 
 });
