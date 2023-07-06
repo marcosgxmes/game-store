@@ -212,6 +212,7 @@ color: #fff;
 font-weight: bold;
 background-color: rgb(16, 35, 65);
 letter-spacing: 1px;
+cursor: pointer;
 }
 
 button.btn-pay {
@@ -533,7 +534,7 @@ margin-bottom: 5px;
 }
 
 
-#quantidade {
+.produto_qnt_princ {
 display: flex;
 align-items: center;
 justify-content: center;
@@ -551,6 +552,7 @@ border: none;
 color: black;
 background: none;
 font-size: 1rem;
+cursor: pointer;
 }
 
 .quanti { text-align: center; }

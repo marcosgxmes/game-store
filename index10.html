@@ -61,7 +61,6 @@
 
                 <section id="carrinho">
                     <div id="overlay"></div>
-            
                     <div id="cart-menu">
                         <div id="your-cart">
                             <h3>Seu carrinho</h3>
@@ -73,7 +72,9 @@
                         </div>
             
                         <div id="price-dados">
-                            <p id="subTotal"><strong id="subtotal">Subtotal</strong> R$ 307,00</p>
+
+                            <p id="subTotal">
+                                <strong id="subtotal">Subtotal</strong> R$ 307,00</p>
                             <p>Os impostos incluídos e os custos de envio são calculados na tela de pagamento.</p>
                            
                             <button class="btn-cart btn-pay" type="submit"><img src="imagens/pesquisa.png" alt="" width="15px"> Pay</button>
@@ -82,7 +83,7 @@
                         <div id="carrinho-conteudo">
                             
                             <div class="carrinho-item">
-                                <img id="img-cart" src="imagens/spider_man2-capa.jpg" width="95px">
+                                <img src="imagens/spider_man2-capa.jpg" width="95px">
                             </div>
             
                             <div class="carrinho-item 2">
@@ -90,19 +91,22 @@
                                 <p id="res">R$ 307,00</p>
 
                                 <div id="delete-cart">
+
                                     <div id="quantidade" class="produto_qnt_princ" data-app="product.quantity">
+
                                         <input class="qnt_menor_maior" type="button" id="plus" value='-'
                                             onclick="process_geral(-1, this)" />
-                                        <input id="totalItens" class="quanti qnt_menor_maior" name="quanti" class="text" size="1" type="text"
-                                            value="1" maxlength="5" />
+                    
+                                        <input id="totalItens2" class="quanti qnt_menor_maior" name="quanti" class="text" size="1" type="text"
+                                            value="" maxlength="5" />
+                    
                                         <input class="qnt_menor_maior" type="button" id="minus" value='+'
                                             onclick="process_geral(1, this)" />
-                                    
-                                    </div><span class="material-symbols-outlined">
-                                        delete
-                                        </span>
-                                </div>
+                                    </div>
 
+                                   
+                                    <span class="material-symbols-outlined">delete</span>
+                                </div>
                             </div>
             
                         </div>
@@ -151,26 +155,26 @@
             </div>
 
             <div class="acessorios">
-                <div class="imagem-p" id="imagemp3" onclick="trocar18()"><img
+                <div class="imagem-p" id="imagemp3" onclick="trocarImg1()"><img id="img1"
                         src="imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919358_gg.jpg" alt="">
                 </div>
 
 
-                <div class="imagem-p" id="imagemp3" onclick="trocar19()"><img
+                <div class="imagem-p" id="imagemp3" onclick="trocarImg2()"><img id="img2"
                         src="imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919361_gg.jpg" alt="">
                 </div>
 
-                <div class="imagem-p" id="imagemp1" onclick="trocar20()"><img
+                <div class="imagem-p" id="imagemp1" onclick="trocarImg3()"><img id="img3"
                         src="imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919354_gg.jpg" alt="">
                 </div>
 
-                <div class="imagem-p" id="imagemp2" onclick="trocar41()"><img
+                <div class="imagem-p" id="imagemp2" onclick="trocarImg4()"><img id="img4"
                         src="imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919363_gg.jpg" alt="">
                 </div>
 
 
 
-                <div class="imagem-p" id="imagemp3" onclick="trocar42()"><img
+                <div class="imagem-p" id="imagemp3" onclick="trocarImg5()"><img id="img5"
                         src="imagens/jogo-marvel-s-spider-man-2-ps5-edicao-de-lancamento_1686919356_gg.jpg" alt="">
                 </div>
             </div>
@@ -195,8 +199,8 @@
                     <input class="qnt_menor_maior" type="button" id="plus" value='-'
                         onclick="process_geral(-1, this)" />
 
-                    <input class="quanti qnt_menor_maior" name="quanti" class="text" size="1" type="text" value="1"
-                        maxlength="5" />
+                    <input id="totalItens" class="quanti qnt_menor_maior" name="quanti" class="text" size="1" type="text"
+                        value="1" maxlength="5" />
 
                     <input class="qnt_menor_maior" type="button" id="minus" value='+'
                         onclick="process_geral(1, this)" />
