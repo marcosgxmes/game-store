@@ -97,61 +97,16 @@ let itemQuant = document.getElementById('totalItens');
 let addItem = document.getElementById('minus');
 
 let preco = document.querySelector('.preco');
-
 let res = document.querySelector('.res');
-
 let total = document.getElementById('subtotal');
 
 
+console.log(parseFloat(preco.textContent.slice(2))+0.9)
 
 
 
 
-cartMenu.addEventListener('click', () => {
-    overlay.classList.toggle('active');
-    rolagem.classList.toggle('active');
-  
-    itemQuant2.value = itemQuant.value;
 
-let x11 = 307;
-
-let peep = parseInt(itemQuant2.value * x11);
-let xxx = peep;
-
-subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xxx},00`
-  total.innerHTML = `R$ ${xxx},00`;
-
-
-addItem.addEventListener('click', () => {
-  let n1 = 307;
-  let n2 = itemQuant2.value;
-  let n3 = parseInt(n1 * n2)
-  let n4 = n3
-  
-  subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
-  total.innerHTML = `R$ ${n4},00`;
-  });
-
-
-
-removeItem.addEventListener('click', () => {
-  let n1 = 307;
-  let n2 = itemQuant2.value;
-  let n3 = parseInt(n1 * n2)
-  let n4 = n3
-  
-  subTotal.innerHTML = `<strong id="subtotal"Total</strong> R$ ${n4},00`
-  total.innerHTML = `R$ ${n4},00`;
-    
-});
-
-});
-
-hamburguer3.addEventListener('click', () => {
-    overlay.classList.toggle('active');
-    rolagem.classList.toggle('active');
-    itemQuant.value = itemQuant2.value;
-});
 
 
 addCarrinho.addEventListener('click', () => {
@@ -186,6 +141,49 @@ removeItem.addEventListener('click', () => {
   subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
 });
 
+});
+
+cartMenu.addEventListener('click', () => {
+  overlay.classList.toggle('active');
+  rolagem.classList.toggle('active');
+
+  itemQuant2.value = itemQuant.value;
+
+
+subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${preco},00`
+total.innerHTML = `R$ ${preco},00`;
+
+
+
+addItem.addEventListener('click', () => {
+let n1 = 307;
+let n2 = itemQuant2.value;
+let n3 = parseInt(n1 * n2)
+let n4 = n3
+
+subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
+total.innerHTML = `R$ ${n4},00`;
+});
+
+
+
+removeItem.addEventListener('click', () => {
+let n1 = 307;
+let n2 = itemQuant2.value;
+let n3 = parseInt(n1 * n2)
+let n4 = n3
+
+subTotal.innerHTML = `<strong id="subtotal"Total</strong> R$ ${n4},00`
+total.innerHTML = `R$ ${n4},00`;
+  
+});
+
+});
+
+hamburguer3.addEventListener('click', () => {
+  overlay.classList.toggle('active');
+  rolagem.classList.toggle('active');
+  itemQuant.value = itemQuant2.value;
 });
 
 
