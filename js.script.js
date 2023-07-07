@@ -105,10 +105,6 @@ console.log(parseFloat(preco.textContent.slice(2))+0.9)
 
 
 
-
-
-
-
 addCarrinho.addEventListener('click', () => {
 overlay.classList.toggle('active');
 rolagem.classList.toggle('active');
@@ -192,8 +188,6 @@ overlay.classList.toggle('active');
 rolagem.classList.toggle('active');
 itemQuant.value = itemQuant2.value;
 });
-
-
 
 
 // BOTAO QUANTIDADE 
