@@ -178,7 +178,6 @@ total.innerHTML = `R$ ${n4},00`;
 });
 
 hamburguer3.addEventListener('click', () => {
-deleted.classList.toggle('active');
 overlay.classList.toggle('active');
 rolagem.classList.toggle('active');
 itemQuant.value = itemQuant2.value;
