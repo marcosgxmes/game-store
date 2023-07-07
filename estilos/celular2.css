@@ -116,7 +116,7 @@ height: 100vh !important;
 width: 100%;
 right: -100%;
 top: 0;
-z-index: 4;
+z-index: 7;
 position: fixed;
 }
 
@@ -124,7 +124,7 @@ position: fixed;
 
 
 #overlay {
-width: 20%;
+min-width: 25%;
 height: 100%;
 background-color: black;
 opacity: 0.7;
@@ -145,7 +145,7 @@ top: 0;
 right: 0;
 text-align: center;
 flex-direction: column;
-width: 80%;
+width: 75%;
 padding: 0 25px;
 height: 100%;
 transition: 0.3s;
@@ -818,7 +818,7 @@ font-style: italic;
 
 @media screen and (min-width:768px) and (max-width:992px) {
 
-
+    #carrinho.active { right: 0; }
      
     #big-bar { display: none; }
      
@@ -927,7 +927,16 @@ font-style: italic;
 
 @media screen and (min-width: 880px){
 
-    
+    #overlay { width: 65%;}
+
+    #cart-menu { width: 35%;}
+
+    #carrinho-conteudo { max-width: 100%;}
+
+    .carrinho-item > p { width: 250px;}
+
+
+   
 
     #small-bar { display: none;}
     .lts { display: block; }
