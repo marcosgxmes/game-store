@@ -62,8 +62,6 @@ document.getElementById(iconID).className = "fa fa-bars";
 
 
 
-
-
 // ABRIR MENU RESPONSIVO
 
 const hamburguer2 = document.querySelector(".hamburguer2");
@@ -88,56 +86,59 @@ const cartMenu = document.getElementById('cart');
 const overlay = document.getElementById('carrinho');
 const addCarrinho = document.getElementById('addCarrinho');
 const btnCart = document.getElementById('btn-cart');
+const btnCart2 = document.getElementById('btn-cart2');
+
+const trash = document.getElementById('lixeira');
+const deleted = document.getElementById('delete');
+const hamburguer4 = document.querySelector(".hamburguer4");
+
+const removeItem = document.getElementById('plus');
+let itemQuant = document.getElementById('totalItens');
+const addItem = document.getElementById('minus');
 
 let quantBtn = document.querySelector(".produto_qnt_princ");
 let itemQuant2 = document.getElementById('totalItens2');
 
-let removeItem = document.getElementById('plus');
-let itemQuant = document.getElementById('totalItens');
-let addItem = document.getElementById('minus');
+let preco = document.querySelector('.preco').textContent;
 
-let preco = document.querySelector('.preco');
+
+let convert = Number.parseFloat(preco);
+
 let res = document.querySelector('.res');
 let total = document.getElementById('subtotal');
 
 
-console.log(parseFloat(preco.textContent.slice(2))+0.9)
-
+// BOTÃO QUANTIDADE 
 
 
 addCarrinho.addEventListener('click', () => {
+
 overlay.classList.toggle('active');
 rolagem.classList.toggle('active');
 
 itemQuant2.value = itemQuant.value;
 
+let xProdutos = (convert * itemQuant2.value);
 
-
-res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${preco},00`
-
-
+res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
+});
 
 addItem.addEventListener('click', () => {
-  let n1 = 307;
-  let n2 = itemQuant2.value;
-  let n3 = parseInt(n1 * n2)
-  let n4 = n3
+
+let xProdutos = (convert * itemQuant2.value);
+
+res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
+});
   
-  subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
-  });
-
-
-
 removeItem.addEventListener('click', () => {
-  let n1 = 307;
-  let n2 = itemQuant2.value;
-  let n3 = parseInt(n1 * n2)
-  let n4 = n3
-  
-  subTotal.innerHTML = `<strong id="subtotal">Total</strong> R$ ${n4},00`
+
+let xProdutos = (convert * itemQuant2.value);
+
+res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
 });
 
-});
+
+// FECHAR CARRINHO
 
 cartMenu.addEventListener('click', () => {
   overlay.classList.toggle('active');
@@ -177,16 +178,36 @@ total.innerHTML = `R$ ${n4},00`;
 });
 
 hamburguer3.addEventListener('click', () => {
-  overlay.classList.toggle('active');
-  rolagem.classList.toggle('active');
-  itemQuant.value = itemQuant2.value;
+deleted.classList.toggle('active');
+overlay.classList.toggle('active');
+rolagem.classList.toggle('active');
+itemQuant.value = itemQuant2.value;
 });
-
 
 btnCart.addEventListener('click', () => {
 overlay.classList.toggle('active');
 rolagem.classList.toggle('active');
 itemQuant.value = itemQuant2.value;
+});
+
+
+//  BOTÃO LIXEIRA 
+
+
+trash.addEventListener('click', () => {
+deleted.classList.toggle('active');
+overlay.classList.toggle('active');
+});
+
+hamburguer4.addEventListener('click', () => {
+deleted.classList.toggle('active');
+rolagem.classList.toggle('active');
+itemQuant.value = itemQuant2.value;
+});
+
+btnCart2.addEventListener('click', () => {
+deleted.classList.toggle('active');
+rolagem.classList.toggle('active');
 });
 
 

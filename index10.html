@@ -74,9 +74,7 @@
 
                         <div id="price-dados">
 
-                            <p id="subTotal">
-                                <strong id="subtotal">Subtotal</strong> R$ 307,00
-                            </p>
+                            
                             <p>Os impostos incluídos e os custos de envio são calculados na tela de pagamento.</p>
 
                             <button class="btn-cart btn-pay" type="submit"><img src="imagens/pesquisa.png" alt=""
@@ -91,7 +89,9 @@
 
                             <div class="carrinho-item 2">
                                 <p>Spider Man 2 / PS5</p>
-                                <p id="res">R$ 307,00</p>
+                                <p class="res">
+                                    <strong id="subtotal"></strong>
+                                </p>
 
                                 <div id="delete-cart">
 
@@ -108,7 +108,7 @@
                                     </div>
 
 
-                                    <span class="material-symbols-outlined">delete</span>
+                                    <span id="lixeira" class="material-symbols-outlined">delete</span>
                                 </div>
                             </div>
 
@@ -117,6 +117,25 @@
                     </div>
 
                 </section>
+
+                <Section id="delete">
+                    <div id="overlay"></div>
+                    <div id="deleted">
+                        <div id="your-cart">
+                            <h3>Seu carrinho</h3>
+                            <div class="hamburguer4" onclick="addToCart()">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+
+                       <div id="empty">
+                           <h3>O seu carrinho de compras<br> está vazio</h3>
+                           <button id="btn-cart2" type="submit" onclick="AddToCart()">Continuar a comprar</button>
+                       </div>
+                    </div>
+                </Section>
             </nav>
         </div>
     </header>
@@ -194,7 +213,7 @@
 
                 <p id="frete"><i class="fa fa-truck" aria-hidden="true"></i>FRETE GRÁTIS</p>
 
-                <p ><strong id="preco-final" value="307"> R$ 307,00</strong> <br>ou 12x sem juros.</p>
+                <p><strong>R$ </strong><strong class="preco">307,00</strong> <br> ou 12x sem juros.</p>
                 <h4 id="qt">Quantidade</h4>
 
 
@@ -259,7 +278,7 @@
             <div class="sugest lst">
                 <a href="index12.html"><img src="imagens/diablo-capa.jpg" alt=""></a>
                 <h4>Diablo IV</h4>
-                <p>R$ 349,90</p>
+                <p>R$ 349,00</p>
             </div>
 
             <div class="sugest lst">
