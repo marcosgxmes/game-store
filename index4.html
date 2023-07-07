@@ -56,83 +56,85 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <section id="carrinho">
-                    <div id="overlay"></div>
-                    <div id="cart-menu">
-                        <div id="your-cart">
-                            <h3>Seu carrinho</h3>
-                            <div class="hamburguer3" onclick="addToCart()">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </div>
-                        </div>
-    
-                        <div id="price-dados">
-    
-                            
-                            <p>Os impostos incluídos e os custos de envio são calculados na tela de pagamento.</p>
-    
-                            <button class="btn-cart btn-pay" type="submit"><img src="imagens/pesquisa.png" alt=""
-                                    width="15px"> Pay</button>
-                        </div>
-    
-                        <div id="carrinho-conteudo">
-    
-                            <div class="carrinho-item 1">
-                                <img src="imagens/series_s_boxjpg.jpg">
-                            </div>
-    
-                            <div class="carrinho-item 2">
-                                <p>Console Microsoft Xbox Series S
-                                </p>
-                                <p class="res">
-                                    <strong id="subtotal"></strong>
-                                </p>
-    
-                                <div id="delete-cart">
-    
-                                    <div id="quantidade" class="produto_qnt_princ" data-app="product.quantity">
-    
-                                        <input class="qnt_menor_maior" type="button" id="plus" value='-'
-                                            onclick="process_geral(-1, this)" />
-    
-                                        <input id="totalItens2" class="quanti qnt_menor_maior" name="quanti"
-                                            class="text" size="1" type="text" value="" maxlength="1" />
-    
-                                        <input class="qnt_menor_maior" type="button" id="minus" value='+'
-                                            onclick="process_geral(1, this)" />
-                                    </div>
-    
-    
-                                    <span id="lixeira" class="material-symbols-outlined">delete</span>
-                                </div>
-                            </div>
-    
-                        </div>
-                        <button id="btn-cart" type="submit" onclick="AddToCart()">Continuar a comprar</button>
-                    </div>
-    
-                </section>
-                <Section id="delete">
-                    <div id="overlay"></div>
-                    <div id="deleted">
-                        <div id="your-cart">
-                            <h3>Seu carrinho</h3>
-                            <div class="hamburguer4" onclick="addToCart()">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </div>
-                        </div>
-    
-                       <div id="empty">
-                           <h3>O seu carrinho de compras<br> está vazio</h3>
-                           <button id="btn-cart2" type="submit" onclick="AddToCart()">Continuar a comprar</button>
-                       </div>
-                    </div>
-                </Section>
+                
             </nav>
+            <section id="carrinho">
+                <div id="overlay"></div>
+                <div id="cart-menu">
+                    <div id="your-cart">
+                        <h3>Seu carrinho</h3>
+                        <div class="hamburguer3" onclick="addToCart()">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+
+                    <div id="price-dados">
+
+                        
+                        <p>Os impostos incluídos e os custos de envio são calculados na tela de pagamento.</p>
+
+                        <button class="btn-cart btn-pay" type="submit"><img src="imagens/pesquisa.png" alt=""
+                                width="15px"> Pay</button>
+                    </div>
+
+                    <div id="carrinho-conteudo">
+
+                        <div class="carrinho-item 1">
+                            <img src="imagens/series_s_boxjpg.jpg">
+                        </div>
+
+                        <div class="carrinho-item 2">
+                            <p>Console Microsoft Xbox Series S
+                            </p>
+                            <p class="res">
+                                <strong id="subtotal"></strong>
+                            </p>
+
+                            <div id="delete-cart">
+
+                                <div id="quantidade" class="produto_qnt_princ" data-app="product.quantity">
+
+                                    <input class="qnt_menor_maior" type="button" id="plus" value='-'
+                                        onclick="process_geral(-1, this)" />
+
+                                    <input id="totalItens2" class="quanti qnt_menor_maior" name="quanti"
+                                        class="text" size="1" type="text" value="" maxlength="1" />
+
+                                    <input class="qnt_menor_maior" type="button" id="minus" value='+'
+                                        onclick="process_geral(1, this)" />
+                                </div>
+
+
+                                <span id="lixeira" class="material-symbols-outlined">delete</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="btn-cart" type="submit" onclick="AddToCart()">Continuar a comprar</button>
+                </div>
+
+            </section>
+            
+            <Section id="delete">
+                <div id="overlay"></div>
+                <div id="deleted">
+                    <div id="your-cart">
+                        <h3>Seu carrinho</h3>
+                        <div class="hamburguer4" onclick="addToCart()">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+
+                   <div id="empty">
+                       <h3>O seu carrinho de compras<br> está vazio</h3>
+                       <button id="btn-cart2" type="submit" onclick="AddToCart()">Continuar a comprar</button>
+                   </div>
+                </div>
+            </Section>
            
         </div>
     

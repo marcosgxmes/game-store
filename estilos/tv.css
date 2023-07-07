@@ -2,6 +2,18 @@
 
 @media screen and (min-width: 1200px) {
     
+    header {
+        height: 220px;
+    }
+
+    header h1 { margin-top: 50px; }
+
+    
+
+    #l2 {
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+    }
 
     #big-menu {
         display: block;
@@ -21,7 +33,7 @@
         padding-top: 3px; 
         }
     
-        #big-menu div h4 { color:#003b7a; }
+        #big-menu div h4 { color:#003b7a; cursor: pointer; }
     
         #big-menu div h4:hover { color: red; }
 

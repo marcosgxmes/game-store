@@ -925,15 +925,21 @@ font-style: italic;
 
 /* TELAS GRANDES */
 
-@media screen and (min-width: 880px){
+@media screen and (min-width: 993px){
 
     #overlay { width: 65%;}
 
     #cart-menu { width: 35%;}
 
+    #price-dados { margin-top: 70px;}
+
+    #deleted { width: 35%;}
+
     #carrinho-conteudo { max-width: 100%;}
 
     .carrinho-item > p { width: 250px;}
+
+    #info-page > p { letter-spacing: 1px;}
 
 
    
@@ -998,7 +1004,7 @@ font-style: italic;
     display: grid;
     align-items: center;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     justify-content: space-around;
     grid-template-columns: auto auto auto;
     padding: 0;
@@ -1011,14 +1017,14 @@ font-style: italic;
     .acessorios {
     flex-direction: column;
     justify-content: space-between;
-    width: 150px;
+    width: 170px;
     max-height: 100%;
     grid-row-start: 1;
     margin: 0;
     }
 
 
-    .imagem-p { height: 100px; }
+    .imagem-p { height: 110px; }
 
     #price {
     display: flex;

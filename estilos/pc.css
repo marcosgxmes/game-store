@@ -22,7 +22,6 @@
 
     header {
         height: 220px;
-        margin-bottom: 10px;
     }
 
     header h1 {
@@ -53,7 +52,7 @@
     margin: 0 auto;  
     }
 
-    #big-menu div h4 { color:#003b7a; }
+    #big-menu div h4 { color:#003b7a; cursor: pointer; }
 
     #big-menu div h4:hover { color: red; }
 
