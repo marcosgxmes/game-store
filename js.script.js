@@ -1,34 +1,5 @@
-// CARROSEL
-const imgs = document.getElementById('slider');
-const img = document.querySelectorAll('#slider img');
-const imgWidth = document.querySelector('#slider img').width;
-
-let idy = 0;
-
-function carrosel() {
-    idy++;
-    if(idy > img.length -1) {
-        idy = 0;
-    }
-    imgs.style.transform = `translateX(${-idy * imgWidth}px)`;
-}
-
-setInterval(carrosel, 3300);
-
-
-
-
-
-
-
-
-
-
-
-
 //TROCAR IMAGENS
 let imgPrincipal = document.getElementById('main-img');
-
 let img1 = document.getElementById('img1');
 let img2 = document.getElementById('img2');
 let img3 = document.getElementById('img3');
@@ -36,7 +7,6 @@ let img4 = document.getElementById('img4');
 let img5 = document.getElementById('img5');
 
 const fotos = [img1, img2, img3, img4, img5];
-
 
 function trocarImg1() {
 if(fotos[0].src == fotos[0].src) {
@@ -69,21 +39,6 @@ if(fotos[4].src == fotos[4].src) {
 };
 
 
-//TROCAR ICONE DO MENU
-function change (iconID){
-
-if(document.getElementById(iconID).className=="fa fa-bars") {
-document.getElementById(iconID).className = "fa fa-close";
-} else {
-document.getElementById(iconID).className = "fa fa-bars";
-
-} if (itens.style.display == 'block') {
-  itens.style.display = 'none'
-} else {
-  itens.style.display = 'block'
-}
-};
-
 
 
 // ABRIR MENU RESPONSIVO
@@ -100,8 +55,6 @@ hamburguer2.addEventListener("click", () => {
 
 
 // ABRIR POP UP CARRINHO
-
-
 const hamburguer3 = document.querySelector(".hamburguer3");
 const cartMenu = document.getElementById('cart');
 const overlay = document.getElementById('carrinho');
@@ -127,9 +80,9 @@ let res = document.querySelector('.res');
 let total = document.getElementById('subtotal');
 
 
+
+
 // BOTÃO QUANTIDADE 
-
-
 addCarrinho.addEventListener('click', () => {
   overlay.classList.toggle('active');
   rolagem.classList.toggle('active');
@@ -201,9 +154,9 @@ itemQuant.value = itemQuant2.value;
 });
 
 
+
+
 //  BOTÃO LIXEIRA 
-
-
 trash.addEventListener('click', () => {
 deleted.classList.toggle('active');
 overlay.classList.toggle('active');
@@ -222,8 +175,6 @@ rolagem.classList.toggle('active');
 
 
 // BOTAO QUANTIDADE 
-
-
 function process_geral(quant, element){
 var classValue = parseInt(element.parentElement.querySelector('.quanti').value);
 classValue += quant;
@@ -234,6 +185,17 @@ if(classValue < 1){
     element.parentElement.querySelector("input.quanti").value = classValue;    
 }
 };
+
+
+
+
+
+
+
+
+
+
+
 
 
 
