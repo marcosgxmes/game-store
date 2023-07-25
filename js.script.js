@@ -1,6 +1,32 @@
+// CARROSEL
+const imgs = document.getElementById('slider');
+const img = document.querySelectorAll('#slider img');
+const imgWidth = document.querySelector('#slider img').width;
+
+let idy = 0;
+
+function carrosel() {
+    idy++;
+    if(idy > img.length -1) {
+        idy = 0;
+    }
+    imgs.style.transform = `translateX(${-idy * imgWidth}px)`;
+}
+
+setInterval(carrosel, 3300);
+
+
+
+
+
+
+
+
+
+
+
 
 //TROCAR IMAGENS
-
 let imgPrincipal = document.getElementById('main-img');
 
 let img1 = document.getElementById('img1');
@@ -44,8 +70,6 @@ if(fotos[4].src == fotos[4].src) {
 
 
 //TROCAR ICONE DO MENU
-
-
 function change (iconID){
 
 if(document.getElementById(iconID).className=="fa fa-bars") {
@@ -63,7 +87,6 @@ document.getElementById(iconID).className = "fa fa-bars";
 
 
 // ABRIR MENU RESPONSIVO
-
 const hamburguer2 = document.querySelector(".hamburguer2");
 const navMenu = document.querySelector(".nav-menu");
 const rolagem = document.querySelector(".overflow__hidden");
