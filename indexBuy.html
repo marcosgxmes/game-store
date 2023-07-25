@@ -134,20 +134,7 @@
             </Section>
         </div>
     </header>
-
-
-    <section id="big-menu">
-        <div>
-            <h4><a href="index.html"></a>HOME</a></h4>
-            <h4>JOGOS</h4>
-            <h4>CONSOLES</h4>
-            <h4>RETROS</h4>
-            <h4>ARCADES</h4>
-            <h4>ACESSÓRIOS</h4>
-        </div>
-    </section>
-
-
+    
     <form id="small-bar">
         <div id="search-main">
             <input type="text" name="search" id="search" placeholder="Pesquisar">
@@ -158,62 +145,40 @@
 
     <main>
         <section id="info-page">
-            <p>início / lançamentos / jogos / god of war ragnarök 2023</p>
+            <p id="info-atual"></p>
         </section>
 
         <section id="compra">
-            <div id="m-i"> <img src="imagens/gow-capa.jpg" alt="" id="main-img"> </div>
+            <div id="m-i"><img id="item-img" src="" alt="" ></div>
 
             <div class="acessorios">
-                <div class="imagem-p" onclick="trocarImg1()">
-                    <img id="img1" src="imagens/gow-img6.jpg" alt="">
+                <div class="imagem-p">
+                    <img src="" alt="">
                 </div>
 
-                <div id="gow2" class="imagem-p" onclick="trocarImg2()">
-                    <img id="img2" src="imagens/god-of-war-ragnarok-watermark-screenshot-03-en-08sep21.webp" alt="">
+                <div class="imagem-p">
+                    <img src="" alt="">
                 </div>
-
-                <div class="imagem-p" onclick="trocarImg3()">
-                    <img id="img3" src="imagens/god-of-war-ragnarok-watermark-screenshot-11-en-08sep21.webp" alt="">
-                </div>
-
-                <div class="imagem-p" onclick="trocarImg4()">
-                    <img id="img4" src="imagens/god-of-war-ragnarok-watermark-screenshot-08-en-08sep21.webp" alt="">
-                </div>
-
-                <div class="imagem-p" onclick="trocarImg5()">
-                    <img id="img5" src="imagens/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21.webp" alt="">
+                
+                <div class="imagem-p">
+                    <img src="" alt="">
                 </div>
             </div>
 
             <div id="price">
-                <h1> God of War Ragnarök - PS4/PS5</h1>
+                <h1 id="item-title"></h1>
 
                 <div class="stars">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i> 4.8 (528 avaliações)
+                    <i class="fa fa-star"></i>
+                    <p id="avaliation"></p>
                 </div>
-
-                <p id="frete"><i class="fa fa-truck" aria-hidden="true"></i>FRETE GRÁTIS</p>
                 
-                <p><strong>R$ </strong><strong class="preco">349,00</strong> <br> ou 12x sem juros.</p>
-
-                <h4 id="qt">Quantidade</h4>
-
-                <div id="quantidade" class="produto_qnt_princ" data-app="product.quantity">
-                    <input class="qnt_menor_maior" type="button" id="plus" value='-'
-                        onclick="process_geral(-1, this)" />
-
-                    <input id="totalItens" class="quanti qnt_menor_maior" name="quanti" class="text" size="1"
-                        type="text" value="1" maxlength="5" />
-
-                    <input class="qnt_menor_maior" type="button" id="minus" value='+'
-                        onclick="process_geral(1, this)" />
-                </div>
-
+                <p id="item-price"></p>
+                
                 <button id="addCarrinho">ADICIONAR AO CARRINHO</button>
             </div>
         </section>
@@ -221,20 +186,11 @@
         <H2>DESCRIÇÃO DO PRODUTO</H2>
 
         <section id="description">
-            <P>Em God of War: Ragnarok, acompanhe a jornada de Kratos e Atreus pelos Nove Reinos em busca de respostas,
-                enquanto as forças asgardianas preparam-se para a guerra. Atreus está à procura de conhecimento para
-                entender a profecia de Loki e o papel dele no Ragnarok. Agora cabe a Kratos enfrentar seus fantasmas do
-                passado para estar presente ao lado de Atreus neste momento de incertezas.
-
-                Explore lugares inimagináveis com paisagens exuberantes e crie alianças por todos os reinos para
-                enfrentar seus inimigos, entre deuses poderosos e criaturas épicas. As famosas Lâminas do Caos, o
-                Machado Leviatã e o Escudo Guardião estão de volta, junto com uma série de novas habilidades que irão
-                deixar Kratos e Atreus ainda mais implacáveis.</P>
+            <P id="item-description"></P>
 
             <div class="detalhes">
                 <h3>Detalhes:</h3>
-                <ul>
-                    <li>1 Jogo God of War Ragnarök.</li>
+                <ul id="detalhes">
                 </ul>
             </div>
 
@@ -271,30 +227,6 @@
             </div>
         </section>
     </aside>
-
-    <footer>
-        <div class="footer_options">
-            <p><i>Comprar</i></p>
-        </div>
-
-        <div class="footer_options">
-            <p><i>Sobre</i></p>
-        </div>
-
-        <div class="footer_options optl">
-            <p><i>Precisa de ajuda?</i></p>
-        </div>
-
-        <h4>Pagamentos Aceitos</h4>
-
-        <img src="imagens/pay1 (1).png" alt="">
-
-        <div id="copright">
-            <p>Hydra Game Store | BR Shop &copy; 2023 Todos os direitos </p>
-            <p>reservados.</p>
-        </div>
-    </footer>
-
-    <script src="js.script.js"></script>
+    <script src="js.tst.js"></script>
 </body>
 </html>
