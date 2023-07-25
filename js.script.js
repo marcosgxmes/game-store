@@ -68,12 +68,10 @@ const hamburguer2 = document.querySelector(".hamburguer2");
 const navMenu = document.querySelector(".nav-menu");
 const rolagem = document.querySelector(".overflow__hidden");
 
-
 hamburguer2.addEventListener("click", () => {
-
-hamburguer2.classList.toggle('active');
-navMenu.classList.toggle('active');
-rolagem.classList.toggle('active');
+  hamburguer2.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  rolagem.classList.toggle('active');
 });
  
 
@@ -100,8 +98,6 @@ let quantBtn = document.querySelector(".produto_qnt_princ");
 let itemQuant2 = document.getElementById('totalItens2');
 
 let preco = document.querySelector('.preco').textContent;
-
-
 let convert = Number.parseFloat(preco);
 
 let res = document.querySelector('.res');
@@ -112,29 +108,21 @@ let total = document.getElementById('subtotal');
 
 
 addCarrinho.addEventListener('click', () => {
-
-overlay.classList.toggle('active');
-rolagem.classList.toggle('active');
-
-itemQuant2.value = itemQuant.value;
-
-let xProdutos = (convert * itemQuant2.value);
-
-res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
+  overlay.classList.toggle('active');
+  rolagem.classList.toggle('active');
+  itemQuant2.value = itemQuant.value;
+  let xProdutos = (convert * itemQuant2.value);
+  res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
 });
 
 addItem.addEventListener('click', () => {
-
-let xProdutos = (convert * itemQuant2.value);
-
-res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
+  let xProdutos = (convert * itemQuant2.value);
+  res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
 });
   
 removeItem.addEventListener('click', () => {
-
-let xProdutos = (convert * itemQuant2.value);
-
-res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
+  let xProdutos = (convert * itemQuant2.value);
+  res.innerHTML = `<strong id="subtotal">Total</strong> R$ ${xProdutos},00`
 });
 
 
@@ -215,7 +203,7 @@ rolagem.classList.toggle('active');
 
 function process_geral(quant, element){
 var classValue = parseInt(element.parentElement.querySelector('.quanti').value);
-classValue+=quant;
+classValue += quant;
   
 if(classValue < 1){
     element.parentElement.querySelector("input.quanti").value = 1;
