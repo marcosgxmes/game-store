@@ -99,15 +99,12 @@ font-size: 20px;
 
 
 /* SESSÃO CARRINHO */
-
-
 #cart {
 display: flex;
 align-items: center;
 height: 70px;
 border-right: 1px solid rgba(0, 0, 0, 0.099);
 }
-
 
 
 #carrinho { 
@@ -119,6 +116,7 @@ top: 0;
 z-index: 7;
 position: fixed;
 }
+
 
 #carrinho.active { right: 0; }
 
@@ -135,6 +133,7 @@ position: relative;
 right: 0;
 transition: 0.3s;
 }
+
 
 #cart-menu {
 display: flex;
@@ -159,11 +158,13 @@ align-items: center;
 justify-content: space-between;
 }
 
+
 #carrinho h3 {   
 color: rgb(16, 35, 65);
 letter-spacing: 1px;
 text-align: left;
 }
+
 
 .hamburguer3 {
 display: block;
@@ -177,6 +178,7 @@ font-size: 20px;
 transform: translateY(8px) rotate(45deg);
 background-color: black;
 }
+
 
 .hamburguer3 .bar:nth-child(3) {
 transform: translateY(-8px) rotate(-45deg);
@@ -414,21 +416,21 @@ body.active { overflow: hidden; }
 
 .nav-link:hover { color: #0088d2; }
 
-.hamburguer2 {
+.hamburguer {
 display: block;
 cursor: pointer;
 font-size: 20px;
 z-index: 3;
 }
 
-.hamburguer2.active .bar:nth-child(2) { opacity: 0; }
+.hamburguer.active .bar:nth-child(2) { opacity: 0; }
 
-.hamburguer2.active .bar:nth-child(1) {
+.hamburguer.active .bar:nth-child(1) {
 transform: translateY(8px) rotate(45deg);
 background-color: white;
 }
 
-.hamburguer2.active .bar:nth-child(3) {
+.hamburguer.active .bar:nth-child(3) {
 transform: translateY(-8px) rotate(-45deg);
 background-color: white;
 }

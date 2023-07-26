@@ -1,16 +1,4 @@
 
-// ABRIR MENU RESPONSIVO
-const hamburguer2 = document.querySelector(".hamburguer2");
-const navMenu = document.querySelector(".nav-menu");
-const rolagem = document.querySelector(".overflow__hidden");
-
-hamburguer2.addEventListener("click", () => {
-  hamburguer2.classList.toggle('active');
-  navMenu.classList.toggle('active');
-  rolagem.classList.toggle('active');
-});
- 
-
 
 // ABRIR POP UP CARRINHO
 const hamburguer3 = document.querySelector(".hamburguer3");

@@ -19,6 +19,7 @@
             <div class="hydra-logo">
                 <a href="index.html"><img src="imagens/pngwing.com.png" alt="" width="45px" height="45px">
             </div>
+
             <div class="hydra-name">
                 <h3>Hydra<br> Game Store</h3>
                 </a>
@@ -37,7 +38,9 @@
                 <a href="index8.html"><button type="submit"><i class="fa fa-user"></i></button></a>
             </div>
 
-            <div id="cart"><i class="fa fa-shopping-cart"></i></div>
+            <div id="cart">
+                <i class="fa fa-shopping-cart"></i>
+            </div>
 
             <nav class="navbar">
                 <ul class="nav-menu">
@@ -50,14 +53,13 @@
                     <li class="nav-item"><a href="" class="nav-link">ARCADES</a></li>
                 </ul>
 
-                <div class="hamburguer2">
+                <div class="hamburguer">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-
-                
             </nav>
+
             <section id="carrinho">
                 <div id="overlay"></div>
 
@@ -81,11 +83,11 @@
                     <div id="carrinho-conteudo">
 
                         <div class="carrinho-item 1">
-                            <img src="imagens/gow-capa.jpg">
+                            <img id="cart-img" src="???">
                         </div>
 
                         <div class="carrinho-item 2">
-                            <p>God of War Ragnarök PS4/PS5</p>
+                            <p id="cart-price">???
 
                             <p class="res">
                                 <strong id="subtotal"></strong>
@@ -110,6 +112,7 @@
                             </div>
                         </div>
                     </div>
+
                     <button id="btn-cart" type="submit" onclick="AddToCart()">Continuar a comprar</button>
                 </div>
             </section>
@@ -141,15 +144,16 @@
             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
     </form>
-
-
+    
     <main>
         <section id="info-page">
             <p id="info-atual"></p>
         </section>
 
         <section id="compra">
-            <div id="m-i"><img id="item-img" src="" alt="" ></div>
+            <div id="m-i">
+                <img id="item-img" src="" alt="" >
+            </div>
 
             <div class="acessorios">
                 <div class="imagem-p">
@@ -160,6 +164,14 @@
                     <img src="" alt="">
                 </div>
                 
+                <div class="imagem-p">
+                    <img src="" alt="">
+                </div>
+
+                <div class="imagem-p">
+                    <img src="" alt="">
+                </div>
+
                 <div class="imagem-p">
                     <img src="" alt="">
                 </div>
@@ -178,26 +190,38 @@
                 </div>
                 
                 <p id="item-price"></p>
+
+                <h4 id="qt">Quantidade</h4>
+                <div id="quantidade" class="produto_qnt_princ" data-app="product.quantity">
+
+                    <input class="qnt_menor_maior" type="button" id="plus" value='-'
+                        onclick="process_geral(-1, this)" />
+
+                    <input id="totalItens" class="quanti qnt_menor_maior" name="quanti" class="text" size="1"
+                        type="text" value="1" maxlength="5" />
+
+                    <input class="qnt_menor_maior" type="button" id="minus" value='+'
+                        onclick="process_geral(1, this)" />
+                </div>
                 
                 <button id="addCarrinho">ADICIONAR AO CARRINHO</button>
             </div>
         </section>
 
         <H2>DESCRIÇÃO DO PRODUTO</H2>
-
         <section id="description">
             <P id="item-description"></P>
 
             <div class="detalhes">
                 <h3>Detalhes:</h3>
                 <ul id="detalhes">
+                    
                 </ul>
             </div>
 
         </section>
     </main>
-
-
+    
     <aside>
         <h2>Veja também</h2>
 
@@ -227,6 +251,9 @@
             </div>
         </section>
     </aside>
-    <script src="js.tst.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/funcoes.js"></script>
+    <script src="js/jogos.js"></script>
 </body>
 </html>

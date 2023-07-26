@@ -17,8 +17,7 @@ setInterval(carrosel, 3000);
 
 
 
-
-//TROCAR ICONE DO MENU
+//MENU HAMBURGUER
 function change (iconID){
 
     if(document.getElementById(iconID).className=="fa fa-bars") {
@@ -32,3 +31,8 @@ function change (iconID){
       itens.style.display = 'block'
     }
 };
+
+
+
+
+
