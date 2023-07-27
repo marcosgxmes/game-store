@@ -566,7 +566,7 @@ function playStation5(){
         //DESCRIÇÃO
         "A evolução em consoles de videogame chegou e você precisa viver essa experiência! Com SSD de alta velocidade, que permite um carregamento ultrarrápido, áudio 3D e controle Wireless DualSense com feedback tátil e gatilhos adaptáveis, o PlayStation 5 proporcionará uma incrível imersão em seus games favoritos.",
         //DETALHES
-        "2 Controles DualSense."
+        "1 Console Sony PlayStation 5."
         );
     
     
@@ -591,9 +591,85 @@ itemTitle.innerHTML = `${ps5.nome}`;
 itemstars.innerHTML = `${ps5.avalicao}`;
 itemPrice.innerHTML = `R$ ${ps5.preco},00`;
 itemDescription.innerHTML = `${ps5.descricao}`;
-itemDestail.innerHTML = `<li>${ps5.detalhe}</li>`;
+itemDestail.innerHTML = `
+<li>${ps5.detalhe}</li>
+<li>2 Controles DualSense.</li>
+<li>1 Cabo USB-C.</li>
+<li>1 Cabo de alimentação.</li>
+<li>1 Cabo HDMI.</li>`;
 imgCart.src = ps5.capa;
 priceCart.innerHTML = `R$ ${ps5.preco},00`;
+
+
+//JOGAR IMAGENS NO SRC DA DIV
+let aux = 0;
+
+imgProduto.forEach(imagem => {
+imagem.src = fotos[aux];
+aux++
+});
+
+//TROCAR IMAGENS
+const imgPrincipal = document.getElementById('item-img');
+
+imgProduto.forEach(img => {
+img.addEventListener('click', () => {
+  imgPrincipal.src = img.src
+})
+})
+
+}; 
+
+
+//CONSOLE PS4
+function playStation4(){
+    
+    const ps4 = new Jogo(
+        //INFO DA PÁGINA
+        'INÍCIO / LANÇAMENTOS / CONSOLES / SONY CONSOLE PLAYSTATION 4 PRO 2016',
+        //CAPA
+        'https://d2r9epyceweg5n.cloudfront.net/stores/002/027/409/products/4a3af706fab2cd009f85f29d8d95b7b31-10a8b99adaa3fc704e16717097037043-640-0.webp',
+        //NOME
+        "Console Sony PlayStation 4 PRO",
+        //AVALIAÇÃO
+        '4.7 (1.376 avaliações)',
+        //PREÇO
+        3.249,
+        //DESCRIÇÃO
+        "PlayStation 4 Jogos incríveis e entretenimiento sem fim. Os jogos mais incríveis estão no PS4, com 1TB de armazenamento. O console PS4 oferece excelente poder de jogabilidade, entretenimento incrível tecnologia HDR vibrante. Inclui: Console PlayStation 4 Controle sem fio DualShock 4 Disco Blu-ray de God Of War Ragnarok PS4 Headset mono Cabo HDMI Cabo de alimentaçao CA Cabo USB Materiais impressosControle sem fio DualShock 4 Disco Blu-ray de God Of War Ragnarok PS4 Headset mono Cabo HDMI Cabo de alimentaçao CA Cabo USB Materiais impressos.",
+        //DETALHES
+        "1 Console Sony PlayStation 4 PRO."
+        );
+    
+    
+    const fotos = [
+        "https://m.media-amazon.com/images/I/41sN+-1hRsL._AC_SX679_.jpg",
+
+        "https://m.media-amazon.com/images/I/61+Ufg4Je5L._AC_SX679_.jpg",
+
+        "https://m.media-amazon.com/images/I/61GgeLOJjuL._AC_SX679_.jpg",
+        
+        "https://m.media-amazon.com/images/I/51Ieq0twp+L._AC_SX679_.jpg",
+        
+        "https://m.media-amazon.com/images/I/51S9Kk+2M2L._AC_SX679_.jpg"
+    ]
+
+
+infoPage.innerHTML = `${ps4.info}`;
+itemImg.src = ps4.capa;
+itemTitle.innerHTML = `${ps4.nome}`;
+itemstars.innerHTML = `${ps4.avalicao}`;
+itemPrice.innerHTML = `R$ ${ps4.preco},00`;
+itemDescription.innerHTML = `${ps4.descricao}`;
+itemDestail.innerHTML = `
+<li>${ps4.detalhe}</li>
+<li>2 Controles DualShock 4.</li>
+<li>1 Cabo USB-C.</li>
+<li>1 Cabo de alimentação.</li>
+<li>1 Cabo HDMI.</li>
+<li>1 Fone Sony.</li>`;
+imgCart.src = ps4.capa;
+priceCart.innerHTML = `R$ ${ps4.preco},00`;
 
 
 //JOGAR IMAGENS NO SRC DA DIV
@@ -681,7 +757,6 @@ img.addEventListener('click', () => {
 };  
 
 
-
 //CONSOLE XBOX SS
 function xboxSS(){
     
@@ -725,6 +800,78 @@ itemDescription.innerHTML = `${xboxss.descricao}`;
 itemDestail.innerHTML = `<li>${xboxss.detalhe}</li>`;
 imgCart.src = xboxss.capa;
 priceCart.innerHTML = `R$ ${xboxss.preco},00`;
+
+
+//JOGAR IMAGENS NO SRC DA DIV
+let aux = 0;
+
+imgProduto.forEach(imagem => {
+imagem.src = fotos[aux];
+aux++
+});
+
+//TROCAR IMAGENS
+const imgPrincipal = document.getElementById('item-img');
+
+imgProduto.forEach(img => {
+img.addEventListener('click', () => {
+  imgPrincipal.src = img.src
+})
+})
+
+}; 
+
+
+//PLACA DE VIDEO NVIDIA
+function nvidiaRTX(){
+    
+    const nvidia = new Jogo(
+        //INFO DA PÁGINA
+        'INÍCIO / LANÇAMENTOS / ACESSÓRIOS / PLACA DE VIDEO NVIDIA GEFORCE RTX 4070 TI',
+        //CAPA
+        'https://m.media-amazon.com/images/I/71BGmiM5y3L._AC_SX425_.jpg',
+        //NOME
+        "Placa de Vídeo Nvidia Geforce RTX 4070 TI",
+        //AVALIAÇÃO
+        '4.6 (11 avaliações)',
+        //PREÇO
+        6.106,
+        //DESCRIÇÃO
+        "MEMORIA GPU AD104-400 Process 4 CUDA Cores 7680 Idle Board Power N/A Max Board Power 285W Power Connectors PCIe Gen5 16-pin connector Idle GPU Temperature N/A Max GPU Temperature N/A Size 12GB Type GDDR6X Memory Width 192-bit Memory Bandwidth 504 Interface PCI-E 4.0 Dimensions(with Bracket) 336*148*62 Dimensions(without Bracket) 320*133*62 Boost Clock 2670 Over Clock O Memory Clock (effective) 21 Over Clock X 1st output DisplayPort 1.4a 2nd output DisplayPort 1.4a 3rd output DisplayPort 1.4a 4th output HDMI 2.1a 5th output Edge N/A Software SLI / Crossfire × FAN 2*92mm, 1*102mm Slot 3 FAN Control O Idle Noise Level (decibel) N/A MAX Noise Level (decibel) N/A Heatpipes / VC 8*6mm RGB Front and Top Other special features 1-Click Sync Pro DirectX DirectX 12 Windows support Windows 10/11 64-bit Minimum Power Supply 700W.",
+        //DETALHES
+        "Altura do produto: 6,2 cm."
+        );
+    
+    
+    const fotos = [
+        "https://m.media-amazon.com/images/I/71M5Zsmcj5L._AC_SY355_.jpg",
+
+        "https://m.media-amazon.com/images/I/71p7zoDISNL._AC_SY355_.jpg",
+        
+        "https://m.media-amazon.com/images/I/712OzK8fUKL._AC_SY355_.jpg",
+
+        "https://m.media-amazon.com/images/I/71lx7Hr0VhL._AC_SY355_.jpg",
+        
+        "https://m.media-amazon.com/images/I/71HkkwOXtkL._AC_SY355_.jpg"
+    ]
+
+
+infoPage.innerHTML = `${nvidia.info}`;
+itemImg.src = nvidia.capa;
+itemTitle.innerHTML = `${nvidia.nome}`;
+itemstars.innerHTML = `${nvidia.avalicao}`;
+itemPrice.innerHTML = `R$ ${nvidia.preco},00`;
+itemDescription.innerHTML = `${nvidia.descricao}`;
+itemDestail.innerHTML = `
+<li>${nvidia.detalhe}</li>
+<li>Largura do produto: 14,8 cm.</li>
+<li>Peso do produto: 1,8 kg.</li>
+<li>Chipset: NVIDIA.</li>
+<li>Memória de vídeo: 12 GB.</li>
+<li>Vel. relógio de memória: 1313 MHz.</li>
+`;
+imgCart.src = nvidia.capa;
+priceCart.innerHTML = `R$ ${nvidia.preco},00`;
 
 
 //JOGAR IMAGENS NO SRC DA DIV

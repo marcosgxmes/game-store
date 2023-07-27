@@ -8,22 +8,103 @@ section { margin: 50px 0; }
 h2 { margin-bottom: 15px;
 color: #333; }
 
+body { padding-top: 70px;}
 
 /* HEADER E MENU */
 
+
 header {
-height: 230px;
-background: black url('../imagens/depositphotos_124824752-stock-illustration-abstract-red-frame-with-steel.jpg') no-repeat;
-background-position: center;
-background-size: cover;
+position: fixed;
+top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 70px;
+padding: 0 7px;
+z-index: 4;
+background-color: rgb(35, 37, 43);
+color: #fff
 }
 
-header h1 {
-color: rgb(255, 255, 255);
-font-style: oblique;
-margin-top: 40px !important;
-margin-bottom: 30px !important;
-text-shadow: 2px 2px 6px rgb(252, 4, 4);
+header.active {
+pointer-events: none;
+user-select: none;
+}
+
+
+#acesso-main {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+    
+#acesso-main.active {
+pointer-events: none;
+user-select: none;
+}
+
+    
+#acesso-main a {
+color: black;
+text-decoration: none;
+}
+
+
+.hydra-logo {
+display: flex;
+align-items: center;
+height: 100%;
+padding-right: 5px;
+border-right: 1px solid black ;
+margin-right: 5px;
+}
+
+    
+.hydra-name {
+display: flex;
+align-items: center;
+text-transform: uppercase;
+height: 100%;
+padding-left: 5px;
+}
+
+
+.hydra-name h3 {
+font-family: 'gow';
+font-weight: normal;
+color: white;
+text-align: left;
+
+}
+    
+    
+.icones {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+    
+.icones button {
+border: none;
+background: none;
+}
+    
+    
+.icones div i {
+margin: 0 9px;
+font-size: 20px;
+color: white;
+}
+
+#cart {
+display: flex;
+align-items: center;
+height: 70px;
+color: black;
+border-right: 1px solid black;
 }
 
 
@@ -80,81 +161,109 @@ font-size: 17px;
 color: rgb(162, 163, 163);
 }
 
-/* CARROSEL*/
 
-#carrosel {
-width: 100%;
-background-color: black;
-overflow: hidden;
+/* menu hamburguer*/
+
+.nav-menu.active { right: 0; }
+
+.nav-item { margin: 16px 0; }
+
+.nav-link { transition: 0.5s ease;}
+
+.nav-link:hover { color: rgb(254, 4, 4) }
+
+.hamburguer {
+display: block;
+cursor: pointer;
+font-size: 20px;
+z-index: 3;
 }
 
-#slider {
-width: 100%;
-display: flex;
-transition: transform 0.3s ease-in-out ;
-transform: translateX(0);
+.hamburguer.active .bar:nth-child(2) { opacity: 0; }
+
+.hamburguer.active .bar:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+background-color: white;
 }
 
-#slider img {
-object-fit: cover;
-width: 100%;
+.hamburguer.active .bar:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+background-color: white;
+}
+
+.bar {
+display: block;
+width: 20px;
+height: 3px;
+border-radius: 2px;
+margin: 5px auto;
+background-color: white;
+transition: all 0.3s ease-in-out;
 }
 
 
 /* MENU */
-
-nav { 
-margin-bottom: 50px;
-margin-top: 7px;
-}
-
-.toggle { display: block !important;  }
-
-.toggle i { font-size: 28px;  }
-
-
-#burguer {
-width: 100%;
-display: block;
-background-color: white;
-color: black;
-padding: 8px;
-cursor: pointer;
-margin: 0 auto;
+.navbar {  
+display: flex;
+font-size: 20px;
+align-items: center;
+justify-content: space-between;
+padding-left: 10px;
+padding-right: 5px;
+height: 100%;
 }
 
 
-#burguer:hover {
-background-color:white;
-color: #000;
-}
-
-
-#itens { display: none; }
-
-
-menu a {
-width: 100%;
-margin: 0 auto;
-color: white;
-background-color:#24252a;
-text-decoration: none;
+.nav-menu {
+display: flex;
+align-items: center;
+justify-content: top;
+gap: 20px;
+position: fixed;
+right: -100%;
+top: 0px;
+padding-top: 90px;
+background-color: rgb(0, 0, 0);
 text-align: center;
-border-top: 1px solid rgb(120, 120, 120);
-padding: 10px;
-border-radius: 0px;
+flex-direction: column;
+width: 60%;
+height: 100vh;
+transition: 0.3s;
+z-index: 2;
+}
+
+li { list-style: none; }
+
+a {
+color: white;
+text-decoration: none;
 }
 
 
-menu a:hover {
-color: black;
-background-color:rgb(255, 255, 255);
-}
+/* CARROSEL*/
+
+#carrosel {
+    max-width: 800px;
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.557);
+    }
+    
+    #slider {
+    width: 100%;
+    display: flex;
+    transition: transform 0.3s ease-in-out ;
+    transform: translateX(0);
+    }
+    
+    #slider img {
+    object-fit: cover;
+    width: 100%;
+    }
 
 
 /* SESSÃO JOGOS */
-
-
 #jogos {
 display: flex;
 margin: 50px auto 30px auto;

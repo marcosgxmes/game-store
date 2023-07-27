@@ -1,22 +1,3 @@
-// CARROSEL
-const imgs = document.getElementById('slider');
-const img = document.querySelectorAll('#slider img');
-const imgWidth = document.querySelector('#slider img').width;
-
-let idy = 0;
-
-function carrosel() {
-    idy++;
-    if(idy > img.length -1) {
-        idy = 0;
-    }
-    imgs.style.transform = `translateX(${-idy * imgWidth}px)`;
-};
-
-setInterval(carrosel, 3000);
-
-
-
 //MENU HAMBURGUER
 function change (iconID){
 
@@ -33,6 +14,21 @@ function change (iconID){
 };
 
 
+// CARROSEL
+const imgs = document.getElementById('slider');
+const img = document.querySelectorAll('#slider img');
+const imgWidth = document.querySelector('#slider img').width;
 
+let idy = 0;
+
+function carrosel() {
+    idy++;
+    if(idy > img.length -1) {
+        idy = 0;
+    }
+    imgs.style.transform = `translateX(${-idy * imgWidth}px)`;
+};
+
+setInterval(carrosel, 3000);
 
 
