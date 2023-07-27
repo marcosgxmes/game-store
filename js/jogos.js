@@ -89,6 +89,8 @@ function godOfWar() {
             imgPrincipal.src = img.src
         })
      }); 
+
+     return godofwar
 }; 
 
     
@@ -155,7 +157,7 @@ imgProduto.forEach(img => {
     })
 })
 
-}; spiderMan2()
+}; 
 
 
 //JOGO ELDEN RING

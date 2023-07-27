@@ -1,5 +1,4 @@
 
-
 // ABRIR POP UP CARRINHO
 const hamburguer3 = document.querySelector(".hamburguer3");
 const cartMenu = document.getElementById('cart');
@@ -19,7 +18,7 @@ const addItem = document.getElementById('minus');
 let quantBtn = document.querySelector(".produto_qnt_princ");
 let itemQuant2 = document.getElementById('totalItens2');
 
-let preco = document.querySelector('.preco').textContent;
+let preco = document.querySelector('.preco');
 let convert = Number.parseFloat(preco);
 
 let res = document.querySelector('.res');
@@ -131,7 +130,6 @@ if(classValue < 1){
     element.parentElement.querySelector("input.quanti").value = classValue;    
 }
 };
-
 
 
 

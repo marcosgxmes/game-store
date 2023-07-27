@@ -10,6 +10,8 @@ color: #333; }
 
 body { padding-top: 70px;}
 
+.overflow__hidden.active { overflow: hidden; }
+
 /* HEADER E MENU */
 
 
@@ -214,6 +216,23 @@ height: 100%;
 }
 
 
+.blurred{
+content: "";
+position: fixed;
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.0));
+backdrop-filter: blur(20px);
+left: -100%;
+top: 0px;
+width: 40%;
+height: 100vh;
+transition: 0.1s;
+z-index: 2;
+}
+
+.blurred.active { left: 0;}
+
+
+
 .nav-menu {
 display: flex;
 align-items: center;
@@ -228,7 +247,7 @@ text-align: center;
 flex-direction: column;
 width: 60%;
 height: 100vh;
-transition: 0.3s;
+transition: 0.1s;
 z-index: 2;
 }
 
@@ -241,26 +260,25 @@ text-decoration: none;
 
 
 /* CARROSEL*/
-
 #carrosel {
-    max-width: 800px;
-    background-color: black;
-    overflow: hidden;
-    margin-bottom: 30px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.557);
-    }
-    
-    #slider {
-    width: 100%;
-    display: flex;
-    transition: transform 0.3s ease-in-out ;
-    transform: translateX(0);
-    }
-    
-    #slider img {
-    object-fit: cover;
-    width: 100%;
-    }
+max-width: 800px;
+background-color: black;
+overflow: hidden;
+margin-bottom: 30px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.557);
+}
+
+#slider {
+width: 100%;
+display: flex;
+transition: transform 0.3s ease-in-out ;
+transform: translateX(0);
+}
+
+#slider img {
+object-fit: cover;
+width: 100%;
+}
 
 
 /* SESSÃO JOGOS */

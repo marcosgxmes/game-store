@@ -390,7 +390,7 @@ text-align: center;
 flex-direction: column;
 width: 60%;
 height: 100vh;
-transition: 0.3s;
+transition: 0.1s;
 z-index: 2;
 }
 
@@ -444,6 +444,22 @@ margin: 5px auto;
 background-color: black;
 transition: all 0.3s ease-in-out;
 }
+
+
+.blurred{
+content: "";
+position: fixed;
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.0));
+backdrop-filter: blur(20px);
+left: -100%;
+top: 0px;
+width: 40%;
+height: 100vh;
+transition: 0.1s;
+z-index: 2;
+}
+
+.blurred.active { left: 0;}
 
 
 /* BARRA DE PESQUISA */

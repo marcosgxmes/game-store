@@ -1,23 +1,8 @@
-//MENU HAMBURGUER
-function change (iconID){
-
-    if(document.getElementById(iconID).className=="fa fa-bars") {
-    document.getElementById(iconID).className = "fa fa-close";
-    } else {
-    document.getElementById(iconID).className = "fa fa-bars";
-    
-    } if (itens.style.display == 'block') {
-      itens.style.display = 'none'
-    } else {
-      itens.style.display = 'block'
-    }
-};
-
-
 // CARROSEL
-const imgs = document.getElementById('slider');
+(function() {
+  const imgs = document.getElementById('slider');
 const img = document.querySelectorAll('#slider img');
-const imgWidth = document.querySelector('#slider img').width;
+const imgWidth = document.querySelector('#slider img');
 
 let idy = 0;
 
@@ -26,9 +11,36 @@ function carrosel() {
     if(idy > img.length -1) {
         idy = 0;
     }
-    imgs.style.transform = `translateX(${-idy * imgWidth}px)`;
+    imgs.style.transform = `translateX(${-idy * imgWidth.width}px)`;
 };
 
 setInterval(carrosel, 3000);
+})();
+
+
+// MENU HAMBURGER
+(function () {
+const hamburguer = document.querySelector(".hamburguer");
+const navMenu = document.querySelector(".nav-menu");
+const rolagem = document.querySelector(".overflow__hidden");
+const blur = document.querySelector('.blurred')
+  
+  hamburguer.addEventListener("click", () => {
+    hamburguer.classList.toggle('active');
+    blur.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    rolagem.classList.toggle('active');
+  });
+})();
+
+
+
+const jogoGow = document.getElementById('jogo-gow')
+
+jogoGow.addEventListener('click', () => {
+  console.log('narutoo')
+})
+
+
 
 
