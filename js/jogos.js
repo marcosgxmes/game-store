@@ -26,7 +26,8 @@ function Jogo (info, capa, nome, avalicao, preco, descricao, detalhe){
     this.preco = preco
     this.descricao = descricao
     this.detalhe = detalhe
-    };
+};
+
 
 
 //JOGO GOD OF WAR
@@ -90,7 +91,6 @@ function godOfWar() {
         })
      }); 
 
-     return godofwar
 }; 
 
     

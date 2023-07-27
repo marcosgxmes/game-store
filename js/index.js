@@ -1,8 +1,8 @@
-// CARROSEL
+ //CARROSEL
 (function() {
   const imgs = document.getElementById('slider');
-const img = document.querySelectorAll('#slider img');
-const imgWidth = document.querySelector('#slider img');
+  const img = document.querySelectorAll('#slider img');
+  const imgWidth = document.querySelector('#slider img');
 
 let idy = 0;
 
@@ -15,7 +15,7 @@ function carrosel() {
 };
 
 setInterval(carrosel, 3000);
-})();
+})(); 
 
 
 // MENU HAMBURGER
@@ -35,11 +35,13 @@ const blur = document.querySelector('.blurred')
 
 
 
-const jogoGow = document.getElementById('jogo-gow')
 
-jogoGow.addEventListener('click', () => {
-  console.log('narutoo')
-})
+
+
+
+
+
+
 
 
 
