@@ -6,361 +6,12 @@ const itemstars = document.getElementById('avaliation');
 const itemPrice = document.getElementById('item-price');
 const itemDescription = document.getElementById('item-description');
 const itemDestail = document.getElementById('detalhes');
-
-// IMG DENTRO DAS DIV
 const imgProduto = [...document.querySelectorAll('.imagem-p img')];
+
 
 //ITENS NO CARRINHO
 const imgCart = document.getElementById('cart-img');
 const priceCart = document.getElementById('cart-price');
-
-/*
-
-//CONSOLE PS5
-function playStation5(){
-    
-    const ps5 = new Jogo(
-        //INFO DA PÁGINA
-        'INÍCIO / LANÇAMENTOS / CONSOLES / SONY CONSOLE DIGITAL PLAYSTATION 5 2020 BRANCO',
-        //CAPA
-        'https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5_1600357937_g.jpg',
-        //NOME
-        "Console Sony PlayStation 5",
-        //AVALIAÇÃO
-        '4.8 (703 avaliações)',
-        //PREÇO
-        4.199,
-        //DESCRIÇÃO
-        "A evolução em consoles de videogame chegou e você precisa viver essa experiência! Com SSD de alta velocidade, que permite um carregamento ultrarrápido, áudio 3D e controle Wireless DualSense com feedback tátil e gatilhos adaptáveis, o PlayStation 5 proporcionará uma incrível imersão em seus games favoritos.",
-        //DETALHES
-        "1 Console Sony PlayStation 5."
-        );
-    
-    
-    const fotos = [
-        "https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5-midia-fisica_1598984720_g.jpg",
-
-        "https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5_1603798015_g.jpg",
-
-        
-    
-        "https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5-midia-fisica_1598984721_g.jpg",
-
-        "https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5-midia-fisica_1598984719_g.jpg",
-        
-        "https://images.kabum.com.br/produtos/fotos/magalu/459232/PlayStation-5-2022-825GB-1-Controle-Branco-Sony_1682705727_gg.jpg"
-    ]
-
-
-infoPage.innerHTML = `${ps5.info}`;
-itemImg.src = ps5.capa;
-itemTitle.innerHTML = `${ps5.nome}`;
-itemstars.innerHTML = `${ps5.avalicao}`;
-itemPrice.innerHTML = `R$ ${ps5.preco},00`;
-itemDescription.innerHTML = `${ps5.descricao}`;
-itemDestail.innerHTML = `
-<li>${ps5.detalhe}</li>
-<li>2 Controles DualSense.</li>
-<li>1 Cabo USB-C.</li>
-<li>1 Cabo de alimentação.</li>
-<li>1 Cabo HDMI.</li>`;
-imgCart.src = ps5.capa;
-priceCart.innerHTML = `R$ ${ps5.preco},00`;
-
-
-//JOGAR IMAGENS NO SRC DA DIV
-let aux = 0;
-
-imgProduto.forEach(imagem => {
-imagem.src = fotos[aux];
-aux++
-});
-
-//TROCAR IMAGENS
-const imgPrincipal = document.getElementById('item-img');
-
-imgProduto.forEach(img => {
-img.addEventListener('click', () => {
-  imgPrincipal.src = img.src
-})
-})
-
-}; 
-
-
-//CONSOLE PS4
-function playStation4(){
-    
-    const ps4 = new Jogo(
-        //INFO DA PÁGINA
-        'INÍCIO / LANÇAMENTOS / CONSOLES / SONY CONSOLE PLAYSTATION 4 PRO 2016',
-        //CAPA
-        'https://d2r9epyceweg5n.cloudfront.net/stores/002/027/409/products/4a3af706fab2cd009f85f29d8d95b7b31-10a8b99adaa3fc704e16717097037043-640-0.webp',
-        //NOME
-        "Console Sony PlayStation 4 PRO",
-        //AVALIAÇÃO
-        '4.7 (1.376 avaliações)',
-        //PREÇO
-        3.249,
-        //DESCRIÇÃO
-        "PlayStation 4 Jogos incríveis e entretenimiento sem fim. Os jogos mais incríveis estão no PS4, com 1TB de armazenamento. O console PS4 oferece excelente poder de jogabilidade, entretenimento incrível tecnologia HDR vibrante. Inclui: Console PlayStation 4 Controle sem fio DualShock 4 Disco Blu-ray de God Of War Ragnarok PS4 Headset mono Cabo HDMI Cabo de alimentaçao CA Cabo USB Materiais impressosControle sem fio DualShock 4 Disco Blu-ray de God Of War Ragnarok PS4 Headset mono Cabo HDMI Cabo de alimentaçao CA Cabo USB Materiais impressos.",
-        //DETALHES
-        "1 Console Sony PlayStation 4 PRO."
-        );
-    
-    
-    const fotos = [
-        "https://m.media-amazon.com/images/I/41sN+-1hRsL._AC_SX679_.jpg",
-
-        "https://m.media-amazon.com/images/I/61+Ufg4Je5L._AC_SX679_.jpg",
-
-        "https://m.media-amazon.com/images/I/61GgeLOJjuL._AC_SX679_.jpg",
-        
-        "https://m.media-amazon.com/images/I/51Ieq0twp+L._AC_SX679_.jpg",
-        
-        "https://m.media-amazon.com/images/I/51S9Kk+2M2L._AC_SX679_.jpg"
-    ]
-
-
-infoPage.innerHTML = `${ps4.info}`;
-itemImg.src = ps4.capa;
-itemTitle.innerHTML = `${ps4.nome}`;
-itemstars.innerHTML = `${ps4.avalicao}`;
-itemPrice.innerHTML = `R$ ${ps4.preco},00`;
-itemDescription.innerHTML = `${ps4.descricao}`;
-itemDestail.innerHTML = `
-<li>${ps4.detalhe}</li>
-<li>2 Controles DualShock 4.</li>
-<li>1 Cabo USB-C.</li>
-<li>1 Cabo de alimentação.</li>
-<li>1 Cabo HDMI.</li>
-<li>1 Fone Sony.</li>`;
-imgCart.src = ps4.capa;
-priceCart.innerHTML = `R$ ${ps4.preco},00`;
-
-
-//JOGAR IMAGENS NO SRC DA DIV
-let aux = 0;
-
-imgProduto.forEach(imagem => {
-imagem.src = fotos[aux];
-aux++
-});
-
-//TROCAR IMAGENS
-const imgPrincipal = document.getElementById('item-img');
-
-imgProduto.forEach(img => {
-img.addEventListener('click', () => {
-  imgPrincipal.src = img.src
-})
-})
-
-}; 
-
-
-//CONSOLE XBOX SX
-function xboxSX(){
-    
-    const xboxsx = new Jogo(
-        //INFO DA PÁGINA
-        'INÍCIO / LANÇAMENTOS / CONSOLES / CONSOLE MICROSOFT XBOX SERIES X 2020',
-        //CAPA
-        'https://m.media-amazon.com/images/I/61eYoSqkHnL._AC_SX679_.jpg',
-        //NOME
-        "Console Microsoft Xbox Series X",
-        //AVALIAÇÃO
-        '4.8 (3.361 avaliações)',
-        //PREÇO
-        4.150,
-        //DESCRIÇÃO
-        "Apresentamos o xbox series x, nosso console mais rápido e poderoso de todos os tempos; jogue milhares de títulos de quatro gerações de consoles- todos os jogos têm melhor aparência e são melhor executados no xbox series x; no coração do series x está a xbox velocity architecture, que combina um ssd personalizado e software integrado para diminuir significativamente os tempos de carregamento dentro e fora do jogo; troque simultaneamente entre vários jogos em um instante com o quick resume; explore novos mundos e desfrute da ação como nunca antes com 12 teraflops incomparáveis de poder de processamento gráfico; desfrute de jogos 4k a até 120 quadros por segundo, som 3d avançado especial e muito mais; comece com uma biblioteca instantânea de mais de 100 jogos de alta qualidade, incluindo todos os novos títulos do xbox game studios no mesmo dia do seu lançamento como o halo infinite, com o xbox game pass ultimate (assinatura vendida separadamente) ***informações importantes:4k a 120 fps: requer conteúdo e exibição compatíveis; use-o no xbox series x conforme o conteúdo for disponibilizado.xbox game pass: o catálogo de jogos varia ao longo do tempo.",
-        //DETALHES
-        "1 Dispositivo VR."
-        );
-    
-    
-    const fotos = [
-        "https://m.media-amazon.com/images/I/51A41nLe5IL._AC_SX522_.jpg",
-
-        "https://m.media-amazon.com/images/I/510uaz4Tu8L._AC_SX522_.jpg",
-        
-        "https://m.media-amazon.com/images/I/51HSFVoY4eL._AC_SX522_.jpg",
-
-        "https://m.media-amazon.com/images/I/518lHGigunL._AC_SX522_.jpg",
-        
-        "https://m.media-amazon.com/images/I/71HyGW8sJXL._AC_SX522_.jpg"
-    ]
-
-
-infoPage.innerHTML = `${xboxsx.info}`;
-itemImg.src = xboxsx.capa;
-itemTitle.innerHTML = `${xboxsx.nome}`;
-itemstars.innerHTML = `${xboxsx.avalicao}`;
-itemPrice.innerHTML = `R$ ${xboxsx.preco},00`;
-itemDescription.innerHTML = `${xboxsx.descricao}`;
-itemDestail.innerHTML = `<li>${xboxsx.detalhe}</li>`;
-imgCart.src = xboxsx.capa;
-priceCart.innerHTML = `R$ ${xboxsx.preco},00`;
-
-
-//JOGAR IMAGENS NO SRC DA DIV
-let aux = 0;
-
-imgProduto.forEach(imagem => {
-imagem.src = fotos[aux];
-aux++
-});
-
-//TROCAR IMAGENS
-const imgPrincipal = document.getElementById('item-img');
-
-imgProduto.forEach(img => {
-img.addEventListener('click', () => {
-  imgPrincipal.src = img.src
-})
-})
-
-};  
-
-
-//CONSOLE XBOX SS
-function xboxSS(){
-    
-    const xboxss = new Jogo(
-        //INFO DA PÁGINA
-        'INÍCIO / LANÇAMENTOS / CONSOLES / CONSOLE MICROSOFT XBOX SERIES S 2020',
-        //CAPA
-        'https://m.media-amazon.com/images/I/81Z1xBs6GoL._AC_SX679_.jpg',
-        //NOME
-        "Console Microsoft Xbox Series S",
-        //AVALIAÇÃO
-        '4.6 (13.991 avaliações)',
-        //PREÇO
-        2.299,
-        //DESCRIÇÃO
-        "Xbox series s, nosso xbox menor e mais elegante de todos os tempos; com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o xbox series s oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.",
-        //DETALHES
-        "1 Console Xbox SS."
-        );
-    
-    
-    const fotos = [
-        "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_g.jpg",
-
-        "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067306_g.jpg",
-        
-        "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067300_g.jpg",
-
-        "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067302_g.jpg",
-        
-        "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067305_g.jpg"
-    ]
-
-
-infoPage.innerHTML = `${xboxss.info}`;
-itemImg.src = xboxss.capa;
-itemTitle.innerHTML = `${xboxss.nome}`;
-itemstars.innerHTML = `${xboxss.avalicao}`;
-itemPrice.innerHTML = `R$ ${xboxss.preco},00`;
-itemDescription.innerHTML = `${xboxss.descricao}`;
-itemDestail.innerHTML = `<li>${xboxss.detalhe}</li>`;
-imgCart.src = xboxss.capa;
-priceCart.innerHTML = `R$ ${xboxss.preco},00`;
-
-
-//JOGAR IMAGENS NO SRC DA DIV
-let aux = 0;
-
-imgProduto.forEach(imagem => {
-imagem.src = fotos[aux];
-aux++
-});
-
-//TROCAR IMAGENS
-const imgPrincipal = document.getElementById('item-img');
-
-imgProduto.forEach(img => {
-img.addEventListener('click', () => {
-  imgPrincipal.src = img.src
-})
-})
-
-}; 
-
-
-//PLACA DE VIDEO NVIDIA
-function nvidiaRTX(){
-    
-    const nvidia = new Jogo(
-        //INFO DA PÁGINA
-        'INÍCIO / LANÇAMENTOS / ACESSÓRIOS / PLACA DE VIDEO NVIDIA GEFORCE RTX 4070 TI',
-        //CAPA
-        'https://m.media-amazon.com/images/I/71BGmiM5y3L._AC_SX425_.jpg',
-        //NOME
-        "Placa de Vídeo Nvidia Geforce RTX 4070 TI",
-        //AVALIAÇÃO
-        '4.6 (11 avaliações)',
-        //PREÇO
-        6.106,
-        //DESCRIÇÃO
-        "MEMORIA GPU AD104-400 Process 4 CUDA Cores 7680 Idle Board Power N/A Max Board Power 285W Power Connectors PCIe Gen5 16-pin connector Idle GPU Temperature N/A Max GPU Temperature N/A Size 12GB Type GDDR6X Memory Width 192-bit Memory Bandwidth 504 Interface PCI-E 4.0 Dimensions(with Bracket) 336*148*62 Dimensions(without Bracket) 320*133*62 Boost Clock 2670 Over Clock O Memory Clock (effective) 21 Over Clock X 1st output DisplayPort 1.4a 2nd output DisplayPort 1.4a 3rd output DisplayPort 1.4a 4th output HDMI 2.1a 5th output Edge N/A Software SLI / Crossfire × FAN 2*92mm, 1*102mm Slot 3 FAN Control O Idle Noise Level (decibel) N/A MAX Noise Level (decibel) N/A Heatpipes / VC 8*6mm RGB Front and Top Other special features 1-Click Sync Pro DirectX DirectX 12 Windows support Windows 10/11 64-bit Minimum Power Supply 700W.",
-        //DETALHES
-        "Altura do produto: 6,2 cm."
-        );
-    
-    
-    const fotos = [
-        "https://m.media-amazon.com/images/I/71M5Zsmcj5L._AC_SY355_.jpg",
-
-        "https://m.media-amazon.com/images/I/71p7zoDISNL._AC_SY355_.jpg",
-        
-        "https://m.media-amazon.com/images/I/712OzK8fUKL._AC_SY355_.jpg",
-
-        "https://m.media-amazon.com/images/I/71lx7Hr0VhL._AC_SY355_.jpg",
-        
-        "https://m.media-amazon.com/images/I/71HkkwOXtkL._AC_SY355_.jpg"
-    ]
-
-
-infoPage.innerHTML = `${nvidia.info}`;
-itemImg.src = nvidia.capa;
-itemTitle.innerHTML = `${nvidia.nome}`;
-itemstars.innerHTML = `${nvidia.avalicao}`;
-itemPrice.innerHTML = `R$ ${nvidia.preco},00`;
-itemDescription.innerHTML = `${nvidia.descricao}`;
-itemDestail.innerHTML = `
-<li>${nvidia.detalhe}</li>
-<li>Largura do produto: 14,8 cm.</li>
-<li>Peso do produto: 1,8 kg.</li>
-<li>Chipset: NVIDIA.</li>
-<li>Memória de vídeo: 12 GB.</li>
-<li>Vel. relógio de memória: 1313 MHz.</li>
-`;
-imgCart.src = nvidia.capa;
-priceCart.innerHTML = `R$ ${nvidia.preco},00`;
-
-
-//JOGAR IMAGENS NO SRC DA DIV
-let aux = 0;
-
-imgProduto.forEach(imagem => {
-imagem.src = fotos[aux];
-aux++
-});
-
-//TROCAR IMAGENS
-const imgPrincipal = document.getElementById('item-img');
-
-imgProduto.forEach(img => {
-img.addEventListener('click', () => {
-  imgPrincipal.src = img.src
-})
-})
-
-}; 
- */
-
 
 const getJogo = localStorage.getItem("jogo");
 
@@ -378,6 +29,7 @@ if(getJogo === "godOfWar") {
             nome: "God of War Ragnarök - PS4/PS5",
             preco: 350,
             descricao: "Em God of War: Ragnarok, acompanhe a jornada de Kratos e Atreus pelos Nove Reinos em busca de respostas, enquanto as forças asgardianas preparam-se para a guerra. Atreus está à procura de conhecimento para entender a profecia de Loki e o papel dele no Ragnarok. Agora cabe a Kratos enfrentar seus fantasmas do passado para estar presente ao lado de Atreus neste momento de incertezas. Explore lugares inimagináveis com paisagens exuberantes e crie alianças por todos os reinos para enfrentar seus inimigos, entre deuses poderosos e criaturas épicas. As famosas Lâminas do Caos, o Machado Leviatã e o Escudo Guardião estão de volta, junto com uma série de novas habilidades que irão deixar Kratos e Atreus ainda mais implacáveis.",
+            detalhe: '1 Jogo God of War Ragnarok. '
           }
     
     infoPage.innerHTML = kratos.info
@@ -899,6 +551,370 @@ if(getJogo === "tekken8") {
     }; 
     tekken();
 }
+
+
+//CONSOLE PS5
+if(getJogo === "ps5"){
+    function playStation5(){
+    
+    const ps5 = {
+        //INFO DA PÁGINA
+       info: 'INÍCIO / LANÇAMENTOS / CONSOLES / SONY CONSOLE DIGITAL PLAYSTATION 5 2020 BRANCO',
+        //CAPA
+       capa: 'https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5_1600357937_g.jpg',
+        //NOME
+       nome: "Console Sony PlayStation 5",
+        //AVALIAÇÃO
+       avaliacao: '4.8 (703 avaliações)',
+        //PREÇO
+       preco: 4.199,
+        //DESCRIÇÃO
+      descricao:  "A evolução em consoles de videogame chegou e você precisa viver essa experiência! Com SSD de alta velocidade, que permite um carregamento ultrarrápido, áudio 3D e controle Wireless DualSense com feedback tátil e gatilhos adaptáveis, o PlayStation 5 proporcionará uma incrível imersão em seus games favoritos.",
+        //DETALHES
+       detalhe: "1 Console Sony PlayStation 5."
+    };
+    
+    
+    const fotos = [
+        "https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5-midia-fisica_1598984720_g.jpg",
+
+        "https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5_1603798015_g.jpg",
+
+        
+    
+        "https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5-midia-fisica_1598984721_g.jpg",
+
+        "https://images.kabum.com.br/produtos/fotos/115737/console-sony-playstation-5-midia-fisica_1598984719_g.jpg",
+        
+        "https://images.kabum.com.br/produtos/fotos/magalu/459232/PlayStation-5-2022-825GB-1-Controle-Branco-Sony_1682705727_gg.jpg"
+    ]
+
+
+infoPage.innerHTML = `${ps5.info}`;
+itemImg.src = ps5.capa;
+itemTitle.innerHTML = `${ps5.nome}`;
+itemstars.innerHTML = `${ps5.avaliacao}`;
+itemPrice.innerHTML = `R$ ${ps5.preco},00`;
+itemDescription.innerHTML = `${ps5.descricao}`;
+itemDestail.innerHTML = `
+<li>${ps5.detalhe}</li>
+<li>2 Controles DualSense.</li>
+<li>1 Cabo USB-C.</li>
+<li>1 Cabo de alimentação.</li>
+<li>1 Cabo HDMI.</li>`;
+imgCart.src = ps5.capa;
+priceCart.innerHTML = `R$ ${ps5.preco},00`;
+
+
+//JOGAR IMAGENS NO SRC DA DIV
+let aux = 0;
+
+imgProduto.forEach(imagem => {
+imagem.src = fotos[aux];
+aux++
+});
+
+//TROCAR IMAGENS
+const imgPrincipal = document.getElementById('item-img');
+
+imgProduto.forEach(img => {
+img.addEventListener('click', () => {
+  imgPrincipal.src = img.src
+})
+})
+
+}; 
+playStation5();
+}
+
+
+//CONSOLE PS4
+if(getJogo === "ps4"){
+   function playStation4(){
+    
+    const ps4 = {
+        //INFO DA PÁGINA
+       info: 'INÍCIO / LANÇAMENTOS / CONSOLES / SONY CONSOLE PLAYSTATION 4 PRO 2016',
+        //CAPA
+       capa: 'https://d2r9epyceweg5n.cloudfront.net/stores/002/027/409/products/4a3af706fab2cd009f85f29d8d95b7b31-10a8b99adaa3fc704e16717097037043-640-0.webp',
+        //NOME
+       nome: "Console Sony PlayStation 4 PRO",
+        //AVALIAÇÃO
+       avaliacao: '4.7 (1.376 avaliações)',
+        //PREÇO
+     preco:   3.249,
+        //DESCRIÇÃO
+     descricao:   "PlayStation 4 Jogos incríveis e entretenimiento sem fim. Os jogos mais incríveis estão no PS4, com 1TB de armazenamento. O console PS4 oferece excelente poder de jogabilidade, entretenimento incrível tecnologia HDR vibrante. Inclui: Console PlayStation 4 Controle sem fio DualShock 4 Disco Blu-ray de God Of War Ragnarok PS4 Headset mono Cabo HDMI Cabo de alimentaçao CA Cabo USB Materiais impressosControle sem fio DualShock 4 Disco Blu-ray de God Of War Ragnarok PS4 Headset mono Cabo HDMI Cabo de alimentaçao CA Cabo USB Materiais impressos.",
+        //DETALHES
+       detalhe: "1 Console Sony PlayStation 4 PRO."
+    };
+    
+    
+    const fotos = [
+        "https://m.media-amazon.com/images/I/41sN+-1hRsL._AC_SX679_.jpg",
+
+        "https://m.media-amazon.com/images/I/61+Ufg4Je5L._AC_SX679_.jpg",
+
+        "https://m.media-amazon.com/images/I/61GgeLOJjuL._AC_SX679_.jpg",
+        
+        "https://m.media-amazon.com/images/I/51Ieq0twp+L._AC_SX679_.jpg",
+        
+        "https://m.media-amazon.com/images/I/51S9Kk+2M2L._AC_SX679_.jpg"
+    ]
+
+
+infoPage.innerHTML = `${ps4.info}`;
+itemImg.src = ps4.capa;
+itemTitle.innerHTML = `${ps4.nome}`;
+itemstars.innerHTML = `${ps4.avaliacao}`;
+itemPrice.innerHTML = `R$ ${ps4.preco},00`;
+itemDescription.innerHTML = `${ps4.descricao}`;
+itemDestail.innerHTML = `
+<li>${ps4.detalhe}</li>
+<li>2 Controles DualShock 4.</li>
+<li>1 Cabo USB-C.</li>
+<li>1 Cabo de alimentação.</li>
+<li>1 Cabo HDMI.</li>
+<li>1 Fone Sony.</li>`;
+imgCart.src = ps4.capa;
+priceCart.innerHTML = `R$ ${ps4.preco},00`;
+
+
+//JOGAR IMAGENS NO SRC DA DIV
+let aux = 0;
+
+imgProduto.forEach(imagem => {
+imagem.src = fotos[aux];
+aux++
+});
+
+//TROCAR IMAGENS
+const imgPrincipal = document.getElementById('item-img');
+
+imgProduto.forEach(img => {
+img.addEventListener('click', () => {
+  imgPrincipal.src = img.src
+})
+})
+
+};  playStation4();
+}
+
+
+
+//CONSOLE XBOX SX
+if(getJogo === "xboxsx"){
+   function xboxSX(){
+    
+    const xboxsx = {
+        //INFO DA PÁGINA
+      info:  'INÍCIO / LANÇAMENTOS / CONSOLES / CONSOLE MICROSOFT XBOX SERIES X 2020',
+        //CAPA
+       capa: 'https://m.media-amazon.com/images/I/61eYoSqkHnL._AC_SX679_.jpg',
+        //NOME
+      nome:  "Console Microsoft Xbox Series X",
+        //AVALIAÇÃO
+      avaliacao:  '4.8 (3.361 avaliações)',
+        //PREÇO
+      preco:  4.150,
+        //DESCRIÇÃO
+     descricao:   "Apresentamos o xbox series x, nosso console mais rápido e poderoso de todos os tempos; jogue milhares de títulos de quatro gerações de consoles- todos os jogos têm melhor aparência e são melhor executados no xbox series x; no coração do series x está a xbox velocity architecture, que combina um ssd personalizado e software integrado para diminuir significativamente os tempos de carregamento dentro e fora do jogo; troque simultaneamente entre vários jogos em um instante com o quick resume; explore novos mundos e desfrute da ação como nunca antes com 12 teraflops incomparáveis de poder de processamento gráfico; desfrute de jogos 4k a até 120 quadros por segundo, som 3d avançado especial e muito mais; comece com uma biblioteca instantânea de mais de 100 jogos de alta qualidade, incluindo todos os novos títulos do xbox game studios no mesmo dia do seu lançamento como o halo infinite, com o xbox game pass ultimate (assinatura vendida separadamente) ***informações importantes:4k a 120 fps: requer conteúdo e exibição compatíveis; use-o no xbox series x conforme o conteúdo for disponibilizado.xbox game pass: o catálogo de jogos varia ao longo do tempo.",
+        //DETALHES
+      detalhe:  "1 Dispositivo VR."
+    };
+    
+    
+    const fotos = [
+        "https://m.media-amazon.com/images/I/51A41nLe5IL._AC_SX522_.jpg",
+
+        "https://m.media-amazon.com/images/I/510uaz4Tu8L._AC_SX522_.jpg",
+        
+        "https://m.media-amazon.com/images/I/51HSFVoY4eL._AC_SX522_.jpg",
+
+        "https://m.media-amazon.com/images/I/518lHGigunL._AC_SX522_.jpg",
+        
+        "https://m.media-amazon.com/images/I/71HyGW8sJXL._AC_SX522_.jpg"
+    ]
+
+
+infoPage.innerHTML = `${xboxsx.info}`;
+itemImg.src = xboxsx.capa;
+itemTitle.innerHTML = `${xboxsx.nome}`;
+itemstars.innerHTML = `${xboxsx.avaliacao}`;
+itemPrice.innerHTML = `R$ ${xboxsx.preco},00`;
+itemDescription.innerHTML = `${xboxsx.descricao}`;
+itemDestail.innerHTML = `<li>${xboxsx.detalhe}</li>`;
+imgCart.src = xboxsx.capa;
+priceCart.innerHTML = `R$ ${xboxsx.preco},00`;
+
+
+//JOGAR IMAGENS NO SRC DA DIV
+let aux = 0;
+
+imgProduto.forEach(imagem => {
+imagem.src = fotos[aux];
+aux++
+});
+
+//TROCAR IMAGENS
+const imgPrincipal = document.getElementById('item-img');
+
+imgProduto.forEach(img => {
+img.addEventListener('click', () => {
+  imgPrincipal.src = img.src
+})
+})
+
+};
+xboxSX();
+}
+
+
+
+//CONSOLE XBOX SS
+if(getJogo === "xboxss"){
+    function xboxSS(){
+    
+        const xboxss = {
+            //INFO DA PÁGINA
+           info: 'INÍCIO / LANÇAMENTOS / CONSOLES / CONSOLE MICROSOFT XBOX SERIES S 2020',
+            //CAPA
+          capa:  'https://m.media-amazon.com/images/I/81Z1xBs6GoL._AC_SX679_.jpg',
+            //NOME
+          nome:  "Console Microsoft Xbox Series S",
+            //AVALIAÇÃO
+         avaliacao:   '4.6 (13.991 avaliações)',
+            //PREÇO
+         preco:   2.299,
+            //DESCRIÇÃO
+         descricao:   "Xbox series s, nosso xbox menor e mais elegante de todos os tempos; com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o xbox series s oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.",
+            //DETALHES
+         detalhe:   "1 Console Xbox SS."
+        };
+        
+        
+        const fotos = [
+            "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_g.jpg",
+    
+            "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067306_g.jpg",
+            
+            "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067300_g.jpg",
+    
+            "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067302_g.jpg",
+            
+            "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067305_g.jpg"
+        ]
+    
+    
+    infoPage.innerHTML = `${xboxss.info}`;
+    itemImg.src = xboxss.capa;
+    itemTitle.innerHTML = `${xboxss.nome}`;
+    itemstars.innerHTML = `${xboxss.avaliacao}`;
+    itemPrice.innerHTML = `R$ ${xboxss.preco},00`;
+    itemDescription.innerHTML = `${xboxss.descricao}`;
+    itemDestail.innerHTML = `<li>${xboxss.detalhe}</li>`;
+    imgCart.src = xboxss.capa;
+    priceCart.innerHTML = `R$ ${xboxss.preco},00`;
+    
+    
+    //JOGAR IMAGENS NO SRC DA DIV
+    let aux = 0;
+    
+    imgProduto.forEach(imagem => {
+    imagem.src = fotos[aux];
+    aux++
+    });
+    
+    //TROCAR IMAGENS
+    const imgPrincipal = document.getElementById('item-img');
+    
+    imgProduto.forEach(img => {
+    img.addEventListener('click', () => {
+      imgPrincipal.src = img.src
+    })
+    })
+    
+    }; 
+    xboxSS()
+}
+
+
+
+//PLACA DE VIDEO NVIDIA
+if(getJogo === "nvidia"){
+   function nvidiaRTX(){
+    
+    const nvidia = {
+        //INFO DA PÁGINA
+      info:  'INÍCIO / LANÇAMENTOS / ACESSÓRIOS / PLACA DE VIDEO NVIDIA GEFORCE RTX 4070 TI',
+        //CAPA
+      capa:  'https://m.media-amazon.com/images/I/71BGmiM5y3L._AC_SX425_.jpg',
+        //NOME
+     nome:   "Placa de Vídeo Nvidia Geforce RTX 4070 TI",
+        //AVALIAÇÃO
+     avaliacao:   '4.6 (11 avaliações)',
+        //PREÇO
+     preco:   6.106,
+        //DESCRIÇÃO
+     descricao:   "MEMORIA GPU AD104-400 Process 4 CUDA Cores 7680 Idle Board Power N/A Max Board Power 285W Power Connectors PCIe Gen5 16-pin connector Idle GPU Temperature N/A Max GPU Temperature N/A Size 12GB Type GDDR6X Memory Width 192-bit Memory Bandwidth 504 Interface PCI-E 4.0 Dimensions(with Bracket) 336*148*62 Dimensions(without Bracket) 320*133*62 Boost Clock 2670 Over Clock O Memory Clock (effective) 21 Over Clock X 1st output DisplayPort 1.4a 2nd output DisplayPort 1.4a 3rd output DisplayPort 1.4a 4th output HDMI 2.1a 5th output Edge N/A Software SLI / Crossfire × FAN 2*92mm, 1*102mm Slot 3 FAN Control O Idle Noise Level (decibel) N/A MAX Noise Level (decibel) N/A Heatpipes / VC 8*6mm RGB Front and Top Other special features 1-Click Sync Pro DirectX DirectX 12 Windows support Windows 10/11 64-bit Minimum Power Supply 700W.",
+        //DETALHES
+     detalhe:   "Altura do produto: 6,2 cm."
+    };
+    
+    
+    const fotos = [
+        "https://m.media-amazon.com/images/I/71M5Zsmcj5L._AC_SY355_.jpg",
+
+        "https://m.media-amazon.com/images/I/71p7zoDISNL._AC_SY355_.jpg",
+        
+        "https://m.media-amazon.com/images/I/712OzK8fUKL._AC_SY355_.jpg",
+
+        "https://m.media-amazon.com/images/I/71lx7Hr0VhL._AC_SY355_.jpg",
+        
+        "https://m.media-amazon.com/images/I/71HkkwOXtkL._AC_SY355_.jpg"
+    ]
+
+
+infoPage.innerHTML = `${nvidia.info}`;
+itemImg.src = nvidia.capa;
+itemTitle.innerHTML = `${nvidia.nome}`;
+itemstars.innerHTML = `${nvidia.avaliacao}`;
+itemPrice.innerHTML = `R$ ${nvidia.preco},00`;
+itemDescription.innerHTML = `${nvidia.descricao}`;
+itemDestail.innerHTML = `
+<li>${nvidia.detalhe}</li>
+<li>Largura do produto: 14,8 cm.</li>
+<li>Peso do produto: 1,8 kg.</li>
+<li>Chipset: NVIDIA.</li>
+<li>Memória de vídeo: 12 GB.</li>
+<li>Vel. relógio de memória: 1313 MHz.</li>
+`;
+imgCart.src = nvidia.capa;
+priceCart.innerHTML = `R$ ${nvidia.preco},00`;
+
+
+//JOGAR IMAGENS NO SRC DA DIV
+let aux = 0;
+
+imgProduto.forEach(imagem => {
+imagem.src = fotos[aux];
+aux++
+});
+
+//TROCAR IMAGENS
+const imgPrincipal = document.getElementById('item-img');
+
+imgProduto.forEach(img => {
+img.addEventListener('click', () => {
+  imgPrincipal.src = img.src
+})
+})
+
+};  
+nvidiaRTX();
+}
+
+
 
 
 

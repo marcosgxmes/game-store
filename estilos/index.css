@@ -12,9 +12,9 @@ body { padding-top: 70px;}
 
 .overflow__hidden.active { overflow: hidden; }
 
+
+
 /* HEADER E MENU */
-
-
 header {
 position: fixed;
 top: 0;
@@ -295,6 +295,8 @@ row-gap: 30px;
 padding: 0 15px;
 }
 
+#jogos a {color: black;}
+
 
 .jogos-itens {
 width: 140px;
@@ -426,7 +428,7 @@ padding: 0 25px;
 }
 
 
-    /* footer */
+/* footer */
 
 
 footer {

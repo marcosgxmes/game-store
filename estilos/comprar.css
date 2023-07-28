@@ -25,7 +25,9 @@ h2 { margin-left: 15px; }
 html, body { width: 100%; }
 
 
-header {
+
+
+#header {
 padding-left: 7px;
 display: flex;
 background-color: #fff;
@@ -485,6 +487,7 @@ letter-spacing: 1px;
 #small-bar {
 position: relative;
 width: 100%; 
+background-color: #fff;
 border-top: 1px solid rgba(0, 0, 0, 0.099);
 border-bottom: 1px solid rgba(0, 0, 0, 0.199);
 padding: 10px 15px;

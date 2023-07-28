@@ -1,4 +1,21 @@
 
+//MENU HAMBURGER
+(function () {
+  const hamburguer = document.querySelector(".hamburguer");
+  const navMenu = document.querySelector(".nav-menu");
+  const rolagem = document.querySelector(".overflow__hidden");
+  const blur = document.querySelector('.blurred')
+    
+    hamburguer.addEventListener("click", () => {
+      hamburguer.classList.toggle('active');
+      blur.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      rolagem.classList.toggle('active');
+    });
+  })();
+
+
+
 // ABRIR POP UP CARRINHO
 const hamburguer3 = document.querySelector(".hamburguer3");
 const cartMenu = document.getElementById('cart');
@@ -130,9 +147,6 @@ if(classValue < 1){
     element.parentElement.querySelector("input.quanti").value = classValue;    
 }
 };
-
-
-
 
 
 
