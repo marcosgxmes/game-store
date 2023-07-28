@@ -1,4 +1,4 @@
- /* //CARROSEL
+  //CARROSEL
 (function() {
   const imgs = document.getElementById('slider');
   const img = document.querySelectorAll('#slider img');
@@ -33,7 +33,7 @@ const blur = document.querySelector('.blurred')
   });
 })();
 
-*/
+
 
 
 
