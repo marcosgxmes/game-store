@@ -417,20 +417,7 @@ margin-bottom: 15px;
 .arcades-itens p { line-height: 25px; }
 
 
-
-/* SESSÃO DESCONTO */
-
-#off {
-display: block;
-margin: 50px auto;
-max-width: 400px;
-padding: 0 25px;
-}
-
-
 /* footer */
-
-
 footer {
     background-color: black;
     display: flex;

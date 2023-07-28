@@ -522,7 +522,6 @@ color: rgb(162, 163, 163);
 
 #info-page {
 width: 100%;
-max-width: 400px;
 margin: 0 auto;
 padding: 10px 15px;
 }
@@ -857,6 +856,11 @@ font-style: italic;
 
 @media screen and (min-width:768px) and (max-width:992px) {
 
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
     #carrinho.active { right: 0; }
      
     #big-bar { display: none; }
@@ -940,22 +944,20 @@ font-style: italic;
 
     #info-page {
     width: 100%;
-    max-width: 700px;
     display: flex;
     align-items: center;
-    justify-content: center;
     }
 
-    
+    .imagem-p{
+        width: 200px;
+    }
 
     .imagem-p img:hover {
-    border: 2px solid black;
     box-shadow: none;
     box-sizing: border-box;
+    
     }
-
-    .lts { display: block; }
-    .lts1 { display: none;}
+ 
 }
 
 
@@ -965,6 +967,8 @@ font-style: italic;
 /* TELAS GRANDES */
 
 @media screen and (min-width: 993px){
+
+    
 
     #overlay { width: 65%;}
 

@@ -2,6 +2,15 @@
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
 
+    .navbar { display: none;}
+#carrosel { display: none;}
+.toggle{ display: none; }
+#cart .fa-search{ display: none;}
+
+
+
+#big-bar { display: block;}
+
     section {
         margin: 50px 0;
     }

@@ -9,11 +9,9 @@
     header h1 { margin-top: 50px; }
 
     
+#carrosel { display: none;}
 
-    #l2 {
-    letter-spacing: 10px;
-    margin-bottom: 30px;
-    }
+    
 
     #big-menu {
         display: block;

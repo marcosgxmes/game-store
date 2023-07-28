@@ -2,200 +2,194 @@
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
 
-    .navbar { display: none;}
-    #carrosel { display: none;}
-    .toggle{ display: none; }
-    #cart .fa-search{ display: none;}
+.navbar { display: none;}
+#carrosel { display: none;}
+.toggle{ display: none; }
+#cart .fa-search{ display: none;}
 
-    main { width: 100%; }
+#big-bar { display: block;}
 
-    header { 
-        display: flex;
-        height: 70px;
-        align-items: center;
-        padding: 0 20px;
-        justify-content: space-between;
+main { width: 100%; }
 
-    }
+header { 
+display: flex;
+height: 80px;
+align-items: center;
+padding: 0 20px;
+justify-content: space-between;
+gap: 15px;
 
-    #acesso-main {
-        display: flex;
-        align-items: center;
-        width: 120px;
-    }
+}
+
+#acesso-main {
+display: flex;
+align-items: center;
+width: 120px;
+}
 
 
-    #search-main {
-        border: 2px solid black;
-    }
+#search-main {
+border: 2px solid black;
+}
 
-    #search {
-        width: 450px;
-        height: 30px;
-        background: none;
-        border: none;
-        padding: 10px;
-       
-    }
+#search {
+width: 470px;
+height: 30px;
+background: none;
+border: none;
+padding: 10px;
 
-    #search-main button {
-        font-size: 17px;
-        border: none;
-        margin-right: 10px;
-        background: none;
-    }
+}
 
-    .icones {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-    }
+#search-main button {
+font-size: 17px;
+border: none;
+margin-right: 10px;
+background: none;
+}
 
-    .icones .fa-shopping-cart {
-        font-size: 20px;
-    }
+.icones {
+height: 100%;
+width: 55px;
+display: flex;
+align-items: center;
+}
 
-    
+.icones .fa-shopping-cart {
+font-size: 20px;
+}
 
-    
 
-    header h1 {
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
+#cart i { color: black;}
 
-    #cart i { color: black;}
-   
 
-    
-    
-    
-        #big-menu {
-        display: block;
-        width: 100%;
-        padding: 5px 0;
-        margin-top: 0;
-        margin-bottom: 50px;
-        padding: 10px 0;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.267);
-        }
-    
-        #big-menu div {
-        display: flex;
-        justify-content: space-between;
-        width: 700px;
-        margin: 0 auto;  
-        }
-    
-        #big-menu div h4 { color:#003b7a; }
-    
-        #big-menu div h4:hover { color: red; }
+#big-menu {
+display: block;
+width: 100%;
+padding: 5px 0;
+margin-top: 0;
+margin-bottom: 50px;
+padding: 10px 0;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.267);
+}
+
+#big-menu div {
+display: flex;
+justify-content: space-between;
+width: 700px;
+margin: 0 auto;  
+}
+
+#big-menu div h4 { color:#003b7a; }
+
+#big-menu div h4:hover { color: red; }
 
 
 
-        #jogos {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 992px;
-            margin: 50px auto;
-            padding: 0 15px;
-            row-gap: 30px;
-            column-gap: 20px;
-            align-items: center;
-            align-content: center;
-            justify-content: space-around;
-            }
-        
-            .jogos-itens {
-                width: 175px;
-            }
-        
-            .jogos-itens img {
-                width: 175px;
-                height: 240px;
-                border-radius: 7px;
-                margin-bottom: 15px;
-            }
-
-            .jogos-itens p {
-                line-height: 25px;
-            }
+#jogos {
+display: flex;
+flex-wrap: wrap;
+max-width: 992px;
+margin: 50px auto;
+padding: 0 15px;
+row-gap: 30px;
+column-gap: 20px;
+align-items: center;
+align-content: center;
+justify-content: space-around;
+}
 
 
-            #consoles {
-                max-width: 992px;
-                display: grid;
-                row-gap: 40px;
-                column-gap: 80px;
-                align-items: center;
-                margin: 50px auto;
-                justify-content: center;
-                grid-template-columns: auto auto;
-            }
-        
-        
-            .consoles-itens {
-                width: 300px;
-            }
-        
-            .consoles-itens img {
-                margin-bottom: 20px;
-            }
+.jogos-itens {
+width: 175px;
+}
 
-            .consoles-itens p {
-                line-height: 25px;
-            }
+.jogos-itens img {
+width: 175px;
+height: 240px;
+border-radius: 7px;
+margin-bottom: 15px;
+}
+
+.jogos-itens p {
+line-height: 25px;
+}
 
 
-            #retros { margin: 50px auto; }
+#consoles {
+max-width: 992px;
+display: grid;
+row-gap: 40px;
+column-gap: 80px;
+align-items: center;
+margin: 50px auto;
+justify-content: center;
+grid-template-columns: auto auto;
+}
+
+
+.consoles-itens {
+width: 300px;
+}
+
+.consoles-itens img {
+margin-bottom: 20px;
+}
+
+.consoles-itens p {
+line-height: 25px;
+}
+
+
+#retros { margin: 50px auto; }
 
 
 
-            #arcades {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                margin: 50px auto;
-                justify-content: space-around;
-                margin-bottom: 80px;
-            }
-        
-        
-            .arcades-itens img {
-                width: 200px;
-                margin-bottom: 25px;
-            }
-    
+#arcades {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+margin: 50px auto;
+justify-content: space-around;
+margin-bottom: 80px;
+}
 
 
-    /* FOOTER */
+.arcades-itens img {
+width: 200px;
+margin-bottom: 25px;
+}
 
-    footer {
-        background-color: black;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        padding-top: 10px;
-        padding-bottom: 30px;
-    }
 
-    footer div {
-        width: 100px;
-        margin: 20px 0;
-    }
 
-    .hydra img {
-        width: 70px;
-        display: block;
-        margin:  0 auto;
-    }
+/* FOOTER */
 
-    .hydra {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+footer {
+background-color: black;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+align-content: flex-start;
+flex-wrap: wrap;
+padding-top: 10px;
+padding-bottom: 30px;
+}
+
+footer div {
+width: 100px;
+margin: 20px 0;
+}
+
+.hydra img {
+width: 70px;
+display: block;
+margin:  0 auto;
+}
+
+.hydra {
+width: 100%;
+margin-bottom: 20px;
+}
+
 }
