@@ -11,49 +11,95 @@
 
 main { width: 100%; }
 
-header { 
-display: flex;
-height: 80px;
-align-items: center;
-padding: 0 20px;
-justify-content: space-between;
-gap: 15px;
 
+header {
+display: flex;
+width: 100%;
+padding: 10px 20px;
+height: 80px;
 }
+
+    
+#header {
+display: flex;
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+height: 100%;
+justify-content: center;
+column-gap: 30px;
+align-items: center;
+}
+
 
 #acesso-main {
 display: flex;
 align-items: center;
-width: 120px;
-}
-
-
-#search-main {
-border: 2px solid black;
-}
-
-#search {
-width: 470px;
-height: 30px;
-background: none;
-border: none;
-padding: 10px;
-
-}
-
-#search-main button {
-font-size: 17px;
-border: none;
-margin-right: 10px;
-background: none;
-}
-
-.icones {
+column-gap: 10px;
+justify-content: right;
+width: 160px;
 height: 100%;
-width: 55px;
+margin: 0;
+padding: 0;
+}
+
+.hydra-logo {
+height: 100%;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+.hydra-name{
 display: flex;
 align-items: center;
 }
+
+.hydra-name h3{
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+#search-main {
+display: flex;
+height: 40px;
+width: 700px;
+min-width: 390px;
+padding-right: 15px;
+border: 2px solid black;
+}
+
+#search-main button {
+border: none;
+background: none;
+}
+
+#search {
+display: flex;
+justify-content: space-between;
+color: #fff;
+background: none;
+border: none;
+width: 100%;
+padding: 10px 15px;
+}
+
+
+.icones {
+display: flex;
+align-items: center;
+column-gap: 25px;
+width: 160px;
+height: 100%;
+}
+
+
+
+
+
+
+
 
 .icones .fa-shopping-cart {
 font-size: 20px;
