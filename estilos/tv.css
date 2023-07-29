@@ -2,136 +2,161 @@
 
 @media screen and (min-width: 1200px) {
     
-    header {
-        height: 220px;
-    }
 
-    header h1 { margin-top: 50px; }
-
+.navbar { display: none;}
+#carrosel { display: none !important;}
+.toggle{ display: none; }
+#cart .fa-search{ display: none;}
     
-#carrosel { display: none;}
+header {
+display: flex;
+align-items: center;
+padding: 0 50px ;
+height: 70px;
+justify-content: center;
+gap: 50px;
+}
 
-    
+#acesso-main{
+display: flex;
+gap: 5px;
+align-items: center;
+}
 
-    #big-menu {
-        display: block;
-        width: 100%;
-        padding: 5px 0;
-        margin-top: 0px;
-        margin-bottom: 40px;
-        padding: 10px 0;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.267);
-        }
-    
-        #big-menu div {
-        display: flex;
-        justify-content: space-between;
-        width: 800px;
-        margin: 0 auto; 
-        padding-top: 3px; 
-        }
-    
-        #big-menu div h4 { color:#003b7a; cursor: pointer; }
-    
-        #big-menu div h4:hover { color: red; }
-
-        #carrosel {
-            margin: 0 auto;
-            display: block;
-            width: 1000px;
-            background-color: black;
-            overflow: hidden;
-            margin-bottom: 80px;
-            }
-            
-            #slider {
-            width: 100%;
-            display: flex;
-            transition: transform 0.5s ease-in-out ;
-            transform: translateX(0);
-            }
-            
-            #slider img {
-            object-fit: cover;
-            width: 100%;
-            }
-
-        #jogos {
-            display: flex;
-            flex-wrap: wrap;
-            width: 1000px;
-            margin: 50px auto;
-            row-gap: 30px;
-            column-gap: 50px;
-            align-items: center;
-            align-content: center;
-            justify-content: space-between;
-            }
-        
-            .jogos-itens {
-                width: 175px;
-            }
-        
-            .jogos-itens img {
-                width: 175px;
-                height: 240px;
-                border-radius: 7px;
-                margin-bottom: 15px;
-            }
-
-            .jogos-itens p {
-                line-height: 25px;
-            }
+.hydra-name{ text-align: left; }
 
 
-            #consoles {
-                width: 1000px;
-                display: grid;
-                gap: 40px;
-                margin: 50px auto;
-                justify-content: space-around;
-                grid-template-columns: auto auto auto;
-            }
-        
-        
-            .consoles-itens {
-                width: 300px;
-            }
-        
-            .consoles-itens img {
-                margin-bottom: 20px;
-            }
+#search-main { 
+display: block !important;
+border: 2px solid black;
+}
 
-            .consoles-itens p {
-                line-height: 25px;
-            }
+#big-bar { display: block; }
 
-            #retros {
-                width: 1000px;
-                margin: 50px auto;
-                column-gap: 50px;
-            }
 
-            .retros-itens img {
-                margin-bottom: 20px;
-            }
+#search {
+width: 600px;
+height: 30px;
+background: none;
+border: none;
+padding: 10px;
+}
 
-            #arcades {
-                display: flex;
-                width: 1000px;
-                margin: 50px auto;
-                flex-wrap: wrap;
-                column-gap: 60px;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 80px;
-            }
-        
-        
-            .arcades-itens img {
-                width: 200px;
-                margin-bottom: 25px;
-            }
+#search-main button {
+font-size: 17px;
+border: none;
+margin-right: 10px;
+background: none;
+}
 
-            .arcades-itens p { line-height: 25px; }
+.icones i {
+color: black;
+}
+
+
+
+#big-menu {
+display: block;
+padding: 5px 0;
+margin-top: 0px;
+margin-bottom: 40px;
+padding: 10px 0;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.267);
+}
+
+#big-menu div {
+display: flex;
+justify-content: space-between;
+width: 800px;
+margin: 0 auto; 
+padding-top: 3px; 
+}
+
+#big-menu div h4 { color:#003b7a; cursor: pointer; }
+
+#big-menu div h4:hover { color: red; }
+
+
+
+
+
+
+#jogos {
+display: flex;
+flex-wrap: wrap;
+width: 1000px;
+margin: 50px auto;
+row-gap: 30px;
+column-gap: 50px;
+align-items: center;
+align-content: center;
+justify-content: space-between;
+}
+
+.jogos-itens {
+    width: 175px;
+}
+
+.jogos-itens img {
+    width: 175px;
+    height: 240px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.jogos-itens p {
+    line-height: 25px;
+}
+
+
+#consoles {
+    width: 1000px;
+    display: grid;
+    gap: 40px;
+    margin: 50px auto;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+}
+
+
+.consoles-itens {
+    width: 300px;
+}
+
+.consoles-itens img {
+    margin-bottom: 20px;
+}
+
+.consoles-itens p {
+    line-height: 25px;
+}
+
+#retros {
+    width: 1000px;
+    margin: 50px auto;
+    column-gap: 50px;
+}
+
+.retros-itens img {
+    margin-bottom: 20px;
+}
+
+#arcades {
+    display: flex;
+    width: 1000px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+
+.arcades-itens img {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.arcades-itens p { line-height: 25px; }
 }

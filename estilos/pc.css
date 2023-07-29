@@ -25,24 +25,59 @@
         margin-bottom: 15px;
     }
 
-    .toggle { display: none; }
 
    
 
     header {
-        height: 220px;
+        display: flex;
+        align-items: center;
+        padding: 30px ;
+        height: 70px;
+        justify-content: space-between;
+        gap: 10px;
     }
 
-    header h1 {
-        margin-top: 50px;
+    #acesso-main{
+        display: flex;
+        gap: 5px;
+        align-items: center;
     }
+
+    .hydra-name{
+        text-align: left;
+    }
+
+   
+
+    #search-main {
+        border: 2px solid black;
+        }
+        
+        #search {
+        width: 530px;
+        height: 30px;
+        background: none;
+        border: none;
+        padding: 10px;
+        
+        }
+        
+        #search-main button {
+        font-size: 17px;
+        border: none;
+        margin-right: 10px;
+        background: none;
+        }
+
+    .icones i {
+        color: black;
+    }
+
+   
 
     
 
-    #l2 {
-    letter-spacing: 10px;
-    margin-bottom: 30px;
-    }
+   
 
 
     #big-menu {
