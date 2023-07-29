@@ -32,7 +32,7 @@ html, body { width: 100%; }
 #header {
 padding-left: 7px;
 display: flex;
-background-color: rgb(35, 37, 43);
+background-color: #fff;
 justify-content: space-between;
 align-items: center;
 width: 100%;
@@ -68,7 +68,7 @@ height: 75px;
 display: flex;
 align-items: center;
 padding:  5px;
-border-right: 1px solid rgba(0, 0, 0, 0.399) ;
+border-right: 1px solid rgba(0, 0, 0, 0.099) ;
 margin-right: 5px;
 }
 
@@ -81,7 +81,6 @@ height: 100%;
 
 .hydra-name h3 {
 font-family: 'gow';
-color: #fff;
 font-weight: normal;
 }
 
@@ -103,7 +102,6 @@ background: none;
 .icones div i {
 margin: 0 9px;
 font-size: 20px;
-color: #fff;
 }
 
 
@@ -112,7 +110,7 @@ color: #fff;
 display: flex;
 align-items: center;
 height: 70px;
-border-right: 1px solid rgba(0, 0, 0, 0.399);
+border-right: 1px solid rgba(0, 0, 0, 0.099);
 }
 
 
@@ -180,8 +178,6 @@ display: block;
 cursor: pointer;
 font-size: 20px;
 }
-
-.hamburguer .bar{ background-color: #fff; } 
 
 .hamburguer3 .bar:nth-child(2) { opacity: 0; }
 
@@ -486,23 +482,17 @@ display: block;
 margin: 0 auto;
 width: 100%;
 padding: 10px;
-border: 2px solid #fff;
+border: 2px solid rgba(0, 0, 0, 0.799);
 letter-spacing: 1px;
-background: none;
-}
-
-input#search::placeholder {
-    color: #fff;
 }
 
 #small-bar {
 position: relative;
 width: 100%; 
 background-color: #fff;
-border-top: 1px solid rgba(0, 0, 0, 0.399);
-border-bottom: 1px solid rgba(0, 0, 0, 4.199);
+border-top: 1px solid rgba(0, 0, 0, 0.099);
+border-bottom: 1px solid rgba(0, 0, 0, 0.199);
 padding: 10px 15px;
-background-color: rgb(35, 37, 43);
 }
 
 #small-bar.active {
@@ -525,7 +515,7 @@ cursor: pointer;
 border: none;
 background: none;
 font-size: 17px;
-color: #fff;
+
 }
 
 #search-main button i:hover {
