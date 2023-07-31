@@ -11,18 +11,22 @@ const imgProduto = [...document.querySelectorAll('.imagem-p img')];
 
 //ITENS NO CARRINHO
 const imgCart = document.getElementById('cart-img');
-const priceCart = document.getElementById('cart-price');
+const titleCart = document.getElementById('cart-item-name');
+const totalCart = document.getElementById('subtotal');
 
+
+//LOCALSOTAGE
 const getJogo = localStorage.getItem("jogo");
+
+
+
 
 
 //JOGO GOD OF WAR
 if(getJogo === "godOfWar") {
     function godOfWar() {
     
-     
-
-        const kratos = {
+      const kratos = {
             info: "INÍCIO / LANÇAMENTOS / JOGOS / GOD OF WAR RAGNARÖK 2023",
             capa: "imagens/gow-capa.jpg",
             avaliacao: "4.8 (528 avaliações)",
@@ -36,11 +40,15 @@ if(getJogo === "godOfWar") {
     itemImg.src = kratos.capa
     itemTitle.innerHTML = `${kratos.nome}`
     itemstars.innerHTML = `${kratos.avaliacao}`
-    itemPrice.innerHTML = `R$ ${kratos.preco},00`
+    itemPrice.innerHTML = `${kratos.preco}`
     itemDescription.innerHTML = `${kratos.descricao}`
     itemDestail.innerHTML = `<li>${kratos.detalhe}</li>`
+
     imgCart.src = kratos.capa
-    priceCart.innerHTML = `R$ ${kratos.preco}`
+    titleCart.innerHTML = `${kratos.nome}`
+    totalCart.innerHTML = `${kratos.preco}`
+
+    
     
     
     const fotos = [
@@ -74,6 +82,7 @@ if(getJogo === "godOfWar") {
     }
     godOfWar();
 }
+
 
 
 //JOGO SPIDER MAN 2
