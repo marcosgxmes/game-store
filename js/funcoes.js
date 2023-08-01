@@ -15,7 +15,6 @@
   })();
 
 
-
  // BOTAO QUANTIDADE 
 function process_geral(quant, element){
   var classValue = parseInt(element.parentElement.querySelector('.quanti').value);
@@ -28,73 +27,47 @@ function process_geral(quant, element){
   }
 };
 
-
-
-
-// ICON CARRINHO
-const cartMenu = document.getElementById('cart');
-
-//FUNDO ESCURO
+const overflow = document.querySelector('.overflow__hidden')
 const overlay = document.getElementById('carrinho');
-
-// BOTAO ADD CARRINHO
-const addCarrinho = document.getElementById('addCarrinho');
-
-// CONTINUAR A COMPRAR
 const btnCart = document.getElementById('btn-cart');
-
-// CONTINUAR A COMPRAR 2
 const btnCart2 = document.getElementById('btn-cart2');
+const closeCart = document.querySelector('.hamburguer3');
+const closeCart2 = document.querySelector('.hamburguer4');
+const lixeira = document.getElementById('lixeira');
+const deleted = document.getElementById('delete')
 
 
-  
-  let total = document.getElementById('subtotal').innerHTML;
-  const convert = Number(total)
-  let totalItem = document.getElementById('totalItens2').value;
-  const addItem = document.getElementById('plus');
-  const removeItem = document.getElementById('minus');
 
- 
-
-
-//ADD ITEM
-addItem.addEventListener('click', ()=> {
-  totalItem ++;
-  total.innerHTML = `R$ ${convert * totalItem}`
-});
-
-
-//REMOVER ITEM
-removeItem.addEventListener('click', ()=> {
-  totalItem --;
-  totalItem <= 0 ? totalItem = 1 :  totalItem;
-  
-  total.innerHTML = `R$ ${convert * totalItem}` 
-});
-
-
-addCarrinho.addEventListener('click', () => {
+//FECHAR CARRINHO
+closeCart.addEventListener('click', ()=> {
+  overflow.classList.toggle('active');
   overlay.classList.toggle('active');
 });
 
 
+//FECHAR CARRINHO QUANDO VAZIO
+closeCart2.addEventListener('click', ()=> {
+  deleted.classList.toggle('active');
+  overflow.classList.toggle('active');
+});
 
 
+lixeira.addEventListener('click', () => {
+  overlay.classList.toggle('active');
+  deleted.classList.toggle('active');
+})
 
 
+//CONTINUAR A COMPRAR
+btnCart.addEventListener('click', ()=> {
+  overflow.classList.toggle('active');
+  overlay.classList.toggle('active');
+});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//CONTINUAR A COMPRAR 2
+btnCart2.addEventListener('click', ()=> {
+  deleted.classList.toggle('active');
+  overflow.classList.toggle('active');
+ 
+});

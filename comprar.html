@@ -69,7 +69,7 @@
                     <div id="cart-menu">
                         <div id="your-cart">
                             <h3>Seu carrinho</h3>
-                            <div class="hamburguer3" onclick="addToCart()">
+                            <div class="hamburguer3">
                                 <span class="bar"></span>
                                 <span class="bar"></span>
                                 <span class="bar"></span>
@@ -78,8 +78,8 @@
 
                         <div id="price-dados">
                             <p>Os impostos incluídos e os custos de envio são calculados na tela de pagamento.</p>
-                            <button class="btn-cart btn-pay" type="submit"><img src="imagens/pesquisa.png" alt=""
-                                    width="15px"> Pay</button>
+                            
+                            <button class="btn-cart btn-pay" type="submit"><img src="imagens/logo-pix-png-icone-520x520.png" alt="" width="30px"> Pix</button>
                         </div>
 
                         <div id="carrinho-conteudo">
@@ -104,13 +104,14 @@
                                         <input class="qnt_menor_maior" type="button" id="plus" value='+'
                                             onclick="process_geral(1, this)" />
                                     </div>
+                                    <span id="lixeira" class="material-symbols-outlined">delete</span>
                                 </div>
 
-                                <span id="lixeira" class="material-symbols-outlined">delete</span>
+                               
                             </div>
                         </div>
 
-                        <button id="btn-cart" type="submit" onclick="AddToCart()">Continuar a comprar</button>
+                        <button id="btn-cart" type="submit">Continuar a comprar</button>
                     </div>
                 </section>
 
@@ -119,12 +120,14 @@
                     <div id="deleted">
                         <div id="your-cart">
                             <h3>Seu carrinho</h3>
-                            <div class="hamburguer4" onclick="addToCart()">
+
+                            <div class="hamburguer4">
                                 <span class="bar"></span>
                                 <span class="bar"></span>
                                 <span class="bar"></span>
                             </div>
                         </div>
+
                         <div id="empty">
                             <h3>O seu carrinho de compras<br> está vazio</h3>
                             <button id="btn-cart2" type="submit" onclick="AddToCart()">Continuar a comprar</button>
@@ -203,6 +206,7 @@
                 <p id="item-price"></p>
 
                 <h4 id="qt">Quantidade</h4>
+
                 <div id="quantidade" class="produto_qnt_princ" data-app="product.quantity">
 
                     <input class="qnt_menor_maior" type="button" id="minus" value='-'

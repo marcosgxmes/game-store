@@ -1,23 +1,58 @@
+
+//LOCALSOTAGE
+const getJogo = localStorage.getItem("jogo");
+
+
 //ELEMENTOS DA PÁGINA
 const infoPage = document.getElementById('info-atual');
 const itemImg = document.getElementById('item-img');
 const itemTitle = document.getElementById('item-title');
 const itemstars = document.getElementById('avaliation');
-const itemPrice = document.getElementById('item-price');
+let itemPrice ;
+const preco = document.getElementById('item-price');
 const itemDescription = document.getElementById('item-description');
 const itemDestail = document.getElementById('detalhes');
 const imgProduto = [...document.querySelectorAll('.imagem-p img')];
 
 
-//ITENS NO CARRINHO
+//ELEMENTOS DO CARRINHO
 const imgCart = document.getElementById('cart-img');
 const titleCart = document.getElementById('cart-item-name');
 const totalCart = document.getElementById('subtotal');
+const addCarrinho = document.getElementById('addCarrinho');
+const addItem = document.getElementById('plus');
+let itemQuanti = document.getElementById('totalItens').value;
+let totalItem = document.getElementById('totalItens2').value;
+const removeItem = document.getElementById('minus');
 
 
-//LOCALSOTAGE
-const getJogo = localStorage.getItem("jogo");
+//ADD ITEM AO CARRINHO
+addCarrinho.addEventListener('click', () => {
+  overflow.classList.toggle('active');
+  overlay.classList.toggle('active');
+  let multiplica =  (totalItem * itemPrice); 
+  let convercao = multiplica.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+  totalCart.innerHTML = convercao;
+});
 
+
+//ADD MAIS ITEM
+addItem.addEventListener('click', ()=> {
+  totalItem ++;
+  let multiplica =  (totalItem * itemPrice); 
+  let convercao = multiplica.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+  totalCart.innerHTML = convercao
+});
+
+
+//REMOVER ITEM
+removeItem.addEventListener('click', ()=> {
+  totalItem --;
+  totalItem <= 0 ? totalItem = 1 :  totalItem;
+  let multiplica =  (totalItem * itemPrice); 
+  let convercao = multiplica.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+  totalCart.innerHTML = convercao 
+});
 
 
 
@@ -30,7 +65,7 @@ if(getJogo === "godOfWar") {
             info: "INÍCIO / LANÇAMENTOS / JOGOS / GOD OF WAR RAGNARÖK 2023",
             capa: "imagens/gow-capa.jpg",
             avaliacao: "4.8 (528 avaliações)",
-            nome: "God of War Ragnarök - PS4/PS5",
+            nome: "God of War Ragnarök",
             preco: 350,
             descricao: "Em God of War: Ragnarok, acompanhe a jornada de Kratos e Atreus pelos Nove Reinos em busca de respostas, enquanto as forças asgardianas preparam-se para a guerra. Atreus está à procura de conhecimento para entender a profecia de Loki e o papel dele no Ragnarok. Agora cabe a Kratos enfrentar seus fantasmas do passado para estar presente ao lado de Atreus neste momento de incertezas. Explore lugares inimagináveis com paisagens exuberantes e crie alianças por todos os reinos para enfrentar seus inimigos, entre deuses poderosos e criaturas épicas. As famosas Lâminas do Caos, o Machado Leviatã e o Escudo Guardião estão de volta, junto com uma série de novas habilidades que irão deixar Kratos e Atreus ainda mais implacáveis.",
             detalhe: '1 Jogo God of War Ragnarok. '
@@ -40,16 +75,15 @@ if(getJogo === "godOfWar") {
     itemImg.src = kratos.capa
     itemTitle.innerHTML = `${kratos.nome}`
     itemstars.innerHTML = `${kratos.avaliacao}`
-    itemPrice.innerHTML = `${kratos.preco}`
+    itemPrice = kratos.preco
+    preco.innerHTML = kratos.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${kratos.descricao}`
     itemDestail.innerHTML = `<li>${kratos.detalhe}</li>`
 
     imgCart.src = kratos.capa
     titleCart.innerHTML = `${kratos.nome}`
-    totalCart.innerHTML = `${kratos.preco}`
+    totalCart.innerHTML = `R$ ${kratos.preco}`
 
-    
-    
     
     const fotos = [
         'https://s2-techtudo.glbimg.com/0WyUojp-gkkKrtfyTA841RVrN5Y=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/K/D/1nCcAfSU2iSPAYx27i7Q/god-of-war-ragnarok-kratos-thor-historia-controle-tematico.jpg',
@@ -62,7 +96,9 @@ if(getJogo === "godOfWar") {
     
         "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-watermark-screenshot-12-en-08sep21?$1600px$"
     ];
-    
+
+
+     //TROCAR IMAGENS
     let aux = 0;
             
     imgProduto.forEach(imagem => {
@@ -70,7 +106,7 @@ if(getJogo === "godOfWar") {
         aux++
     });
     
-    //TROCAR IMAGENS
+   
     const imgPrincipal = document.getElementById('item-img');
     
     imgProduto.forEach(img => {
@@ -82,7 +118,6 @@ if(getJogo === "godOfWar") {
     }
     godOfWar();
 }
-
 
 
 //JOGO SPIDER MAN 2
@@ -99,7 +134,7 @@ if(getJogo === "spiderMan") {
             //AVALIAÇÃO
             avaliacao:'4.7 (206 avaliações)',
             //PREÇO
-            preco:307.00,
+            preco:307,
             //DESCRIÇÃO
            descricao: "Os Spiders Peter Parker e Miles Morales estão de volta em mais uma aventura eletrizante da famosa franquia Marvel's Spider-Man para PS5. Balance, pule e plane com as novas Asas de Teia para percorrer a Nova York da Marvel e alterne rapidamente entre Peter Parker e Miles Morales para jogar histórias diferentes e usar novos poderes épicos enquanto o infame vilão Venom ameaça a vida deles, das pessoas próximas a eles e a cidade.",
             //DETALHES
@@ -108,28 +143,32 @@ if(getJogo === "spiderMan") {
         
         
         const fotos = [
-            "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-story-duo-4k-legal-13jul23?$1600px$",
-    
+            'https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-peter-miles-en-25may23.jpg?$1600px$',
+            
             "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-venom-4k-legal-13jul23?$1600px$",
-        
+          
             "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-symbiote-4k-legal-13jul23?$1600px$",
     
             "https://m.media-amazon.com/images/I/91FtLDOXIxL._SL1500_.jpg",
-            
-            'https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-peter-miles-en-25may23.jpg?$1600px$'
-        ]
+
+            "https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-story-duo-4k-legal-13jul23?$1600px$"
+          ]
     
     
     infoPage.innerHTML = `${spiderman2.info}`;
     itemImg.src = spiderman2.capa;
     itemTitle.innerHTML = `${spiderman2.nome}`;
     itemstars.innerHTML = `${spiderman2.avaliacao}`;
-    itemPrice.innerHTML = `R$ ${spiderman2.preco},00`;
+    itemPrice = spiderman2.preco
+    preco.innerHTML = spiderman2.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${spiderman2.descricao}`;
     itemDestail.innerHTML = `<li>${spiderman2.detalhe}</li>`;
     
-    imgCart.src = spiderman2.capa;
-    priceCart.innerHTML = `R$ ${spiderman2.preco},00`;
+    imgCart.src = spiderman2.capa
+    titleCart.innerHTML = `${spiderman2.nome}`
+    totalCart.innerHTML = spiderman2.preco
+
+   
     
     
     //JOGAR IMAGENS NO SRC DA DIV
@@ -193,12 +232,14 @@ if(getJogo === "eldenRing") {
     itemImg.src = eldenring.capa;
     itemTitle.innerHTML = `${eldenring.nome}`;
     itemstars.innerHTML = `${eldenring.avalicao}`;
-    itemPrice.innerHTML = `R$ ${eldenring.preco},00`;
+    itemPrice = eldenring.preco
+    preco.innerHTML = eldenring.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${eldenring.descricao}`;
     itemDestail.innerHTML = `<li>${eldenring.detalhe}</li>`;
     
-    imgCart.src = eldenring.capa;
-    priceCart.innerHTML = `R$ ${eldenring.preco},00`;
+    imgCart.src = eldenring.capa
+    titleCart.innerHTML = `${eldenring.nome}`
+    totalCart.innerHTML = `R$ ${eldenring.preco}`
     
     
     //JOGAR IMAGENS NO SRC DA DIV
@@ -261,11 +302,14 @@ if(getJogo === "diabloIV") {
     itemImg.src = diablo.capa;
     itemTitle.innerHTML = `${diablo.nome}`;
     itemstars.innerHTML = `${diablo.avaliacao}`;
-    itemPrice.innerHTML = `R$ ${diablo.preco},00`;
+    itemPrice = diablo.preco
+    preco.innerHTML = diablo.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${diablo.descricao}`;
     itemDestail.innerHTML = `<li>${diablo.detalhe}</li>`;
-    imgCart.src = diablo.capa;
-    priceCart.innerHTML = `R$ ${diablo.preco},00`;
+
+    imgCart.src = diablo.capa
+    titleCart.innerHTML = `${diablo.nome}`
+    totalCart.innerHTML = `R$ ${diablo.preco}`
     
     
     //JOGAR IMAGENS NO SRC DA DIV
@@ -329,12 +373,14 @@ if(getJogo === "mk1") {
     itemImg.src = mk1.capa;
     itemTitle.innerHTML = `${mk1.nome}`;
     itemstars.innerHTML = `${mk1.avaliacao}`;
-    itemPrice.innerHTML = `R$ ${mk1.preco},00`;
+    itemPrice = mk1.preco
+    preco.innerHTML = mk1.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${mk1.descricao}`;
     itemDestail.innerHTML = `<li>${mk1.detalhe}</li>`;
-    imgCart.src = mk1.capa;
-    priceCart.innerHTML = `R$ ${mk1.preco},00`;
-    
+
+    imgCart.src = mk1.capa
+    titleCart.innerHTML = `${mk1.nome}`
+    totalCart.innerHTML = `R$ ${mk1.preco}`
     
     //JOGAR IMAGENS NO SRC DA DIV
     let aux = 0;
@@ -397,11 +443,14 @@ if(getJogo === "fifa23") {
     itemImg.src = fifa23.capa;
     itemTitle.innerHTML = `${fifa23.nome}`;
     itemstars.innerHTML = `${fifa23.avaliacao}`;
-    itemPrice.innerHTML = `R$ ${fifa23.preco},00`;
+    itemPrice = fifa23.preco
+    preco.innerHTML = fifa23.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${fifa23.descricao}`;
     itemDestail.innerHTML = `<li>${fifa23.detalhe}</li>`;
-    imgCart.src = fifa23.capa;
-    priceCart.innerHTML = `R$ ${fifa23.preco},00`;
+
+    imgCart.src = fifa23.capa
+    titleCart.innerHTML = `${fifa23.nome}`
+    totalCart.innerHTML = `R$ ${fifa23.preco}`
     
     
     //JOGAR IMAGENS NO SRC DA DIV
@@ -465,11 +514,14 @@ if(getJogo === "streetFighter6") {
     itemImg.src = streetfighter6.capa;
     itemTitle.innerHTML = `${streetfighter6.nome}`;
     itemstars.innerHTML = `${streetfighter6.avaliacao}`;
-    itemPrice.innerHTML = `R$ ${streetfighter6.preco},00`;
+    itemPrice = streetfighter6.preco
+    preco.innerHTML = streetfighter6.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${streetfighter6.descricao}`;
     itemDestail.innerHTML = `<li>${streetfighter6.detalhe}</li>`;
-    imgCart.src = streetfighter6.capa;
-    priceCart.innerHTML = `R$ ${streetfighter6.preco},00`;
+
+    imgCart.src = streetfighter6.capa
+    titleCart.innerHTML = `${streetfighter6.nome}`
+    totalCart.innerHTML = `R$ ${streetfighter6.preco}`
     
     
     //JOGAR IMAGENS NO SRC DA DIV
@@ -533,11 +585,14 @@ if(getJogo === "tekken8") {
     itemImg.src = tekken8.capa;
     itemTitle.innerHTML = `${tekken8.nome}`;
     itemstars.innerHTML = `${tekken8.avaliacao}`;
-    itemPrice.innerHTML = `R$ ${tekken8.preco},00`;
+    itemPrice = tekken8.preco
+    preco.innerHTML = tekken8.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});;
     itemDescription.innerHTML = `${tekken8.descricao}`;
     itemDestail.innerHTML = `<li>${tekken8.detalhe}</li>`;
-    imgCart.src = tekken8.capa;
-    priceCart.innerHTML = `R$ ${tekken8.preco},00`;
+
+    imgCart.src = tekken8.capa
+    titleCart.innerHTML = `${tekken8.nome}`
+    totalCart.innerHTML = `R$ ${tekken8.preco}`
     
     
     //JOGAR IMAGENS NO SRC DA DIV
@@ -576,7 +631,7 @@ if(getJogo === "ps5"){
         //AVALIAÇÃO
        avaliacao: '4.8 (703 avaliações)',
         //PREÇO
-       preco: 4.199,
+       preco: 4199,
         //DESCRIÇÃO
       descricao:  "A evolução em consoles de videogame chegou e você precisa viver essa experiência! Com SSD de alta velocidade, que permite um carregamento ultrarrápido, áudio 3D e controle Wireless DualSense com feedback tátil e gatilhos adaptáveis, o PlayStation 5 proporcionará uma incrível imersão em seus games favoritos.",
         //DETALHES
@@ -603,7 +658,8 @@ infoPage.innerHTML = `${ps5.info}`;
 itemImg.src = ps5.capa;
 itemTitle.innerHTML = `${ps5.nome}`;
 itemstars.innerHTML = `${ps5.avaliacao}`;
-itemPrice.innerHTML = `R$ ${ps5.preco},00`;
+itemPrice = ps5.preco
+preco.innerHTML = ps5.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 itemDescription.innerHTML = `${ps5.descricao}`;
 itemDestail.innerHTML = `
 <li>${ps5.detalhe}</li>
@@ -611,8 +667,10 @@ itemDestail.innerHTML = `
 <li>1 Cabo USB-C.</li>
 <li>1 Cabo de alimentação.</li>
 <li>1 Cabo HDMI.</li>`;
-imgCart.src = ps5.capa;
-priceCart.innerHTML = `R$ ${ps5.preco},00`;
+
+imgCart.src = ps5.capa
+    titleCart.innerHTML = `${ps5.nome}`
+    totalCart.innerHTML = `R$ ${ps5.preco}`
 
 
 //JOGAR IMAGENS NO SRC DA DIV
@@ -651,7 +709,7 @@ if(getJogo === "ps4"){
         //AVALIAÇÃO
        avaliacao: '4.7 (1.376 avaliações)',
         //PREÇO
-     preco:   3.249,
+     preco:   3249,
         //DESCRIÇÃO
      descricao:   "PlayStation 4 Jogos incríveis e entretenimiento sem fim. Os jogos mais incríveis estão no PS4, com 1TB de armazenamento. O console PS4 oferece excelente poder de jogabilidade, entretenimento incrível tecnologia HDR vibrante. Inclui: Console PlayStation 4 Controle sem fio DualShock 4 Disco Blu-ray de God Of War Ragnarok PS4 Headset mono Cabo HDMI Cabo de alimentaçao CA Cabo USB Materiais impressosControle sem fio DualShock 4 Disco Blu-ray de God Of War Ragnarok PS4 Headset mono Cabo HDMI Cabo de alimentaçao CA Cabo USB Materiais impressos.",
         //DETALHES
@@ -676,7 +734,8 @@ infoPage.innerHTML = `${ps4.info}`;
 itemImg.src = ps4.capa;
 itemTitle.innerHTML = `${ps4.nome}`;
 itemstars.innerHTML = `${ps4.avaliacao}`;
-itemPrice.innerHTML = `R$ ${ps4.preco},00`;
+itemPrice = ps4.preco
+preco.innerHTML = ps4.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 itemDescription.innerHTML = `${ps4.descricao}`;
 itemDestail.innerHTML = `
 <li>${ps4.detalhe}</li>
@@ -685,8 +744,10 @@ itemDestail.innerHTML = `
 <li>1 Cabo de alimentação.</li>
 <li>1 Cabo HDMI.</li>
 <li>1 Fone Sony.</li>`;
-imgCart.src = ps4.capa;
-priceCart.innerHTML = `R$ ${ps4.preco},00`;
+
+imgCart.src = ps4.capa
+    titleCart.innerHTML = `${ps4.nome}`
+    totalCart.innerHTML = `R$ ${ps4.preco}`
 
 
 //JOGAR IMAGENS NO SRC DA DIV
@@ -725,7 +786,7 @@ if(getJogo === "xboxsx"){
         //AVALIAÇÃO
       avaliacao:  '4.8 (3.361 avaliações)',
         //PREÇO
-      preco:  4.150,
+      preco:  4150,
         //DESCRIÇÃO
      descricao:   "Apresentamos o xbox series x, nosso console mais rápido e poderoso de todos os tempos; jogue milhares de títulos de quatro gerações de consoles- todos os jogos têm melhor aparência e são melhor executados no xbox series x; no coração do series x está a xbox velocity architecture, que combina um ssd personalizado e software integrado para diminuir significativamente os tempos de carregamento dentro e fora do jogo; troque simultaneamente entre vários jogos em um instante com o quick resume; explore novos mundos e desfrute da ação como nunca antes com 12 teraflops incomparáveis de poder de processamento gráfico; desfrute de jogos 4k a até 120 quadros por segundo, som 3d avançado especial e muito mais; comece com uma biblioteca instantânea de mais de 100 jogos de alta qualidade, incluindo todos os novos títulos do xbox game studios no mesmo dia do seu lançamento como o halo infinite, com o xbox game pass ultimate (assinatura vendida separadamente) ***informações importantes:4k a 120 fps: requer conteúdo e exibição compatíveis; use-o no xbox series x conforme o conteúdo for disponibilizado.xbox game pass: o catálogo de jogos varia ao longo do tempo.",
         //DETALHES
@@ -750,11 +811,14 @@ infoPage.innerHTML = `${xboxsx.info}`;
 itemImg.src = xboxsx.capa;
 itemTitle.innerHTML = `${xboxsx.nome}`;
 itemstars.innerHTML = `${xboxsx.avaliacao}`;
-itemPrice.innerHTML = `R$ ${xboxsx.preco},00`;
+itemPrice = xboxsx.preco
+preco.innerHTML = xboxsx.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 itemDescription.innerHTML = `${xboxsx.descricao}`;
 itemDestail.innerHTML = `<li>${xboxsx.detalhe}</li>`;
-imgCart.src = xboxsx.capa;
-priceCart.innerHTML = `R$ ${xboxsx.preco},00`;
+
+imgCart.src = xboxsx.capa
+    titleCart.innerHTML = `${xboxsx.nome}`
+    totalCart.innerHTML = `R$ ${xboxsx.preco}`
 
 
 //JOGAR IMAGENS NO SRC DA DIV
@@ -794,7 +858,7 @@ if(getJogo === "xboxss"){
             //AVALIAÇÃO
          avaliacao:   '4.6 (13.991 avaliações)',
             //PREÇO
-         preco:   2.299,
+         preco: 2299,
             //DESCRIÇÃO
          descricao:   "Xbox series s, nosso xbox menor e mais elegante de todos os tempos; com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o xbox series s oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.",
             //DETALHES
@@ -819,11 +883,14 @@ if(getJogo === "xboxss"){
     itemImg.src = xboxss.capa;
     itemTitle.innerHTML = `${xboxss.nome}`;
     itemstars.innerHTML = `${xboxss.avaliacao}`;
-    itemPrice.innerHTML = `R$ ${xboxss.preco},00`;
+    itemPrice = xboxss.preco
+    preco.innerHTML = xboxss.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${xboxss.descricao}`;
     itemDestail.innerHTML = `<li>${xboxss.detalhe}</li>`;
-    imgCart.src = xboxss.capa;
-    priceCart.innerHTML = `R$ ${xboxss.preco},00`;
+
+    imgCart.src = xboxss.capa
+    titleCart.innerHTML = `${xboxss.nome}`
+    totalCart.innerHTML = `R$ ${xboxss.preco}`
     
     
     //JOGAR IMAGENS NO SRC DA DIV
@@ -863,7 +930,7 @@ if(getJogo === "nvidia"){
         //AVALIAÇÃO
      avaliacao:   '4.6 (11 avaliações)',
         //PREÇO
-     preco:   6.106,
+     preco:   6106,
         //DESCRIÇÃO
      descricao:   "MEMORIA GPU AD104-400 Process 4 CUDA Cores 7680 Idle Board Power N/A Max Board Power 285W Power Connectors PCIe Gen5 16-pin connector Idle GPU Temperature N/A Max GPU Temperature N/A Size 12GB Type GDDR6X Memory Width 192-bit Memory Bandwidth 504 Interface PCI-E 4.0 Dimensions(with Bracket) 336*148*62 Dimensions(without Bracket) 320*133*62 Boost Clock 2670 Over Clock O Memory Clock (effective) 21 Over Clock X 1st output DisplayPort 1.4a 2nd output DisplayPort 1.4a 3rd output DisplayPort 1.4a 4th output HDMI 2.1a 5th output Edge N/A Software SLI / Crossfire × FAN 2*92mm, 1*102mm Slot 3 FAN Control O Idle Noise Level (decibel) N/A MAX Noise Level (decibel) N/A Heatpipes / VC 8*6mm RGB Front and Top Other special features 1-Click Sync Pro DirectX DirectX 12 Windows support Windows 10/11 64-bit Minimum Power Supply 700W.",
         //DETALHES
@@ -888,7 +955,8 @@ infoPage.innerHTML = `${nvidia.info}`;
 itemImg.src = nvidia.capa;
 itemTitle.innerHTML = `${nvidia.nome}`;
 itemstars.innerHTML = `${nvidia.avaliacao}`;
-itemPrice.innerHTML = `R$ ${nvidia.preco},00`;
+itemPrice = nvidia.preco
+preco.innerHTML = nvidia.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 itemDescription.innerHTML = `${nvidia.descricao}`;
 itemDestail.innerHTML = `
 <li>${nvidia.detalhe}</li>
@@ -898,8 +966,10 @@ itemDestail.innerHTML = `
 <li>Memória de vídeo: 12 GB.</li>
 <li>Vel. relógio de memória: 1313 MHz.</li>
 `;
-imgCart.src = nvidia.capa;
-priceCart.innerHTML = `R$ ${nvidia.preco},00`;
+
+imgCart.src = nvidia.capa
+titleCart.innerHTML = `${nvidia.nome}`
+totalCart.innerHTML = `R$ ${nvidia.preco}`
 
 
 //JOGAR IMAGENS NO SRC DA DIV
