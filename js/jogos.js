@@ -231,7 +231,7 @@ if(getJogo === "eldenRing") {
     infoPage.innerHTML = `${eldenring.info}`;
     itemImg.src = eldenring.capa;
     itemTitle.innerHTML = `${eldenring.nome}`;
-    itemstars.innerHTML = `${eldenring.avalicao}`;
+    itemstars.innerHTML = `${eldenring.avaliacao}`;
     itemPrice = eldenring.preco
     preco.innerHTML = eldenring.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     itemDescription.innerHTML = `${eldenring.descricao}`;
