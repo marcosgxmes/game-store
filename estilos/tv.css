@@ -44,6 +44,10 @@ header {
     padding: 0;
     border: none;
     }
+
+    .hydra-logo img {
+    width: 60px;
+    height: 60px;}
     
     .hydra-name{
     display: flex;
